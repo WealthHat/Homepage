@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from './navbar/Navbar'
 
-const Layout = () => {
+
+const Layout = ({children}:any) => {
   return (
-    <div>Layout</div>
+    <>
+        <Navbar/>
+        {children}
+    </>
   )
 }
 
