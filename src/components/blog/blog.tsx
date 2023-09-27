@@ -1,32 +1,24 @@
-import Image from 'next/image'
-import React from 'react'
+import React from 'react';
+import BlogCard from './blogcard';
 
 const Blog = () => {
   return (
     <div className='blog'>
       <div className='container-fluid'>
+        <div className='d-flex'>
+          <h1 className='explore'>Explore insights</h1>
+          <div className='dash'></div>
+        </div>
+
         <div className='row'>
-          <div className='col-3 p-0'>
-            <div className='blog-card'>
-              <div className='blog-image'>
-                <Image
-                  src='/images/blog1.svg'
-                  alt=''
-                  width={100}
-                  height={100}
-                />
-                <div className="tag">Financial planning</div>
-              </div>
-              <div className='blog-content'>
-                <h1>How inflation affects your investments</h1>
-                <p>22 AUGUST, 2023</p>
-              </div>
-            </div>
-          </div>
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Blog
+export default Blog;
