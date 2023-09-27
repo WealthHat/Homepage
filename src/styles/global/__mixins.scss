@@ -1,10 +1,7 @@
-@mixin common-text-primary {
-  font-family: $primary-font-normal;
-  color: #6e7191;
-}
+
 
 @mixin heading($size, $weight, $color) {
-  font-family: $primary-font;
+  font-family: "Lato";
   font-size: $size;
   color: $color;
   padding: 0;
@@ -13,7 +10,7 @@
 }
 
 @mixin body-text($size, $weight, $color) {
-  font-family: $primary-font;
+  font-family: "Lato";
   font-size: $size;
   color: $color;
   padding: 0;
@@ -194,7 +191,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: $primary-font;
+  font-family: "Lato";
   height: 50px;
 
   @if $color == black {
