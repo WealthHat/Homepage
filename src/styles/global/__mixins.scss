@@ -18,67 +18,12 @@
   font-weight: $weight;
 }
 
-@mixin card-bg($bg-color) {
-  background-color: $white;
-  // color: $white;
-
-  @if $bg-color == dark {
-    background-color: $bg-dark;
-    color: $white;
-  }
-}
-
-@mixin icon-container($type) {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background-color: #fadce9;
-  margin-bottom: 14px;
-
-  @if $type == dark {
-    background-color: rgba(250, 220, 233, 0.1);
-  }
-
-  svg {
-    width: 24px;
-    height: 24px;
-    margin: 22px 20px;
-  }
-}
-
-@mixin card-link($type) {
-  font-family: $secondary-font-normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 23px;
-  letter-spacing: 0.75px;
-  border: 2px solid #d9dbe9;
-  box-sizing: border-box;
-  border-radius: 40px;
-  margin-top: 14px;
-  color: $primary-color;
-  background-color: transparent;
-  padding: 6px 32px;
-  &:hover {
-    background-color: #d9dbe973;
-    transition: all 1s ease;
-  }
-
-  @if $type == dark {
-    border: 2px solid #4e4b66;
-    color: #fadce9;
-    &:hover {
-      background-color: #fadce942;
-      transition: all 1s ease;
-    }
-  }
-}
 
 @mixin input($border: none) {
   background: rgba(255, 255, 255, 1);
   border: 1px solid $border;
   color: $black;
-  font-size: 16px;
+  font-size: $font-16;
   font-weight: 400;
   padding: 14px;
 
