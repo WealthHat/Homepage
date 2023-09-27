@@ -16,52 +16,46 @@ const Navbar = () => {
         setNavOne(false), setNavTwo(false), setNavThree(false);
       }}
     >
+      <div className='nav-left'>
+        <Logo />
+      </div>
+
+      <div className='nav-right'>
+        <ul>
+          <li
+            onMouseEnter={() => {
+              setNavOne(true), setNavTwo(false), setNavThree(false);
+            }}
+          >
+            <Link href='/'>The Firm</Link>
+            <i className='bi bi-chevron-down'></i>
+          </li>
+          <li
+            onMouseEnter={() => {
+              setNavTwo(true), setNavOne(false), setNavThree(false);
+            }}
+          >
+            <Link href='/'>What we do</Link>
+            <i className='bi bi-chevron-down'></i>
+          </li>
+          <li
+            onMouseEnter={() => {
+              setNavTwo(false), setNavOne(false), setNavThree(true);
+            }}
+          >
+            <Link href='/'>Insights</Link>
+            <i className='bi bi-chevron-down'></i>
+          </li>
+          <li>
+            <Link href='/'>Client access</Link>
+          </li>
+          <li className='schedule'>
+            <Link href='/'>Schedule a call</Link>
+          </li>
+        </ul>
+      </div>
+
       <div className='container'>
-        <div className='row'>
-          <div className='col-5'>
-            <div className='nav-left'>
-              <Logo />
-            </div>
-          </div>
-
-          <div className='col-7'>
-            <div className='nav-right'>
-              <ul>
-                <li
-                  onMouseEnter={() => {
-                    setNavOne(true), setNavTwo(false), setNavThree(false);
-                  }}
-                >
-                  <Link href='/'>The Firm</Link>
-                  <i className='bi bi-chevron-down'></i>
-                </li>
-                <li
-                  onMouseEnter={() => {
-                    setNavTwo(true), setNavOne(false), setNavThree(false);
-                  }}
-                >
-                  <Link href='/'>What we do</Link>
-                  <i className='bi bi-chevron-down'></i>
-                </li>
-                <li
-                  onMouseEnter={() => {
-                    setNavTwo(false), setNavOne(false), setNavThree(true);
-                  }}
-                >
-                  <Link href='/'>Insights</Link>
-                  <i className='bi bi-chevron-down'></i>
-                </li>
-                <li>
-                  <Link href='/'>Client access</Link>
-                </li>
-                <li className='schedule'>
-                  <Link href='/'>Schedule a call</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
         {navOne ? (
           <div className='row  dropdown'>
             <div className='line'></div>
@@ -90,7 +84,9 @@ const Navbar = () => {
             <div className='col-4 p-0'>
               <ol>
                 <li className='schedule'>
-                  <Link href='/' className="fw-bolder">What we do</Link>
+                  <Link href='/' className='fw-bolder'>
+                    What we do
+                  </Link>
                 </li>
                 <li className='schedule'>
                   <Link href='/'>One-Time Advice</Link>
@@ -104,7 +100,9 @@ const Navbar = () => {
             <div className='col-4 p-0'>
               <ol>
                 <li className='schedule'>
-                  <Link href='/' className="fw-bolder">Who We Serve</Link>
+                  <Link href='/' className='fw-bolder'>
+                    Who We Serve
+                  </Link>
                 </li>
                 <li className='schedule'>
                   <Link href='/'>
