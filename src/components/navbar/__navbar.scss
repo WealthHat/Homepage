@@ -23,6 +23,7 @@
         @include heading($font-18, 600, '');
         display: flex;
         align-items: center;
+        //  position:relative;
 
         a {
           cursor: pointer;
@@ -32,9 +33,9 @@
         .bi-chevron-down {
           color: $white;
           margin-left: 10px;
-          display:block;
-          margin-top:5px;
-          font-size:$font-16
+          display: block;
+          margin-top: 5px;
+          font-size: $font-16;
         }
 
         &.schedule {
@@ -51,6 +52,35 @@
           }
         }
       }
+    }
+  }
+
+  //   dropdown section
+  .dropdown {
+    background: $black;
+    padding:30px 20px;
+    transition:$transitions;
+
+    .line{
+        border-bottom:1px solid $border-color;
+        margin-bottom:30px;
+    }
+
+    ol{
+
+        li{
+            display:block;
+            line-height: 40px;
+
+            a{
+                @include heading($font-18, 400, $white);
+
+                &:hover{
+                    text-decoration:underline;
+                    transition:$transitions;
+                }
+            }
+        }
     }
   }
 }
