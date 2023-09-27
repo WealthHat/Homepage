@@ -1,0 +1,81 @@
+.footer {
+  background: $black;
+  padding: 50px;
+  padding-bottom:30px;
+
+  
+  .logo-section {
+    margin-bottom: 30px;
+
+    &.non-visible {
+      visibility: hidden;
+    }
+  }
+
+  .footer-left {
+    border-right: 1px solid $deep-color;
+    padding: 30px 0 50px 0;
+
+    .content {
+      @include body-text($font-16, 400, $white);
+      width: 70%;
+      line-height: 30px;
+    }
+  }
+
+
+  .footer-right{
+    padding-top: 30px;
+    padding-bottom:50px;
+    padding-left:40px;
+
+    ul {
+      li {
+        @include body-text($font-16, 400, $white);
+        line-height: 30px;
+  
+        &.list-heading {
+          font-weight: 700;
+        }
+
+        a{
+            @include body-text($font-16, 400, $white);
+            transition:$transitions;
+            
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+      }
+    }
+  }
+
+//   Footer icons section
+.footer-icons{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:250px;
+    margin-top:75px;
+
+    a{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+// copyrights
+.copyrights{
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    small{
+        display:block;
+        @include body-text($font-14, 400, $white);
+        margin-top:50px;
+}
+}
+}

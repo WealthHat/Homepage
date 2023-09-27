@@ -1,17 +1,23 @@
 .nav {
-  width: 100%;
+  width: 100%!important;
   height: 80px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 50px;
 
   .nav-left {
     display: flex;
     align-items: center;
     height: 80px;
+    width:20%;
   }
 
   .nav-right {
     display: flex;
     align-items: center;
     height: 80px;
+    width:50%;
 
     ul {
       display: flex;
@@ -20,10 +26,9 @@
       width: 100%;
 
       li {
-        @include heading($font-18, 600, '');
+        @include heading($font-16, 500, '');
         display: flex;
         align-items: center;
-        //  position:relative;
 
         a {
           cursor: pointer;
@@ -73,7 +78,7 @@
             line-height: 40px;
 
             a{
-                @include heading($font-18, 400, $white);
+                @include heading($font-16, 400, $white);
 
                 &:hover{
                     text-decoration:underline;
