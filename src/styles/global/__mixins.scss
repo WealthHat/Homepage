@@ -1,6 +1,6 @@
 
 
-@mixin heading($size, $weight, $color) {
+@mixin heading($size, $weight, $color:black) {
   font-family: "Lato";
   font-size: $size;
   color: $color;

@@ -1,8 +1,21 @@
-.services{
-    padding:80px 0;
-    background:$background-color;
+.services {
+  padding: 80px 0;
+  background: $background-color;
 
-    .services-center{
-        margin-top:75px;
+  .services-center {
+    margin-top: 75px;
+
+    .services-left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
+
+    .services-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+  }
 }

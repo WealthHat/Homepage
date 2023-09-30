@@ -1,0 +1,21 @@
+.services-card {
+  width: 430px;
+  border-radius: 5px;
+  background: $white;
+  padding: 30px 20px;
+  cursor: pointer;
+
+  h2 {
+    @include heading($font-22, 400);
+    margin-bottom: 21px;
+    font-family: $secondary-font;
+  }
+
+  p {
+    margin-bottom: 90px;
+  }
+
+  small {
+    text-decoration: underline;
+  }
+}
