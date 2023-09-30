@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import Blog from '@/components/blog/blog';
 import Client from '@/components/clients/clients';
+import Different from '@/components/different/different';
 import Firm from '@/components/firm/firm';
 import Hero from '@/components/hero/hero';
 import MetaTags from '@/components/meta-tags'
@@ -16,6 +17,7 @@ export default function Home() {
       <Firm/>
       <Services/>
       <Client/>
+      <Different/>
       <Blog/>
       <Subscribe/>
     </Layout>
