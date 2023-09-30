@@ -3,7 +3,7 @@ import Blog from '@/components/blog/blog';
 import Firm from '@/components/firm/firm';
 import Hero from '@/components/hero/hero';
 import MetaTags from '@/components/meta-tags'
-import Services from '@/components/services/Services';
+// import Services from '@/components/services/Services';
 import Subscribe from '@/components/subscribe/subscribe';
 
 
@@ -13,7 +13,7 @@ export default function Home() {
       <MetaTags title="Homepage" description="Welcome to Wealthhat"/>
       <Hero/>
       <Firm/>
-      <Services/>
+      {/* <Services/> */}
       <Blog/>
       <Subscribe/>
     </Layout>
