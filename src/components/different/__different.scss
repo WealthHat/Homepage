@@ -11,8 +11,8 @@
       table {
         margin-bottom: 0;
         width: 100% !important;
-        border:2px solid $border-color;
-        border-radius:5px;
+        border:8px solid $border-color;
+        border-radius:10px!important;
 
         th {
           @include body-text(16px, 600, $text-color);

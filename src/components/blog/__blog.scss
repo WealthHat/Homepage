@@ -49,13 +49,13 @@
       padding: 25px 20px 35px 20px;
 
       .blog-heading {
-        @include heading($font-20, 400, $black);
+        @include heading($font-18, 400, $black);
         font-family: $secondary-font;
         margin-bottom:20px;
       }
 
       p {
-        @include body-text($font-14, 400, $black);
+        @include body-text($font-12, 400, $black);
       }
     }
   }
