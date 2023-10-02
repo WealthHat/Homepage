@@ -57,9 +57,13 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className='nav-menu' onClick={() => setShowNav(!showNav)}>
+         {!showNav ? <div className='nav-menu' onClick={() => setShowNav(true)}>
             <i className='bi bi-list'></i>
           </div>
+:
+          <div className='nav-menu' onClick={() => setShowNav(false)}>
+            <i className='bi bi-x-lg'></i>
+          </div>}
         </div>
 
         <div className='container'>
