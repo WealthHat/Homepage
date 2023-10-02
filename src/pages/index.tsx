@@ -21,7 +21,7 @@ export default function Home() {
       <Services />
       <Client />
       {/* <Different /> */}
-      {/* <Blog /> */}
+      <Blog />
       {/* <Subscribe /> */}
     </Layout>
   );
