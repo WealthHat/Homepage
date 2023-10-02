@@ -5,7 +5,12 @@
     margin-top: 75px;
     // z-index:9;
     .row{
-      padding:0 30px;
+     
+
+      @media (min-width:1240px){
+ padding:0 30px;
+      }
+
     }
   }
 }

@@ -10,9 +10,9 @@ const Client = () => {
         subtitle='Delivering for Investors'
         content='WealthHat is the world’s largest alternative asset manager, with $1 trillion. We serve institutional and individual investors by building strong businesses '
       />
-      <div className='container p-0 client-center'>
+      <div className='container client-center'>
         <div className='row'>
-          <div className='col-4 client-box'>
+          <div className='col-lg-4 col-md-6 client-box'>
             <ClientCard
               title='One Time Financial & Investment Plan'
               content='We serve institutional and individual investors by building strong
@@ -23,7 +23,7 @@ const Client = () => {
             />
           </div>
 
-          <div className='col-4 client-box'>
+          <div className='col-lg-4 col-md-6 client-box'>
             <ClientCard
               title='Premium Wealth Retainer'
               content='We serve institutional and individual investors by building strong
@@ -34,7 +34,7 @@ const Client = () => {
             />
           </div>
 
-          <div className='col-4 client-box'>
+          <div className='col-lg-4 col-md-6 order-md-1 client-box'>
             <ClientCard
               title='One Time Financial & Investment Plan'
               content='We serve institutional and individual investors by building strong
@@ -45,7 +45,7 @@ const Client = () => {
             />
           </div>
 
-          <div className='col-4 client-box'>
+          <div className='col-lg-4 col-md-6  order-md-1 client-box'>
             <ClientCard
               title='Premium Wealth Retainer'
               content='We serve institutional and individual investors by building strong
@@ -56,7 +56,7 @@ const Client = () => {
             />
           </div>
 
-          <div className='col-4 client-box'>
+          <div className='col-lg-4 col-md-6 order-md-2 client-box'>
             <ClientCard
               title='One Time Financial & Investment Plan'
               content='We serve institutional and individual investors by building strong
@@ -67,7 +67,7 @@ const Client = () => {
             />
           </div>
 
-          <div className='col-4 client-box'>
+          <div className='col-lg-4 col-md-6 order-md-2 client-box'>
             <ClientCard
               title='Premium Wealth Retainer'
               content='We serve institutional and individual investors by building strong
