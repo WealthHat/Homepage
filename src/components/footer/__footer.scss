@@ -1,7 +1,12 @@
 .footer {
   background: $black;
-  padding: 50px;
+  padding: 50px 20px;
   padding-bottom:30px;
+  margin-top:20px;
+
+  @media (min-width:1240px){
+    padding:50px;
+  }
 
   
   .logo-section {
@@ -9,25 +14,49 @@
 
     &.non-visible {
       visibility: hidden;
+
+      @media (max-width:768px){
+        display:none;
+      }
     }
   }
 
   .footer-left {
     border-right: 1px solid $deep-color;
-    padding: 30px 0 50px 0;
+    padding: 30px 10px 10px 10px;
+
+     @media (min-width:1240px){
+padding-bottom:50px;
+
+      }
+
+      @media (max-width:768px){
+        border-right: none;
+      }
 
     .content {
       @include body-text($font-16, 400, $white);
-      width: 70%;
       line-height: 30px;
+
+      @media (min-width:1240px){
+width: 70%;
+      }
     }
   }
 
 
   .footer-right{
-    padding-top: 30px;
-    padding-bottom:50px;
-    padding-left:40px;
+   padding-top: 30px;
+    padding-left:10px;
+
+    @media (min-width:1240px){
+      padding-left:40px;
+   
+    }
+
+    .footer-box{
+      margin-bottom:20px;
+    }
 
     ul {
       li {

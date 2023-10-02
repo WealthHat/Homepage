@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='footer'>
       <div className='container-fluid'>
         <div className='row'>
-          <div className='col-6 footer-left'>
+          <div className='col-lg-6 col-md-12 footer-left'>
             <div className='logo-section'>
               <Logo />
             </div>
@@ -22,13 +22,13 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className='col-6 footer-right'>
+          <div className='col-lg-6 col-md-12 footer-right'>
             <div className='logo-section non-visible'>
               <Logo />
             </div>
 
             <div className='row'>
-              <div className='col-3'>
+              <div className='footer-box col-xl-3 col-lg-6 col-md-12 '>
                 <ul>
                   <li className='list-heading'>Company</li>
                   <li className='schedule'>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className='col-6'>
+              <div className='footer-box col-xl-6 col-lg-6 col-md-12 '>
                 <ul>
                   <li className='list-heading'> Who We Serve</li>
 
@@ -73,7 +73,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className='col-3'>
+              <div className='footer-box col-xl-3 col-lg-6 col-md-12'>
                 <ul>
                   <li className='list-heading'>Insights</li>
                   <li className='schedule'>
