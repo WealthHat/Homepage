@@ -11,7 +11,7 @@ const Navbar = () => {
 
 // 
   return (
-    <>
+    <div className='nav'>
       <nav
         className='nav'
         style={{ background: 'black' }}
@@ -293,7 +293,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
