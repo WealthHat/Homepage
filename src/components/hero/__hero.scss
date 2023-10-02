@@ -30,6 +30,10 @@
       padding:20px;
     }
 
+    @media (max-width:325px){
+      height:150vh;
+    }
+
 
 
     h1 {
@@ -45,6 +49,9 @@
 
           @media (max-width:450px){
       font-size:$font-34;
+    }
+          @media (max-width:375px){
+      font-size:$font-32;
     }
     }
 

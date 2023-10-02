@@ -12,7 +12,7 @@ const Services = () => {
       />
       <div className='container services-center'>
         <div className='row'>
-          <div className='col-6 services-left'>
+          <div className='col-lg-6 col-md-6 services-left'>
             <ServiceCard
               title='One Time Financial & Investment Plan'
               content='We serve institutional and individual investors by building strong
@@ -23,7 +23,7 @@ const Services = () => {
             />
           </div>
 
-          <div className='col-6 services-right'>
+          <div className='col-lg-6 col-md-6 services-right'>
             <ServiceCard
               title='Premium Wealth Retainer'
               content='We serve institutional and individual investors by building strong

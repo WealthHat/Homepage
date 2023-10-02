@@ -9,7 +9,7 @@ const Firm = () => {
 
       <div className='container firm-center'>
         <div className='row'>
-          <div className='col-6 left-firm'>
+          <div className='col-lg-6 col-md-6 left-firm'>
             <h2>Unmatched scale</h2>
             <p>
               WealthHat is the world’s largest alternative asset manager, with
@@ -25,7 +25,8 @@ const Firm = () => {
               <CircleArrow />
             </div>
           </div>
-          <div className='col-6 right-firm'>
+
+          <div className='col-lg-6 col-md-6 right-firm'>
             <div>
               <h1>$100M</h1>
               <h2>Assets Under Management</h2>

@@ -1,6 +1,7 @@
 .services {
   padding: 80px 0;
   background: $background-color;
+  
 
   .services-center {
     margin-top: 75px;
@@ -8,13 +9,22 @@
     .services-left {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: flex-end; 
+
+      @media (max-width:767px){
+        justify-content: center;
+        margin-bottom:30px;
+      }
     }
 
     .services-right {
       display: flex;
       align-items: center;
       justify-content: flex-start;
+
+       @media (max-width:767px){
+        justify-content: center;
+      }
     }
 
   }
