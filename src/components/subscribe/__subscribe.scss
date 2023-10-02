@@ -3,6 +3,10 @@
     padding-top:20px;
     background:$white;
 
+    @media (max-width:500px){
+        padding:20px 10px;
+    }
+
     .form-box{
         label{
             @include body-text($font-18, 400, $black);
@@ -17,7 +21,6 @@
             width:100%;
             padding-left:0;
         }
-
     }
 
     p{

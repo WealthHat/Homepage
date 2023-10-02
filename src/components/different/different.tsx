@@ -11,7 +11,7 @@ const Different = () => {
         subtitle='Delivering for Investors'
         content='WealthHat is the world’s largest alternative asset manager, with $1 trillion. We serve institutional and individual investors by building strong businesses '
       />
-      <div className='container different-center'>
+      <div className='different-center'>
         <div className='table-container'>
           <table>
             <thead>

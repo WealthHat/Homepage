@@ -4,7 +4,7 @@ const Subscribe = () => {
   return (
     <div className='container-fluid subscribe'>
       <div className='row'>
-        <div className='col-3'>
+        <div className='col-xl-3 col-lg-5 col-md-6'>
           <div className='form-box'>
             <label htmlFor='email'>Email</label>
             <input type='email' id='email' placeholder='email@email.com' />

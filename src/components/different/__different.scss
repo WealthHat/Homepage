@@ -8,11 +8,28 @@
     .table-container {
       padding:0 50px;
 
+      @media (min-width:1240px){
+         padding:0 150px;
+      }
+
+      @media (max-width:768px){
+        padding:0 10px;
+      }
+
+      @media (max-width:600px){
+        overflow-x:scroll;
+      }
+
       table {
         margin-bottom: 0;
         width: 100% !important;
         border:8px solid $border-color;
         border-radius:10px!important;
+
+        @media (max-width:600px){
+          width:900px!important;
+          // display:none;
+        }
 
         th {
           @include body-text(16px, 600, $text-color);
