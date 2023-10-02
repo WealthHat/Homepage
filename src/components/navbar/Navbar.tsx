@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Logo from '@/svgs/logo';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [navOne, setNavOne] = useState(false)
@@ -8,7 +9,7 @@ const Navbar = () => {
   const [navThree, setNavThree] = useState(false)
   const [showNav, setShowNav] = useState(false)
 
-
+// 
   return (
     <>
       <nav
@@ -19,7 +20,7 @@ const Navbar = () => {
         }}
       >
         <div className='nav-left'>
-          <Logo />
+          <Image src="logo.svg" alt="brand-logo" width={100} height={100}/>
         </div>
 
         <div className='nav-right'>
@@ -208,7 +209,7 @@ const Navbar = () => {
               data-bs-parent='#accordionFlushExample'
             >
               <div className='d-flex'>
-                <div>
+                <div className="drop-left">
                   <div className='accordion-body fw-bolder'>What We Do</div>
                   <div className='accordion-body'>
                     <Link href=''>One-time Advice</Link>
@@ -218,7 +219,7 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <div>
+                <div className="drop-right">
                   <div className='accordion-body fw-bolder'>Who We Serve</div>
                   <div className='accordion-body'>
                     <Link href=''>

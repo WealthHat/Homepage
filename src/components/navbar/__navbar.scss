@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  position:fixed;
+  z-index:9;
 
 
   @media (min-width: 1240px) {
@@ -17,13 +19,13 @@
     height: 80px;
     width: 20%;
 
-    @media (max-width: 600px) {
-      .svg {
-        height: 1500px !important;
-        width: 100% !important;
-        object-fit: cover;
-      }
-    }
+    // @media (max-width: 500px) {
+    //   .svg {
+    //     height: 15rem !important;
+    //     width: 10rem;
+    //     object-fit: cover;
+    //   }
+    // }
   }
 
   .nav-right {
@@ -136,17 +138,22 @@
 
 .nav-mobile {
   display: none;
-  padding: 20px 30px;
+  padding: 0px 30px 20px 30px;
   background: $black;
   color: $white;
-  height:100%;
   opacity:0;
   transition:$transitions;
-   transform:translateX(-100%);
+  transform:translateX(-100%);
+  position:absolute;
+  top:80px;
 
   @media (max-width: 767px) {
     display: block;
     width: 100%;
+  }
+
+  @media (max-width:500px){
+      padding: 0px 10px 20px 10px;
   }
 
   ul{
@@ -154,7 +161,7 @@
       &:last-child{
 
         button{
-          width:250px;
+          width:200px;
           border:1px solid $border-color;
           text-align:center!important;
           display:flex;
@@ -162,6 +169,7 @@
           justify-content: center;
           height:60px;
           margin-top:30px;
+          // margin-left:20px;
 
         }
       }
@@ -170,7 +178,7 @@
 
   .accordion-item {
     background: transparent;
-    padding:10px 0!important;
+    padding:5px 0!important;
     border-bottom:1px solid $border-color;
 
     .accordion-button {
@@ -195,6 +203,14 @@
       a {
         color: $off-white;
       }
+    }
+
+    .drop-left{
+      width:45%;
+    }
+    .drop-right{
+      width:55%;
+
     }
   }
 
