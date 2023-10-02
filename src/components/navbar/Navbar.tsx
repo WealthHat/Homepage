@@ -20,7 +20,7 @@ const Navbar = () => {
         }}
       >
         <div className='nav-left'>
-          <Image src="logo.svg" alt="brand-logo" width={100} height={100}/>
+          <Image src='logo.svg' alt='brand-logo' width={100} height={100} />
         </div>
 
         <div className='nav-right'>
@@ -173,6 +173,7 @@ const Navbar = () => {
             </button>
 
             <div
+              onClick={() => setShowNav(false)}
               id='flush-collapseOne'
               className='accordion-collapse collapse'
               data-bs-parent='#accordionFlushExample'
@@ -204,12 +205,13 @@ const Navbar = () => {
             </button>
 
             <div
+              onClick={() => setShowNav(false)}
               id='flush-collapseTwo'
               className='accordion-collapse collapse'
               data-bs-parent='#accordionFlushExample'
             >
               <div className='d-flex'>
-                <div className="drop-left">
+                <div className='drop-left'>
                   <div className='accordion-body fw-bolder'>What We Do</div>
                   <div className='accordion-body'>
                     <Link href=''>One-time Advice</Link>
@@ -219,7 +221,7 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <div className="drop-right">
+                <div className='drop-right'>
                   <div className='accordion-body fw-bolder'>Who We Serve</div>
                   <div className='accordion-body'>
                     <Link href=''>
@@ -257,6 +259,7 @@ const Navbar = () => {
             </button>
 
             <div
+              onClick={() => setShowNav(false)}
               id='flush-collapseThree'
               className='accordion-collapse collapse'
               data-bs-parent='#accordionFlushExample'
@@ -273,13 +276,13 @@ const Navbar = () => {
             </div>
           </li>
 
-          <li className='accordion-item'>
+          <li onClick={() => setShowNav(false)} className='accordion-item'>
             <button className='accordion-button collapsed'>
               Client Access
             </button>
           </li>
 
-          <li className='accordion-item'>
+          <li onClick={() => setShowNav(false)} className='accordion-item'>
             <button className='accordion-button collapsed'>
               Schedule a call
             </button>
