@@ -16,13 +16,13 @@ export default function Home() {
         title='Homepage'
         description='Our clients always come first. We serve them through a global network powered by partnership, integrity, advancing economy.'
       />
-      <Hero />
-      <Firm />
-      <Services />
-      <Client />
-      <Different />
-      <Blog />
-      <Subscribe />
+      {/* <Hero /> */}
+      {/* <Firm /> */}
+      {/* <Services /> */}
+      {/* <Client /> */}
+      {/* <Different /> */}
+      {/* <Blog /> */}
+      {/* <Subscribe /> */}
     </Layout>
   );
 }
