@@ -2,21 +2,20 @@
   background: $white;
   padding: 80px 0;
 
-  .firm-center{
-    margin-top:75px;
+  .firm-center {
+    margin-top: 75px;
 
-
-    .row{
-      @media (max-width:767px){
-        display:flex;
-      flex-direction:column-reverse;
-    }
+    .row {
+      @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
     }
   }
 
   .left-firm {
-    @media (max-width:767px){
-        padding :0px 10px;
+    @media (max-width: 767px) {
+      padding: 0px 10px;
     }
 
     h2 {
@@ -36,22 +35,22 @@
       align-items: center;
       cursor: pointer;
 
-      &:hover{
-        text-decoration:underline;
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
 
   .right-firm {
-    padding-left: 50px;  
+        padding-left: 50px;
 
-    @media (min-width:1240px){
-padding-left: 190px;  
-    }
+        @media (min-width:1240px){
+    padding-left: 100px;
+        }
 
-    @media (max-width:767px){
-      padding :0px 10px;
-      margin-bottom:30px;
+    @media (max-width: 767px) {
+      padding: 0px 10px;
+      margin-bottom: 30px;
     }
 
     h1 {
@@ -59,8 +58,8 @@ padding-left: 190px;
       margin-bottom: 14px;
       font-family: $secondary-font;
 
-      @media (max-width:767px){
-        font-size:$font-44;
+      @media (max-width: 767px) {
+        font-size: $font-44;
       }
     }
 

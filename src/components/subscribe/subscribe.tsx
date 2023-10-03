@@ -2,7 +2,7 @@ import React from 'react';
 
 const Subscribe = () => {
   return (
-    <div className='container-fluid subscribe'>
+    <div className='container subscribe'>
       <div className='row'>
         <div className='col-xl-3 col-lg-5 col-md-6'>
           <div className='form-box'>
