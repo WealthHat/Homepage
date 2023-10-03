@@ -1,0 +1,122 @@
+.footer {
+  background: $black;
+  padding: 50px 20px;
+  padding-bottom:30px;
+  margin-top:20px;
+
+  @media (min-width:1240px){
+    padding:50px;
+  }
+
+  @media(max-width:768px){
+    padding:50px 10px;
+  }
+
+  
+  .logo-section {
+    margin-bottom: 30px;
+
+    &.non-visible {
+      visibility: hidden;
+
+      @media (max-width:768px){
+        display:none;
+      }
+    }
+  }
+
+  .footer-left {
+    border-right: 1px solid $deep-color;
+    padding: 30px 10px 10px 10px;
+
+     @media (min-width:1240px){
+padding-bottom:50px;
+
+      }
+
+      @media (max-width:768px){
+        border-right: none;
+      }
+
+    .content {
+      @include body-text($font-16, 400, $white);
+      line-height: 30px;
+
+      @media (min-width:1240px){
+width: 70%;
+      }
+    }
+  }
+
+
+  .footer-right{
+   padding-top: 30px;
+    padding-left:10px;
+
+    @media (min-width:1240px){
+      padding-left:40px;
+   
+    }
+
+    .footer-box{
+      margin-bottom:20px;
+    }
+
+    ul {
+      li {
+        @include body-text($font-16, 400, $white);
+        line-height: 30px;
+        font-weight:normal;
+        
+        &.list-heading {
+        text-decoration: underline;
+          font-weight: 700;
+        }
+
+        a{
+            @include body-text($font-16, 400, $white);
+            transition:$transitions;
+            
+            
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+      }
+    }
+  }
+
+//   Footer icons section
+.footer-icons{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:250px;
+    margin-top:75px;
+
+    @media (max-width:768px){
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+// copyrights
+.copyrights{
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    small{
+        display:block;
+        @include body-text($font-14, 400, $white);
+        margin-top:50px;
+}
+}
+}

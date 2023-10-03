@@ -1,0 +1,54 @@
+.subscribe{
+    padding:50px;
+    padding-top:20px;
+    background:$white;
+
+    @media (max-width:500px){
+        padding:20px 10px;
+    }
+
+    .form-box{
+        label{
+            @include body-text($font-18, 400, $black);
+            margin-bottom:5px;
+            display:block;
+        }
+
+        input{
+            @include input($border-color);
+            border:none;
+            border-bottom:1px solid $black!important;
+            width:100%;
+            padding-left:0;
+            border-radius:0!important;
+        }
+    }
+
+    p{
+        @include body-text($font-16, 400, $black);
+
+    }
+
+    button{
+        border-radius:50%;
+        height:50px!important;
+        width:50px!important;
+        border:1px solid $black;
+        outline:none;
+        color:$black;
+        transition:$transitions;
+        background:$white;
+        font-size:$font-16;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+            background:$black;
+            color:$white;
+        }
+        
+    }
+
+
+}

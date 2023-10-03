@@ -8,6 +8,17 @@
 
 
 // components
-@import "../components/navbar/__navbar"
+@import "../components/navbar/__navbar";
+@import "../components/hero/__hero";
+@import "../components/footer/__footer";
+@import "../components/blog/__blog";
+@import "../components/subscribe/__subscribe";
+@import "../components/firm/__firm";
+@import "../components/heading/__heading";
+@import "../components/services/__services";
+@import "../components/clients/__clients";
+@import "../components/different/__different";
 
 // common
+@import "../common/service-card/__service-card";
+@import "../common/client-card/__client-card";
