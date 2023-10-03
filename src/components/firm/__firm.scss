@@ -4,9 +4,21 @@
 
   .firm-center{
     margin-top:75px;
+
+
+    .row{
+      @media (max-width:767px){
+        display:flex;
+      flex-direction:column-reverse;
+    }
+    }
   }
 
   .left-firm {
+    @media (max-width:767px){
+        padding :0px 10px;
+    }
+
     h2 {
       @include heading($font-24, 400, $black);
       margin-bottom: 20px;
@@ -31,11 +43,25 @@
   }
 
   .right-firm {
-    padding-left: 190px;
+    padding-left: 50px;  
+
+    @media (min-width:1240px){
+padding-left: 190px;  
+    }
+
+    @media (max-width:767px){
+      padding :0px 10px;
+      margin-bottom:30px;
+    }
+
     h1 {
       @include heading($font-50, 400, $black);
       margin-bottom: 14px;
       font-family: $secondary-font;
+
+      @media (max-width:767px){
+        font-size:$font-44;
+      }
     }
 
     h2 {

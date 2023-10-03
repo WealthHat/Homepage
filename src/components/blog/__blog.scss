@@ -1,6 +1,10 @@
 .blog {
   background: $white;
-  padding: 80px 50px;
+  padding: 80px 0px;
+
+  @media (min-width:1240px){
+    padding: 80px 50px;
+  }
 
     .explore{
         @include heading($font-16, 400, $black);
@@ -46,16 +50,20 @@
     }
 
     .blog-content {
-      padding: 25px 20px 35px 20px;
+      padding: 25px 10px 35px 10px;
+
+      @media (min-width:1240px){
+         padding: 25px 20px 35px 20px;
+      }
 
       .blog-heading {
-        @include heading($font-20, 400, $black);
+        @include heading($font-18, 400, $black);
         font-family: $secondary-font;
         margin-bottom:20px;
       }
 
       p {
-        @include body-text($font-14, 400, $black);
+        @include body-text($font-12, 400, $black);
       }
     }
   }
