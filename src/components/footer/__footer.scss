@@ -66,14 +66,17 @@ width: 70%;
       li {
         @include body-text($font-16, 400, $white);
         line-height: 30px;
-  
+        font-weight:normal;
+        
         &.list-heading {
+        text-decoration: underline;
           font-weight: 700;
         }
 
         a{
             @include body-text($font-16, 400, $white);
             transition:$transitions;
+            
             
             &:hover{
                 text-decoration:underline;
