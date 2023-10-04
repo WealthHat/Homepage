@@ -148,10 +148,10 @@ const Navbar = () => {
                     <Link href='/insights'>Articles</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Webinars</Link>
+                    <Link href='/webinar'>Webinars</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>News & Events</Link>
+                    <Link href='/news'>News & Events</Link>
                   </li>
                 </ol>
               </div>
