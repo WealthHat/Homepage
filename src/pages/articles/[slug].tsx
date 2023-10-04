@@ -8,6 +8,7 @@ import LinkedIn from '@/svgs/linkedin'
 import Twitter from '@/svgs/twitter'
 import Facebook from '@/svgs/facebook'
 import Instagram from '@/svgs/instagram'
+import GoBack from '@/common/go-back'
 
 const BlogDetails = () => {
   return (
@@ -18,7 +19,11 @@ const BlogDetails = () => {
           <div className='row'>
             <div className='col-lg-6 article-left'>
               <div className='d-flex align-items-center gap-3'>
-                <p>22 Aug, 2023</p>
+                <p>
+
+                <GoBack />
+                </p>
+                <p> 22 Aug, 2023</p>
                 <p>2 mins</p>
               </div>
               <h1>How are family offices positioning their portfolios?</h1>
@@ -53,28 +58,27 @@ const BlogDetails = () => {
                 value. Our scale – with more than 12,600 real estate assets* and
                 230+ portfolio companies – enables us to invest in dynamic
                 sectors positioned for long-term growth. WealthHat is the
-                world’s largest alternative asset manager,{' '}
-                WealthHat is the world’s largest alternative asset manager, with
-                $1 trillion in AUM. We serve institutional and individual
-                investors by building strong businesses that deliver lasting
-                value. Our scale – with more than 12,600 real estate assets* and
-                230+ portfolio companies – enables us to invest in dynamic
-                sectors positioned for long-term growth. WealthHat is the
-                world’s largest alternative asset manager,{' '}
-                WealthHat is the world’s largest alternative asset manager, with
-                $1 trillion in AUM. We serve institutional and individual
-                investors by building strong businesses that deliver lasting
-                value. Our scale – with more than 12,600 real estate assets* and
-                230+ portfolio companies – enables us to invest in dynamic
-                sectors positioned for long-term growth. WealthHat is the
-                world’s largest alternative asset manager,{' '}
-                WealthHat is the world’s largest alternative asset manager, with
-                $1 trillion in AUM. We serve institutional and individual
-                investors by building strong businesses that deliver lasting
-                value. Our scale – with more than 12,600 real estate assets* and
-                230+ portfolio companies – enables us to invest in dynamic
-                sectors positioned for long-term growth. WealthHat is the
-                world’s largest alternative asset manager,{' '}
+                world’s largest alternative asset manager, WealthHat is the
+                world’s largest alternative asset manager, with $1 trillion in
+                AUM. We serve institutional and individual investors by building
+                strong businesses that deliver lasting value. Our scale – with
+                more than 12,600 real estate assets* and 230+ portfolio
+                companies – enables us to invest in dynamic sectors positioned
+                for long-term growth. WealthHat is the world’s largest
+                alternative asset manager, WealthHat is the world’s largest
+                alternative asset manager, with $1 trillion in AUM. We serve
+                institutional and individual investors by building strong
+                businesses that deliver lasting value. Our scale – with more
+                than 12,600 real estate assets* and 230+ portfolio companies –
+                enables us to invest in dynamic sectors positioned for long-term
+                growth. WealthHat is the world’s largest alternative asset
+                manager, WealthHat is the world’s largest alternative asset
+                manager, with $1 trillion in AUM. We serve institutional and
+                individual investors by building strong businesses that deliver
+                lasting value. Our scale – with more than 12,600 real estate
+                assets* and 230+ portfolio companies – enables us to invest in
+                dynamic sectors positioned for long-term growth. WealthHat is
+                the world’s largest alternative asset manager,{' '}
               </p>
 
               <div className='download-box'>
@@ -94,11 +98,11 @@ const BlogDetails = () => {
 
               <div className='share-box'>
                 <small>Share this article : </small>
-                <div className="social-box">
-                  <LinkedIn/>
-                  <Twitter/>
-                  <Facebook/>
-                  <Instagram/>
+                <div className='social-box'>
+                  <LinkedIn />
+                  <Twitter />
+                  <Facebook />
+                  <Instagram />
                 </div>
               </div>
             </div>
