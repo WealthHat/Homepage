@@ -20,7 +20,7 @@ const Navbar = () => {
         }}
       >
         <div className='nav-left'>
-          <Image src='logo.svg' alt='brand-logo' width={100} height={100} />
+          <Image src='/images/logo.svg' alt='brand-logo' width={100} height={100} />
         </div>
 
         <div className='nav-right'>

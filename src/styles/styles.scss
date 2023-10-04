@@ -5,7 +5,7 @@
 @import "./global/__fonts";
 
 // pages
-
+@import "../pages/articles/__articles";
 
 // components
 @import "../components/navbar/__navbar";
@@ -18,6 +18,7 @@
 @import "../components/services/__services";
 @import "../components/clients/__clients";
 @import "../components/different/__different";
+
 
 // common
 @import "../common/service-card/__service-card";
