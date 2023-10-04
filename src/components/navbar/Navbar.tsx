@@ -145,7 +145,7 @@ const Navbar = () => {
               <div className='col p-0'>
                 <ol>
                   <li className='schedule'>
-                    <Link href='/'>Articles</Link>
+                    <Link href='/insights'>Articles</Link>
                   </li>
                   <li className='schedule'>
                     <Link href='/'>Webinars</Link>

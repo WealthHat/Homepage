@@ -1,0 +1,99 @@
+.insights {
+  padding: 106px 10px;
+
+  .insight-hero {
+    text-align: center !important;
+    margin-top:80px;
+
+    .insight-heading {
+        // display:flex;
+        width:300px;
+        margin:0 auto;
+        text-align:center!important;
+
+      h1 {
+        @include heading($font-50, 400);
+        font-family: $secondary-font;
+        margin-bottom: 25px;
+      }
+
+      .dash {
+        width: 100px;
+        height: 3px;
+        background: $black;
+        margin-top: 40px;
+        margin-left: 5px;
+      }
+
+    }
+  }
+
+  .filter{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    margin-top:93px;
+    margin-bottom:55px;
+
+    .filter-box{
+        display:flex;
+    align-items:center;
+    column-gap:20px;
+
+    svg{
+        cursor:pointer;
+    }
+    }
+  }
+
+  .blogs{
+    margin-bottom:100px;
+    
+     .blog-card {
+    box-shadow: 1.5px 1.5px 16px 0px rgba(113, 113, 115, 0.1);
+    background: $white;
+    margin-bottom:40px;
+    cursor: pointer;
+
+    .blog-image {
+      height: 250px;
+      position:relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .tag{
+        text-transform: uppercase;
+        padding:5px;
+        background:$black;
+        color:$white;
+        position:absolute;
+        left:5%;
+        top:5%;
+        font-size:$font-12;
+      }
+    }
+
+    .blog-content {
+      padding: 25px 10px 35px 10px;
+
+      @media (min-width:1240px){
+         padding: 25px 20px 35px 20px;
+      }
+
+      .blog-heading {
+        @include heading($font-18, 400, $black);
+        font-family: $secondary-font;
+        margin-bottom:20px;
+      }
+
+      p {
+        @include body-text($font-12, 400, $black);
+      }
+    }
+  }
+  }
+}
