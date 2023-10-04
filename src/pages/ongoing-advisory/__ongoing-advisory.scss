@@ -1,0 +1,98 @@
+.advisory {
+  height: 100vh;
+  width: 100%;
+  // margin-top:80px;
+
+  .advisory-left {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      @include heading($font-44, 500);
+      font-family: $secondary-font;
+      line-height: 60px;
+      margin-bottom: 18px;
+    }
+
+    p {
+      @include body-text($font-16, 400, $text-color);
+      margin-bottom: 10px;
+      line-height: 30px;
+      width: 80%;
+    }
+  }
+
+  .advisory-right {
+    height: 100vh;
+    padding-top: 80px;
+
+    img {
+      // margin-top:150px;
+      width: 100%;
+      // object-fit:cover;
+      height: 100%;
+    }
+  }
+}
+
+.note {
+    padding:80px 0;
+  background: $background-color;
+  width: 100%;
+
+  .note-left {
+
+    img {
+      // margin-top:150px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .note-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      @include heading($font-44, 500);
+      font-family: $secondary-font;
+      line-height: 60px;
+      margin-bottom: 18px;
+    }
+
+    p {
+      @include body-text($font-16, 400, $text-color);
+      margin-bottom: 10px;
+      line-height: 30px;
+      width: 80%;
+    }
+  }
+}
+
+.proffer{
+  padding:80px 0;
+
+    h1{
+        @include heading($font-40, 400);
+        text-align:center;
+        font-family: $secondary-font;
+        margin-bottom:56px;
+    }
+
+    h3{
+        @include heading($font-22, 400);
+        margin-bottom:22px;
+    }
+
+    p{
+      @include body-text($font-16, 400, $text-color);
+      width:90%
+    }
+
+
+}

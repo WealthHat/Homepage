@@ -103,7 +103,7 @@ const Navbar = () => {
                     <Link href='/one-time-advice'>One-Time Advice</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/ongoing-advice'>Ongoing Advisory</Link>
+                    <Link href='/ongoing-advisory'>Ongoing Advisory</Link>
                   </li>
                 </ol>
               </div>
