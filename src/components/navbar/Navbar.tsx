@@ -100,10 +100,10 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>One-Time Advice</Link>
+                    <Link href='/one-time-advice'>One-Time Advice</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Ongoing Advisory</Link>
+                    <Link href='/ongoing-advice'>Ongoing Advisory</Link>
                   </li>
                 </ol>
               </div>
