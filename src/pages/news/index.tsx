@@ -1,5 +1,6 @@
 import NewsCard from '@/common/news-card';
 import Layout from '@/components/Layout';
+import MetaTags from '@/components/meta-tags';
 import Marker from '@/svgs/marker';
 import Image from 'next/image';
 import React from 'react';
@@ -7,6 +8,7 @@ import React from 'react';
 const News = () => {
   return (
     <Layout>
+      <MetaTags  title="News and Events" description="News and Events"/>
       <div className='news'>
         <div className='news-hero'>
           <div className='container-fluid'>

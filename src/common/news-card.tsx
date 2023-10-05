@@ -1,7 +1,11 @@
 import Arrow from '@/svgs/arrow';
 import React from 'react'
+import {useRouter} from 'next/router'
 
 const NewsCard = () => {
+  const router = useRouter()
+
+  // 
   return (
     <div className='news-card'>
       <div className='news-box'>
@@ -12,7 +16,7 @@ const NewsCard = () => {
         </h3>
       </div>
 
-      <div className="arrow">
+      <div className="arrow" onClick={() => router.push("/news/1") }>
         <i className="bi bi-chevron-right"></i>
       </div>
     </div>

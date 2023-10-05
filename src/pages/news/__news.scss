@@ -98,3 +98,45 @@
     }
   }
 }
+
+
+// news details
+.news-details{
+  padding:180px 10px 150px 10px;
+
+  small{
+    @include body-text($font-16, 400, $text-color);
+    margin-bottom:29px;
+    display:block;
+  }
+
+  h1{
+    @include heading($font-32, 400);
+    font-family: $secondary-font;
+    margin-bottom:56px;
+    line-height:53px;
+  }
+
+  p{
+     @include body-text($font-16, 400, $text-color);
+     line-height:35px;
+    
+  }
+
+  .contact{
+    margin-top:51px;
+
+    h2{
+       @include heading($font-22, 600);
+       margin-bottom:16px;
+    }
+
+      p{
+     @include body-text($font-16, 400, $text-color);
+     margin-bottom:9px;
+    
+  }
+
+
+  }
+}
