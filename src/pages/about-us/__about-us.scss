@@ -1,9 +1,9 @@
-.webinars {
+.about-us {
   // height:100vh;
 
-  .webinar-hero {
+  .about-hero {
     height: 100vh;
-    background-image: url('../../../public/images/webinar-hero.svg');
+    background-image: url('../../../public/images/about-hero.svg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -19,23 +19,10 @@
     }
 
     p {
-      @include body-text($font-20, 400, $white);
+      @include body-text($font-22, 400, $white);
       margin-bottom: 8px;
-      text-transform: uppercase;
-    }
-
-    small {
-      @include body-text($font-20, 400, $white);
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .status {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
-      color: $white;
-      font-size:$font-20
+      width:50%;
+      line-height:30px;
     }
   }
 

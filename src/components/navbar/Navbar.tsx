@@ -74,16 +74,16 @@ const Navbar = () => {
               <div className='col p-0'>
                 <ol>
                   <li className='schedule'>
-                    <Link href='/'>About WealthHat</Link>
+                    <Link href='/about-us'>About WealthHat</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Our client</Link>
+                    <Link href='/clients'>Our client</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Our process</Link>
+                    <Link href='/process'>Our process</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Our pricing</Link>
+                    <Link href='/pricing'>Our pricing</Link>
                   </li>
                 </ol>
               </div>
