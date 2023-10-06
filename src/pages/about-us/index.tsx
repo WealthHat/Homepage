@@ -17,6 +17,59 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
+
+        <div className='who-we-are'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-3 left'>
+                <h3>Who we are</h3>
+              </div>
+
+              <div className='col-lg-7 right'>
+                <p>
+                  Driving capital to the world’s most impactful and compelling
+                  investments, leveraging our combination of talent, technology,
+                  analytics and global scale.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='experience'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-6 left'>
+                <h3>A Firm with</h3>
+
+                <div className="d-flex align-items-center gap-3">
+                  <i className='mt-3 bi bi-dash-lg'></i> 
+                <h3>
+                  experience
+                </h3>
+                </div>
+                <h3>and vision</h3>
+              </div>
+
+              <div className='col-lg-6 right'>
+                <p>
+                  We see ourselves as a forward looking group of passionate
+                  property professionals with the relevant experience to match.
+                  With varied backgrounds in construction, investment and
+                  development we have entrepreneurialism in our hearts and risk
+                  awareness in our heads.
+                </p>
+                <p>
+                  We see ourselves as a forward looking group of passionate
+                  property professionals with the relevant experience to match.
+                  With varied backgrounds in construction, investment and
+                  development we have entrepreneurialism in our hearts and risk
+                  awareness in our heads.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </Layout>
   );
