@@ -91,4 +91,42 @@
       }
     }
   }
+
+  .expertise{
+    padding:80px 0;
+    background:$black;
+
+    .left{
+      height:400px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      .bi{
+        color:$white;
+        font-size:$font-42;
+      }
+
+      h3{
+        @include heading($font-34, 400, $white);
+        font-family:$secondary-font;
+        margin-bottom:22px;
+        display:flex;
+
+      }
+
+      p{
+        @include body-text($font-16, 400, $white);
+        margin-bottom:10px;
+        width:90%;
+      }
+    }
+
+    .right{
+      height:400px;
+       background-image: url('../../../public/images/expertise-image.svg');
+    background-size: cover;
+    background-position: center;
+    }
+  }
 }
