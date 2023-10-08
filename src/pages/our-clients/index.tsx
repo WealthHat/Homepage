@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import Heading from '@/components/heading/heading';
+import ClientCard from '@/common/client-card/client-card';
 
 const OurClients = () => {
   return (
@@ -18,195 +19,94 @@ const OurClients = () => {
           </div>
         </div>
 
-        {/* <div className='who-we-are'>
+        <div className='private'>
+          <div className='container'>
+            <h1>Private Wealth</h1>
+            <p>
+              Managing a fortune, balancing the needs of a family and a business
+              and maintaining a positive outward image is not always easy to do.
+            </p>
+            <p>
+              As the boundaries between personal life and business life continue
+              to overlap, increasingly over many jurisdictions, we assist
+              clients in their personal lives and in their roles as trustees,
+              directors, managers and owners of land or business.
+            </p>
+            <p>
+              Many families have remained our clients through several
+              generations and as such we have become experts in advising
+              individuals, family offices and their businesses. Our advice
+              covers all aspects of personal and corporate tax, family and
+              corporate governance, immigration, residential property and family
+              and divorce issues. We are pleased to be recognised as experts in
+              our fields.
+            </p>
+            <p>
+              Our years of experience mean we are well-equipped to help UK and
+              international clients throughout all the key decision-making
+              stages of their life, and this includes resolving difficult family
+              arguments. As well as a leading tax team, we are one of the few
+              firms to offer market- leading advice when trusts or probate
+              issues become contentious.
+            </p>
+            <p>
+              The focus for us has, and always will be, to provide clear and
+              pragmatic advice that factors in the fast pace of change in the
+              world of private wealth.
+            </p>
+          </div>
+        </div>
+
+        <div className='client-section'>
           <div className='container'>
             <div className='row'>
-              <div className='col-lg-3 left'>
-                <h3>Who we are</h3>
+              <div className='col-lg-4 col-md-6 client-box'>
+                <ClientCard
+                  title='Families & Family Offices'
+                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
+                  color='light'
+                />
               </div>
-
-              <div className='col-lg-7 right'>
-                <p>
-                  Driving capital to the world’s most impactful and compelling
-                  investments, leveraging our combination of talent, technology,
-                  analytics and global scale.
-                </p>
+              <div className='col-lg-4 col-md-6 client-box'>
+                <ClientCard
+                  title='Families & Family Offices'
+                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
+                  color='dark'
+                />
+              </div>
+              <div className='col-lg-4 col-md-6 client-box'>
+                <ClientCard
+                  title='Families & Family Offices'
+                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
+                  color='light'
+                />
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-lg-4 col-md-6 client-box'>
+                <ClientCard
+                  title='Families & Family Offices'
+                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
+                  color='dark'
+                />
+              </div>
+              <div className='col-lg-4 col-md-6 client-box'>
+                <ClientCard
+                  title='Families & Family Offices'
+                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
+                  color='light'
+                />
+              </div>
+              <div className='col-lg-4 col-md-6 client-box'>
+                <ClientCard
+                  title='Families & Family Offices'
+                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
+                  color='dark'
+                />
               </div>
             </div>
           </div>
         </div>
-
-        <div className='experience'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-6 left'>
-                <h3>A Firm with</h3>
-
-                <div className='d-flex align-items-center gap-3'>
-                  <i className='mt-3 bi bi-dash-lg'></i>
-                  <h3>experience</h3>
-                </div>
-                <h3>and vision</h3>
-              </div>
-
-              <div className='col-lg-6 right'>
-                <p>
-                  We see ourselves as a forward looking group of passionate
-                  property professionals with the relevant experience to match.
-                  With varied backgrounds in construction, investment and
-                  development we have entrepreneurialism in our hearts and risk
-                  awareness in our heads.
-                </p>
-                <p>
-                  We see ourselves as a forward looking group of passionate
-                  property professionals with the relevant experience to match.
-                  With varied backgrounds in construction, investment and
-                  development we have entrepreneurialism in our hearts and risk
-                  awareness in our heads.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className='expertise'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-6 left'>
-                <div>
-                  <div className='d-flex align-items-end'>
-                    <h3>Our Expertise</h3>
-                    <i className='mt-3 bi bi-dash-lg'></i>
-                  </div>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
-              </div>
-
-              <div className='col-lg-6 right'></div>
-            </div>
-          </div>
-        </div>
-
-        <div className='business'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col'>
-                <h3>100+ Business Financed</h3>
-              </div>
-
-              <div className='col'>
-                <div>
-                  <h1>100M+</h1>
-                  <p>Active equity</p>
-                  <p>assets under management</p>
-                </div>
-              </div>
-
-              <div className='col'>
-                <div>
-                  <h1>100M+</h1>
-                  <p>Active equity</p>
-                  <p>assets under management</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className='process'>
-          <Heading
-            title='Our Process'
-            content='WealthHat is the world’s largest alternative asset manager, with $1 trillion in AUM. We serve institutional and individual investors by building strong businesses '
-          />
-
-          <div className='container process-container'>
-            <div className='row'>
-              <div className='col-lg-6 left'>
-                <div className='left-box'>
-                  <h3>Agility</h3>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
-                <div className='left-box'>
-                  <h3>Agility</h3>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
-                <div className='left-box'>
-                  <h3>Agility</h3>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
-              </div>
-
-              <div className='col-lg-6 right'></div>
-            </div>
-          </div>
-        </div>
-
-        <div className='pricing'>
-          <Heading
-            title='Our Pricing'
-            content='WealthHat is the world’s largest alternative asset manager, with $1 trillion in AUM. We serve institutional and individual investors by building strong businesses '
-          />
-
-          <div className='container'>
-            <div className='pricing-box'>
-              <div className='top'>Get a premium subscription</div>
-
-              <h2>Go Premium for as little as N6,500 a month</h2>
-
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-                Receive five new exclusive articles every week
-              </div>
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-                Receive our popular daily and weekly newsletters
-              </div>
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-               Unlimited access to 1000+ exclusive articles
-              </div>
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-                Unlimited access to 1000+ exclusive articles
-              </div>
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-                Unlimited access to 1000+ exclusive articles
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </Layout>
   );
