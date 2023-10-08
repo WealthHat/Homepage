@@ -34,13 +34,13 @@
       justify-content: space-between;
 
       h2{
-         @include heading($font-44, 400);
+         @include heading($font-40, 400);
          font-size:$secondary-font;
       }
 
       .form-select {
-        width: 200px;
-        height:55px;
+        width: 150px;
+        height:40px;
       }
     }
 
@@ -57,6 +57,7 @@
       }
 
       .news-box {
+        width:90%;
         p {
           @include body-text($font-12, 400, $text-color);
           text-transform: uppercase;
@@ -64,7 +65,7 @@
         }
 
         h3 {
-          @include heading($font-24, 400);
+          @include heading($font-22, 400);
           width:80%;
           line-height:40px;
         }
@@ -73,6 +74,7 @@
       .arrow{
         height:40px;
         width:40px;
+        max-width:40px;
         border-radius:50%;
         border:2px solid $text-color;
         display:flex;

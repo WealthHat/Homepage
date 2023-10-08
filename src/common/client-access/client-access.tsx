@@ -5,7 +5,9 @@ const ClientAccess = () => {
     <div className="container client-access">
       <div className="row">
         <div className="col client-left">
-          left
+          <div className="left-box">
+            <h1>Existing Client?</h1>
+          </div>
         </div>
         <div className="col client-right">
           right
