@@ -5,8 +5,8 @@ import ClientCard from '@/common/client-card/client-card';
 const OurProcess = () => {
   return (
     <Layout>
-      <div className='our-clients'>
-        <div className='client-hero'>
+      <div className='our-process'>
+        <div className='process-hero'>
           <div className='container-fluid'>
             <h1>Our Process</h1>
             <p>

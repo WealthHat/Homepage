@@ -12,14 +12,14 @@
         flex-direction:column;
 
         h1{
-            @include heading($font-44, 500);
+            @include heading($font-42, 500);
             font-family:$secondary-font;
             line-height:60px;
             margin-bottom:18px;
         }
 
         p{
-            @include body-text($font-16, 400, $text-color);
+            @include body-text($font-18, 400, $text-color);
             margin-bottom:10px;
             text-transform: uppercase;
         }

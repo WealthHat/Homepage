@@ -1,7 +1,7 @@
-.our-clients {
+.our-process {
   // height:100vh;
 
-  .client-hero {
+  .process-hero {
     height: 100vh;
     background-image: url('../../../public/images/client-hero.svg');
     background-size: cover;
@@ -11,7 +11,7 @@
     padding: 0 50px;
 
     h1 {
-      @include heading($font-46, 700, $white);
+      @include heading($font-42, 700, $white);
       margin-bottom: 26px;
       font-family: $secondary-font;
       width: 55%;

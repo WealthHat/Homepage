@@ -11,7 +11,7 @@
     padding: 0 50px;
 
     h1 {
-      @include heading($font-46, 700, $white);
+      @include heading($font-42, 700, $white);
       margin-bottom: 26px;
       font-family: $secondary-font;
       width: 55%;
@@ -43,7 +43,6 @@
         border-radius:50px;
         width:100%;
         background:$black;
-
       }
 
       h3{

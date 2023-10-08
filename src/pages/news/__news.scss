@@ -9,18 +9,17 @@
     display: flex;
     align-items: center;
     padding: 0 50px;
-    padding-top: 80px;
 
     h1 {
-      @include heading($font-46, 700, $white);
-      margin-bottom: 26px;
+      @include heading($font-42, 700, $white);
+      margin-bottom: 24px;
       font-family: $secondary-font;
       width: 55%;
       line-height: 60px;
     }
 
     p {
-      @include body-text($font-16, 400, $white);
+      @include body-text($font-18, 400, $white);
       margin-bottom: 8px;
     }
   }
