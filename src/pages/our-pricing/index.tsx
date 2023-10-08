@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '@/components/Layout';
+import PriceCard from '@/common/price-card';
 
 
 const OurPricing = () => {
@@ -17,6 +18,31 @@ const OurPricing = () => {
               We are committed to helping more investors unlock differentiated
               opportunities beyond traditional asset classes.
             </p>
+          </div>
+        </div>
+
+        <div className='price'>
+          <div className='container'>
+            <div className='row'>
+              <div className="col-3">
+
+              <PriceCard color="light"/>
+              </div>
+              <div className="col-3">
+
+              <PriceCard color="light"/>
+              </div>
+
+              <div className="col-3">
+
+              <PriceCard color="black"/>
+              </div>
+              <div className="col-3">
+
+              <PriceCard color="black"/>
+              </div>
+              
+            </div>
           </div>
         </div>
       </div>
