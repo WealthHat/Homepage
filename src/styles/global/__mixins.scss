@@ -145,7 +145,22 @@
     transition: $transitions !important;
     &:hover {
       color: $white;
-      background: $primary-color;
+      background: $orange-color;
+    }
+
+    .bi {
+      color: $white;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
+  @if $color == white {
+    background: $white;
+    color: $black;
+    transition: $transitions !important;
+    &:hover {
+      color: $white;
+      background: $orange-color;
     }
 
     .bi {

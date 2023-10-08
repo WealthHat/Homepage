@@ -6,15 +6,15 @@
     margin-top: 75px;
 
     .table-container {
-      padding:0 50px;
+      // padding:0 50px;
 
-      @media (min-width:1240px){
-         padding:0 150px;
-      }
+      // @media (min-width:1240px){
+      //    padding:0 150px;
+      // }
 
-      @media (max-width:768px){
-        padding:0 10px;
-      }
+      // @media (max-width:768px){
+      //   padding:0 10px;
+      // }
 
       @media (max-width:600px){
         overflow-x:scroll;

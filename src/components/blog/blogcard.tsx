@@ -1,9 +1,13 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react'
 
 const BlogCard = () => {
+  const router = useRouter()
+
+  // 
   return (
-    <div className='col-lg-3 col-md-4 col-sm-6'>
+    <div className='col-lg-3 col-md-4 col-sm-6' onClick={() => router.push("/articles/1")}>
 
     <div className='blog-card'>
       <div className='blog-image'>

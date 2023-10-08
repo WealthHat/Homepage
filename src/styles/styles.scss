@@ -5,7 +5,16 @@
 @import "./global/__fonts";
 
 // pages
-
+@import "../pages/articles/__articles";
+@import "../pages/one-time-advice/__one-time-advice";
+@import "../pages/ongoing-advisory/__ongoing-advisory";
+@import "../pages/insights/__insights";
+@import "../pages/webinar/__webinar";
+@import "../pages/news/__news";
+@import "../pages/about-us/__about-us";
+@import "../pages/our-clients/__our-clients";
+@import "../pages/our-process/__our-process";
+@import "../pages/our-pricing/__our-pricing";
 
 // components
 @import "../components/navbar/__navbar";
@@ -19,6 +28,8 @@
 @import "../components/clients/__clients";
 @import "../components/different/__different";
 
+
 // common
 @import "../common/service-card/__service-card";
 @import "../common/client-card/__client-card";
+@import "../common/client-access/__client-access";

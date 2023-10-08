@@ -1,8 +1,8 @@
 import React from 'react'
 
 type Interface = {
-    title:string,
-    subtitle:string,
+    title?:string,
+    subtitle?:string,
     content?:string
 }
 
