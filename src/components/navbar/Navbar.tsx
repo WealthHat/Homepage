@@ -77,13 +77,13 @@ const Navbar = () => {
                     <Link href='/about-us'>About WealthHat</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/clients'>Our client</Link>
+                    <Link href='/our-clients'>Our client</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/process'>Our process</Link>
+                    <Link href='/our-process'>Our process</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/pricing'>Our pricing</Link>
+                    <Link href='/our-pricing'>Our pricing</Link>
                   </li>
                 </ol>
               </div>

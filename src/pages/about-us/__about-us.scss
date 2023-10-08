@@ -19,7 +19,7 @@
     }
 
     p {
-      @include body-text($font-22, 400, $white);
+      @include body-text($font-18, 400, $white);
       margin-bottom: 8px;
       width: 50%;
       line-height: 30px;

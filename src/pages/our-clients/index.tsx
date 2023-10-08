@@ -2,13 +2,13 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Heading from '@/components/heading/heading';
 
-const AboutUs = () => {
+const OurClients = () => {
   return (
     <Layout>
-      <div className='about-us'>
-        <div className='about-hero'>
+      <div className='our-clients'>
+        <div className='client-hero'>
           <div className='container-fluid'>
-            <h1>About Us</h1>
+            <h1>Our Clients</h1>
             <p>
               Private Wealth Solutions’ mission is to deliver innovative
               solutions with exceptional service to advisors and their clients.
@@ -18,7 +18,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className='who-we-are'>
+        {/* <div className='who-we-are'>
           <div className='container'>
             <div className='row'>
               <div className='col-lg-3 left'>
@@ -206,10 +206,10 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );
 };
 
-export default AboutUs;
+export default OurClients;
