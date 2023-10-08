@@ -129,4 +129,121 @@
     background-position: center;
     }
   }
+
+  .business{
+    padding:80px 0;
+    background:$background-color;
+
+    .row{
+      .col{
+        height:200px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        border-right:1px solid $light-color;
+
+        &:last-child{
+          border:none;
+        }
+
+        h3{
+          @include heading($font-22, 400);
+          font-family: $secondary-font;
+        }
+
+        h1{
+           @include heading($font-50, 400);
+           margin-bottom:20px;
+           font-family: $secondary-font;
+        }
+
+        p{
+           @include heading($font-16, 400);
+        }
+      }
+    }
+  }
+
+  .process{
+    padding:80px 0;
+
+    .process-container{
+      margin-top:100px;
+
+      .left{
+  padding-top:30px;
+  
+      .left-box{
+        padding-bottom:10px;
+        margin-bottom:20px;
+        border-bottom:1px solid $light-color;
+        width:90%;
+
+         h3{
+         @include heading($font-30, 400, $text-color);
+         font-family:$secondary-font;
+         margin-bottom:22px;
+  
+       }
+  
+       p{
+         @include body-text($font-16, 400, $black);
+       }
+      }
+     }
+  
+     .right{
+       height:600px;
+        background-image: url('../../../public/images/agility-image.svg');
+     background-size: cover;
+     background-position: center;
+     }
+    }
+
+  }
+
+  .pricing{
+    padding:80px 0;
+    background:$background-color;
+
+    .pricing-box{
+      margin:50px auto;
+      width:60%;
+      border-radius:10px;
+      background:$white;
+      padding:50px 80px;
+      text-align:center;
+
+      .top{
+        @include body-text($font-12, 400, $text-color);
+        background:$background-color;
+        border-radius:25px;
+        text-align:center;
+        padding:10px;
+        width:200px;
+        margin:0 auto;
+        margin-bottom:20px;
+      }
+
+      h2{
+        @include heading($font-22, 400);
+        margin:0 auto;
+        margin-bottom:29px;
+        width:50%;
+        line-height:33px;
+      }
+
+      .box{
+        border:1px solid $border-color;
+        padding:10px 20px;
+        display:flex;
+        align-items: center;
+        column-gap:20px;
+        margin:0 auto;
+        border-radius:10px;
+        font-size:$font-14;
+        margin-bottom:14px;
+      }
+    }
+  }
 }

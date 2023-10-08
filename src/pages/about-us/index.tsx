@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout';
+import Heading from '@/components/heading/heading';
 import Marker from '@/svgs/marker';
 import Image from 'next/image';
 import React from 'react';
@@ -74,29 +75,136 @@ const AboutUs = () => {
           <div className='container'>
             <div className='row'>
               <div className='col-lg-6 left'>
-               <div>
-                 <div className="d-flex align-items-end">
-                  <h3>Our Expertise</h3>
-                   <i className='mt-3 bi bi-dash-lg'></i>
-                 </div>
-                <p>
-                  We see ourselves as a forward looking group of passionate
-                  property professionals with the relevant experience to match.
-                  With varied backgrounds in construction, investment and
-                  development we have entrepreneurialism in our hearts and risk
-                  awareness in our heads.
-                </p>
-                <p>
-                  We see ourselves as a forward looking group of passionate
-                  property professionals with the relevant experience to match.
-                  With varied backgrounds in construction, investment and
-                  development we have entrepreneurialism in our hearts and risk
-                  awareness in our heads.
-                </p>
-               </div>
+                <div>
+                  <div className='d-flex align-items-end'>
+                    <h3>Our Expertise</h3>
+                    <i className='mt-3 bi bi-dash-lg'></i>
+                  </div>
+                  <p>
+                    We see ourselves as a forward looking group of passionate
+                    property professionals with the relevant experience to
+                    match. With varied backgrounds in construction, investment
+                    and development we have entrepreneurialism in our hearts and
+                    risk awareness in our heads.
+                  </p>
+                  <p>
+                    We see ourselves as a forward looking group of passionate
+                    property professionals with the relevant experience to
+                    match. With varied backgrounds in construction, investment
+                    and development we have entrepreneurialism in our hearts and
+                    risk awareness in our heads.
+                  </p>
+                </div>
               </div>
 
-              <div className='col-lg-6 right'>
+              <div className='col-lg-6 right'></div>
+            </div>
+          </div>
+        </div>
+
+        <div className='business'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col'>
+                <h3>100+ Business Financed</h3>
+              </div>
+
+              <div className='col'>
+                <div>
+                  <h1>100M+</h1>
+                  <p>Active equity</p>
+                  <p>assets under management</p>
+                </div>
+              </div>
+
+              <div className='col'>
+                <div>
+                  <h1>100M+</h1>
+                  <p>Active equity</p>
+                  <p>assets under management</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='process'>
+          <Heading
+            title='Our Process'
+            content='WealthHat is the world’s largest alternative asset manager, with $1 trillion in AUM. We serve institutional and individual investors by building strong businesses '
+          />
+
+          <div className='container process-container'>
+            <div className='row'>
+              <div className='col-lg-6 left'>
+                <div className='left-box'>
+                  <h3>Agility</h3>
+                  <p>
+                    We see ourselves as a forward looking group of passionate
+                    property professionals with the relevant experience to
+                    match. With varied backgrounds in construction, investment
+                    and development we have entrepreneurialism in our hearts and
+                    risk awareness in our heads.
+                  </p>
+                </div>
+                <div className='left-box'>
+                  <h3>Agility</h3>
+                  <p>
+                    We see ourselves as a forward looking group of passionate
+                    property professionals with the relevant experience to
+                    match. With varied backgrounds in construction, investment
+                    and development we have entrepreneurialism in our hearts and
+                    risk awareness in our heads.
+                  </p>
+                </div>
+                <div className='left-box'>
+                  <h3>Agility</h3>
+                  <p>
+                    We see ourselves as a forward looking group of passionate
+                    property professionals with the relevant experience to
+                    match. With varied backgrounds in construction, investment
+                    and development we have entrepreneurialism in our hearts and
+                    risk awareness in our heads.
+                  </p>
+                </div>
+              </div>
+
+              <div className='col-lg-6 right'></div>
+            </div>
+          </div>
+        </div>
+
+        <div className='pricing'>
+          <Heading
+            title='Our Pricing'
+            content='WealthHat is the world’s largest alternative asset manager, with $1 trillion in AUM. We serve institutional and individual investors by building strong businesses '
+          />
+
+          <div className='container'>
+            <div className='pricing-box'>
+              <div className='top'>Get a premium subscription</div>
+
+              <h2>Go Premium for as little as N6,500 a month</h2>
+
+              <div className='box'>
+                <i className='bi bi-check-lg'></i>
+                Receive five new exclusive articles every week
+              </div>
+              <div className='box'>
+                <i className='bi bi-check-lg'></i>
+                Receive our popular daily and weekly newsletters
+              </div>
+              <div className='box'>
+                <i className='bi bi-check-lg'></i>
+               Unlimited access to 1000+ exclusive articles
+              </div>
+              <div className='box'>
+                <i className='bi bi-check-lg'></i>
+                Unlimited access to 1000+ exclusive articles
+              </div>
+              <div className='box'>
+                <i className='bi bi-check-lg'></i>
+                Unlimited access to 1000+ exclusive articles
               </div>
             </div>
           </div>
