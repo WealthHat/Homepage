@@ -69,6 +69,7 @@
           @include heading($font-16, 500, '');
           display: flex;
           align-items: center;
+           color: $white;
   
           a {
             cursor: pointer;
@@ -119,6 +120,8 @@
         li {
           display: block;
           line-height: 40px;
+           @include heading($font-16, 400, $white);
+  
   
           a {
             @include heading($font-16, 400, $white);
