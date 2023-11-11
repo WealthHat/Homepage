@@ -1,18 +1,20 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Logo from '@/svgs/logo';
 import Link from 'next/link';
 import Image from 'next/image';
 import ClientAccess from '@/common/client-access/client-access';
 import { Modal } from 'react-bootstrap';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
-  const [navOne, setNavOne] = useState(false)
-  const [navTwo, setNavTwo] = useState(false)
-  const [navThree, setNavThree] = useState(false)
-  const [showNav, setShowNav] = useState(false)
-  const [openModal, setOpenModal] = useState(false)
+  const [navOne, setNavOne] = useState(false);
+  const [navTwo, setNavTwo] = useState(false);
+  const [navThree, setNavThree] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
+  const router = useRouter();
 
-// 
+  //
   return (
     <div className='nav'>
       <nav
@@ -28,6 +30,7 @@ const Navbar = () => {
             alt='brand-logo'
             width={100}
             height={100}
+            onClick={() => router.push('/')}
           />
         </div>
 
@@ -125,11 +128,7 @@ const Navbar = () => {
 
               <div className='col-4 p-0'>
                 <ol>
-                  <li className='schedule fw-bolder'>
-                    
-                      Who We Serve
-                    
-                  </li>
+                  <li className='schedule fw-bolder'>Who We Serve</li>
                   <li className='schedule'>
                     <Link href='/ultra-high-networth'>
                       Ultra High Net Worth & High Net Worth Individuals
@@ -145,7 +144,9 @@ const Navbar = () => {
                     <Link href='/entrepreneurs'>Entrepreneurs & Founders</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/family-business'>Families & Family Businesses</Link>
+                    <Link href='/family-business'>
+                      Families & Family Businesses
+                    </Link>
                   </li>
                   <li className='schedule'>
                     <Link href='/senior-executives'>Senior Executives</Link>

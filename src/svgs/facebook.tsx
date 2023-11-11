@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Facebook = () => {
   return (
@@ -10,14 +10,14 @@ const Facebook = () => {
       xmlns='http://www.w3.org/2000/svg'
     >
       <rect width='22' height='22' fill='#1E1E1E' />
-      <g id='ARTICLE' clip-path='url(#clip0_0_1)'>
+      <g id='ARTICLE' clipPath='url(#clip0_0_1)'>
         <rect
           width='1440'
           height='3344'
           transform='translate(-800 -1826)'
           fill='white'
         />
-        <g id='Frame 34929' clip-path='url(#clip1_0_1)'>
+        <g id='Frame 34929' clipPath='url(#clip1_0_1)'>
           <rect
             width='1440'
             height='1792'
@@ -33,7 +33,7 @@ const Facebook = () => {
             />
             <g id='Frame 34935'>
               <g id='Frame 34926'>
-                <g id='fe:facebook' clip-path='url(#clip2_0_1)'>
+                <g id='fe:facebook' clipPath='url(#clip2_0_1)'>
                   <g id='feFacebook0'>
                     <g id='feFacebook1'>
                       <path
@@ -74,6 +74,6 @@ const Facebook = () => {
       </defs>
     </svg>
   );
-}
+};
 
-export default Facebook
+export default Facebook;

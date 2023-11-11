@@ -5,19 +5,20 @@ import CircleArrow from '@/svgs/circle-arrow';
 const Firm = () => {
   return (
     <div className='firm'>
-      <Heading title='The firm' subtitle='Delivering for Investors' />
+      <Heading title='The firm' subtitle='Fiduciary. Expertise. Trust' />
 
       <div className='container firm-center'>
         <div className='row'>
           <div className='col-lg-6 col-md-6 left-firm'>
-            <h2>Unmatched scale</h2>
+            <h2>Growing and Preserving Wealth</h2>
             <p>
-              WealthHat is the world’s largest alternative asset manager, with
-              $1 trillion in AUM. We serve institutional and individual
-              investors by building strong businesses that deliver lasting
-              value. Our scale – with more than 12,600 real estate assets* and
-              230+ portfolio companies enables us to invest in dynamic sectors
-              positioned for long-term growth.
+              WealthHat is a leading wealth advisory and financial planning
+              firm, with $100M+ in Assets under Advisement (AuA). With our
+              unwavering commitment to precision and purpose, we specialize in
+              offering comprehensive wealth advisory & financial planning
+              services to high net-worth individuals, families, and businesses.
+              Our extensive expertise allows us to serve our clients with utmost
+              conviction.
             </p>
 
             <div className='readmore'>
@@ -31,8 +32,8 @@ const Firm = () => {
               <h1>$100M</h1>
               <h2>Assets Under Management</h2>
               <p>
-                All figures as of June 30, 2023, unless otherwise indicated. *As
-                of March 31, 2023.
+                All figures as of June 30, 2023, unless otherwise indicated.{' '}
+                <br /> *As of March 31, 2023.
               </p>
             </div>
           </div>

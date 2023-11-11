@@ -18,6 +18,10 @@
     padding-left: 50px;
     padding-right: 20px;
 
+    @media (max-width: 900px) {
+      width: 60%;
+    }
+
     @media (max-width: 768px) {
       width: 100%;
       height: 100vh;
@@ -26,18 +30,16 @@
       background-size: cover;
     }
 
-    @media (max-width:500px){
-      padding:20px;
+    @media (max-width: 500px) {
+      padding: 20px;
     }
 
-    @media (max-width:325px){
-      height:150vh;
+    @media (max-width: 325px) {
+      height: 150vh;
     }
-
-
 
     h1 {
-      @include heading($font-40, 700, $white);
+      @include heading($font-40, 500, $white);
       font-family: $secondary-font;
       line-height: 60px;
       margin-bottom: 22px;
@@ -47,21 +49,29 @@
         line-height: 70px;
       }
 
-          @media (max-width:450px){
-      font-size:$font-34;
-    }
-          @media (max-width:375px){
-      font-size:$font-32;
-    }
+      @media (max-width: 450px) {
+        font-size: $font-34;
+      }
+      @media (max-width: 375px) {
+        font-size: $font-32;
+      }
     }
 
     p {
-      @include body-text($font-20, 400, $white);
+      @include body-text($font-18, 300, $white);
+
+      @media (min-width: 1300px) {
+        width: 90%;
+      }
     }
   }
 
   .hero-right {
     width: 50%;
+
+    @media (max-width: 900px) {
+      width: 40%;
+    }
 
     @media (max-width: 768px) {
       display: none;
