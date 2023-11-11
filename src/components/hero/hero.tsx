@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import React from 'react'
-
+import React from 'react';
 
 const Hero = () => {
   return (
@@ -11,8 +10,8 @@ const Hero = () => {
             Wealth Advisors to successful Individuals, Families & Businesses
           </h1>
           <p>
-            Our clients always come first. We serve them through a global
-            network powered by partnership, integrity, advancing economy.
+            Our clients always come first. We take a distinctive, fiduciary
+            approach to serving our unique clients and their loved ones.
           </p>
         </div>
       </div>
@@ -22,6 +21,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

@@ -1,18 +1,20 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Logo from '@/svgs/logo';
 import Link from 'next/link';
 import Image from 'next/image';
 import ClientAccess from '@/common/client-access/client-access';
 import { Modal } from 'react-bootstrap';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
-  const [navOne, setNavOne] = useState(false)
-  const [navTwo, setNavTwo] = useState(false)
-  const [navThree, setNavThree] = useState(false)
-  const [showNav, setShowNav] = useState(false)
-  const [openModal, setOpenModal] = useState(false)
+  const [navOne, setNavOne] = useState(false);
+  const [navTwo, setNavTwo] = useState(false);
+  const [navThree, setNavThree] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
+  const router = useRouter();
 
-// 
+  //
   return (
     <div className='nav'>
       <nav
@@ -28,6 +30,7 @@ const Navbar = () => {
             alt='brand-logo'
             width={100}
             height={100}
+            onClick={() => router.push('/')}
           />
         </div>
 
@@ -57,14 +60,19 @@ const Navbar = () => {
               <Link href='/'>Insights</Link>
               <i className='bi bi-chevron-down'></i>
             </li>
-            <li onMouseEnter={() => {
+            <li
+              onMouseEnter={() => {
                 setNavTwo(false), setNavOne(false), setNavThree(false);
-              }}>
+              }}
+            >
               <Link href='/'>Client access</Link>
             </li>
-            <li onMouseEnter={() => {
+            <li
+              onMouseEnter={() => {
                 setNavTwo(false), setNavOne(false), setNavThree(false);
-              }} className='schedule'>
+              }}
+              className='schedule'
+            >
               <Link href='/'>Schedule a call</Link>
             </li>
           </ul>
@@ -108,11 +116,7 @@ const Navbar = () => {
 
               <div className='col-4 p-0'>
                 <ol>
-                  <li className='schedule'>
-                    <Link href='/' className='fw-bolder'>
-                      What we do
-                    </Link>
-                  </li>
+                  <li className='schedule fw-bolder'>What we do</li>
                   <li className='schedule'>
                     <Link href='/one-time-advice'>One-Time Advice</Link>
                   </li>
@@ -124,30 +128,28 @@ const Navbar = () => {
 
               <div className='col-4 p-0'>
                 <ol>
+                  <li className='schedule fw-bolder'>Who We Serve</li>
                   <li className='schedule'>
-                    <Link href='/' className='fw-bolder'>
-                      Who We Serve
-                    </Link>
-                  </li>
-                  <li className='schedule'>
-                    <Link href='/'>
+                    <Link href='/ultra-high-networth'>
                       Ultra High Net Worth & High Net Worth Individuals
                     </Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Beneficiaries & Heirs</Link>
+                    <Link href='/beneficiaries'>Beneficiaries & Heirs</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Families & Spouses</Link>
+                    <Link href='/families'>Families & Spouses</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Entrepreneurs & Founders</Link>
+                    <Link href='/entrepreneurs'>Entrepreneurs & Founders</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Families & Family Businesses</Link>
+                    <Link href='/family-business'>
+                      Families & Family Businesses
+                    </Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/'>Senior Executives</Link>
+                    <Link href='/senior-executives'>Senior Executives</Link>
                   </li>
                 </ol>
               </div>
@@ -308,7 +310,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-{/* client access modal section */}
+      {/* client access modal section */}
       {/* <Modal
         show={openModal}
         onHide={() => setOpenModal(false)}
