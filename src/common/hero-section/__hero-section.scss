@@ -1,0 +1,53 @@
+.hero-section {
+  height: 100vh;
+  margin-top: 50px;
+  background:$background-color;
+
+  .hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .hero-left-box {
+      width: 90%;
+    }
+
+    h1 {
+      @include heading($font-42, 700, $black);
+      margin-bottom: 26px;
+      font-family: $secondary-font;
+      line-height: 55px;
+      width: 100% !important;
+    }
+
+    p {
+      @include body-text($font-18, 400, $black);
+      margin-bottom: 8px;
+      line-height: 30px;
+    }
+
+    button {
+      @include buttons($black);
+      margin-top: 20px;
+      border-radius:0;
+    }
+  }
+
+  .hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-image {
+      height: 500px;
+      width: 500px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

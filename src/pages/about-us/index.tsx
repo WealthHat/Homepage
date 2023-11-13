@@ -1,22 +1,22 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import Heading from '@/components/heading/heading';
+import Image from 'next/image';
+import HeroSection from '@/common/hero-section/hero-section';
 
 const AboutUs = () => {
   return (
     <Layout>
       <div className='about-us'>
-        <div className='about-hero'>
-          <div className='container-fluid'>
-            <h1>About Us</h1>
-            <p>
-              Private Wealth Solutions’ mission is to deliver innovative
-              solutions with exceptional service to advisors and their clients.
-              We are committed to helping more investors unlock differentiated
-              opportunities beyond traditional asset classes.
-            </p>
-          </div>
-        </div>
+        <HeroSection
+          title='Why Choose WealtHat?'
+          content='WealthHat provides comprehensive wealth advisory and financial
+              planning services spanning investment advisory, tax advisory,
+              retirement planning, and wealth preservation to individuals,
+              families, and businesses. Our focus is always upon you and the
+              needs of your wealth.'
+          image='/images/about-hero.svg'
+        />
 
         <div className='who-we-are'>
           <div className='container'>
@@ -194,7 +194,7 @@ const AboutUs = () => {
               </div>
               <div className='box'>
                 <i className='bi bi-check-lg'></i>
-               Unlimited access to 1000+ exclusive articles
+                Unlimited access to 1000+ exclusive articles
               </div>
               <div className='box'>
                 <i className='bi bi-check-lg'></i>
