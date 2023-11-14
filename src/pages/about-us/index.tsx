@@ -3,6 +3,7 @@ import Layout from '@/components/Layout';
 import Heading from '@/components/heading/heading';
 import Image from 'next/image';
 import HeroSection from '@/common/hero-section/hero-section';
+import Comprehensive from '@/components/comprehensive';
 
 const AboutUs = () => {
   return (
@@ -103,6 +104,10 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className='comprehensive-services'>
+          <Comprehensive />
         </div>
       </div>
     </Layout>

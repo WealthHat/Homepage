@@ -34,7 +34,7 @@
         }
 
         p{
-              @include body-text($font-16, 400, $black);
+              @include body-text(16px, 400, $black);
               margin:0 auto;
               
               
