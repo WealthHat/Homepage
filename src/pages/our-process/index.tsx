@@ -1,22 +1,18 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import ClientCard from '@/common/client-card/client-card';
+import HeroSection from '@/common/hero-section/hero-section';
+
 
 const OurProcess = () => {
   return (
     <Layout>
       <div className='our-process'>
-        <div className='process-hero'>
-          <div className='container-fluid'>
-            <h1>Our Process</h1>
-            <p>
-              Private Wealth Solutions’ mission is to deliver innovative
-              solutions with exceptional service to advisors and their clients.
-              We are committed to helping more investors unlock differentiated
-              opportunities beyond traditional asset classes.
-            </p>
-          </div>
-        </div>
+         <HeroSection
+          title='Our Process'
+          content='Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth.'
+          image='/images/about-hero.svg'
+        />
 
         <div className='approach'>
           <div className='container'>
