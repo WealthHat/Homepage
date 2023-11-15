@@ -2,57 +2,36 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Heading from '@/components/heading/heading';
 import ClientCard from '@/common/client-card/client-card';
+import HeroSection from '@/common/hero-section/hero-section';
 
 const OurClients = () => {
   return (
     <Layout>
       <div className='our-clients'>
-        <div className='client-hero'>
-          <div className='container-fluid'>
-            <h1>Our Clients</h1>
-            <p>
-              Private Wealth Solutions’ mission is to deliver innovative
-              solutions with exceptional service to advisors and their clients.
-              We are committed to helping more investors unlock differentiated
-              opportunities beyond traditional asset classes.
-            </p>
-          </div>
-        </div>
+        <HeroSection
+          title='Our Clients'
+          content='Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth.'
+          image='/images/about-hero.svg'
+        />
 
         <div className='private'>
           <div className='container'>
-            <h1>Private Wealth</h1>
             <p>
-              Managing a fortune, balancing the needs of a family and a business
-              and maintaining a positive outward image is not always easy to do.
+              Growing substantial wealth, preserving it over time, and
+              harmonizing the dynamics of family and business interests, all
+              while maintaining a preferred lifestyle, presents a formidable
+              challenge. WealthHat acknowledges the intricate nature of this
+              endeavor. We recognize that our clients constitute a diverse
+              group, each with their own distinct financial needs and
+              aspirations. This understanding drives us to meticulously
+              categorize our client segments, enabling us to craft tailored
+              solutions that precisely align with their unique requirements.
             </p>
             <p>
-              As the boundaries between personal life and business life continue
-              to overlap, increasingly over many jurisdictions, we assist
-              clients in their personal lives and in their roles as trustees,
-              directors, managers and owners of land or business.
-            </p>
-            <p>
-              Many families have remained our clients through several
-              generations and as such we have become experts in advising
-              individuals, family offices and their businesses. Our advice
-              covers all aspects of personal and corporate tax, family and
-              corporate governance, immigration, residential property and family
-              and divorce issues. We are pleased to be recognised as experts in
-              our fields.
-            </p>
-            <p>
-              Our years of experience mean we are well-equipped to help UK and
-              international clients throughout all the key decision-making
-              stages of their life, and this includes resolving difficult family
-              arguments. As well as a leading tax team, we are one of the few
-              firms to offer market- leading advice when trusts or probate
-              issues become contentious.
-            </p>
-            <p>
-              The focus for us has, and always will be, to provide clear and
-              pragmatic advice that factors in the fast pace of change in the
-              world of private wealth.
+              At WealthHat, we embrace the inherent complexity of wealth
+              management and honor the diversity of our clientele. We understand
+              that adopting a one-size-fits-all approach falls short in meeting
+              the intricate demands of our clients' financial journeys.
             </p>
           </div>
         </div>
@@ -62,47 +41,80 @@ const OurClients = () => {
             <div className='row'>
               <div className='col-lg-4 col-md-6 client-box'>
                 <ClientCard
-                  title='Families & Family Offices'
-                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
+                  title='High Net Worth & Ultra High Net Individuals'
+                  content='"Tailored wealth management solutions designed specifically for individuals and families with significant assets. We understand the unique challenges and opportunities that come with substantial wealth and provide strategies to preserve and grow your assets."'
                   color='light'
                 />
               </div>
+
               <div className='col-lg-4 col-md-6 client-box'>
                 <ClientCard
-                  title='Families & Family Offices'
-                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
+                  title='Beneficiaries & Heirs'
+                  content='"Guidance and support to beneficiaries and heirs to ensure seamless transition and continuation of wealth. Our experts help navigate the complexities of inheritance, trusts, and legacy planning."'
                   color='dark'
                 />
               </div>
-              <div className='col-lg-4 col-md-6 client-box'>
+
+              <div className='col-lg-4 col-md-6 order-md-1 client-box'>
                 <ClientCard
-                  title='Families & Family Offices'
-                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
+                  title='Families & Spouses'
+                  content={`"Comprehensive financial planning that considers the needs of every family member. From joint investments to educational trusts, we make sure your family's financial well-being is secured"`}
                   color='light'
+                />
+              </div>
+
+              <div className='col-lg-4 col-md-6  order-md-1 client-box'>
+                <ClientCard
+                  title='Families & Family Businesses'
+                  content='"Expertise in aligning family values with business goals. We offer strategies for succession planning, risk management, and growth to ensure your family business thrives for generations."'
+                  color='dark'
+                />
+              </div>
+
+              <div className='col-lg-4 col-md-6 order-md-2 client-box'>
+                <ClientCard
+                  title='Entrepreneurs & Founders'
+                  content='"Dedicated support for business leaders, from startup phase to exit strategy. Our financial advisors help entrepreneurs optimize their personal and business wealth for maximum impact."'
+                  color='light'
+                />
+              </div>
+
+              <div className='col-lg-4 col-md-6 order-md-2 client-box'>
+                <ClientCard
+                  title='Senior Executives'
+                  content='"Customized financial planning for top-tier professionals. Our services address the unique needs of senior executives, from stock option planning to retirement strategies."'
+                  color='dark'
                 />
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className='in-touch'>
+          <div className='container'>
             <div className='row'>
-              <div className='col-lg-4 col-md-6 client-box'>
-                <ClientCard
-                  title='Families & Family Offices'
-                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
-                  color='dark'
-                />
+              <div className='col-3'>
+                <h3>Get in Touch</h3>
               </div>
-              <div className='col-lg-4 col-md-6 client-box'>
-                <ClientCard
-                  title='Families & Family Offices'
-                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
-                  color='light'
-                />
-              </div>
-              <div className='col-lg-4 col-md-6 client-box'>
-                <ClientCard
-                  title='Families & Family Offices'
-                  content='Our clients always come first. We serve them through a global network powered by partnership, integrity, We serve them through a global network powered by partnership, integrity, '
-                  color='dark'
-                />
+
+              <div className='col-9'>
+                <p>
+                  If you are interested in becoming a client, please complete
+                  the form via the ‘become a client’ button below.
+                  Alternatively, if you are already a client, or if you have a
+                  question about how we help clients in particular
+                  circumstances, please use the ‘ contact us’ button.
+                </p>
+                <p>
+                  We will get back to you as soon as we can during office hours,
+                  which are Monday to Friday. 8am to 8pm ( UK time). except for
+                  Uk public holidays.
+                </p>
+
+                <div className='button-container'>
+                  <button>Become a client</button>
+                  <button>Contact us</button>
+                </div>
               </div>
             </div>
           </div>
