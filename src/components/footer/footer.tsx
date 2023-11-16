@@ -1,6 +1,6 @@
 import Logo from '@/svgs/logo';
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 import FooterIcons from './footer-icons';
 
 const Footer = () => {
@@ -14,11 +14,17 @@ const Footer = () => {
             </div>
 
             <p className='content'>
-              As a global investment manager and fiduciary to our clients, our
-              purpose at WealthHat is to help everyone experience financial
-              well-being. Since 1999, we've been a leading provider of financial
-              technology, and our clients turn to us for the solutions they need
-              when planning for their most important goals.
+              As a wealth advisor and fiduciary to our clients, our purpose at
+              WealthHat is to help our clients achieve their financial goals and
+              experience financial well-being. Our clients turn to us for the
+              solutions they need when planning for their most important
+              personal goals as well as family goals.
+            </p>
+
+            <p className='content'>
+              WealthHat Advisory Limited is a SEC-registered Corporate
+              Investment Advisor. WealthHat is a trademark of WealthHat Advisory
+              Limited.
             </p>
           </div>
 
@@ -90,17 +96,15 @@ const Footer = () => {
             </div>
 
             <FooterIcons />
-
-            
           </div>
         </div>
 
         <div className='copyrights'>
-          <small >© 2023 WealthHat Advisory Limited.</small>
+          <small>© 2023 WealthHat Advisory Limited.</small>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
