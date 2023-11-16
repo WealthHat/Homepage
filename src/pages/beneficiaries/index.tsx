@@ -1,194 +1,132 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import Heading from '@/components/heading/heading';
+import HeroSection from '@/common/hero-section/hero-section';
+import Comprehensive from '@/components/comprehensive';
+import Blog from '@/components/blog/blog';
+import Subscribe from '@/components/subscribe/subscribe';
 
 const Beneficiaries = () => {
   return (
     <Layout>
       <div className='ultra-high'>
-        <div className='ultra-high-hero'>
-          <div className='container-fluid'>
-            <h1>Beneficiaries & Heir's</h1>
-            <p>
-              Private Wealth Solutions’ mission is to deliver innovative
-              solutions with exceptional service to advisors and their clients.
-              We are committed to helping more investors unlock differentiated
-              opportunities beyond traditional asset classes.
-            </p>
-          </div>
-        </div>
+        <HeroSection
+          title='Beneficiaries and Heirs'
+          content='Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth.'
+          image='/images/about-hero.svg'
+          showbutton={true}
+        />
 
-        <div className='our-investment'>
-          <div className='container'>
+        <div className='content-section'>
+          <div className='container content-container'>
             <div className='row'>
-              <div className='col-lg-5 left'>
-                <div>
-                  <h2>Our Investment</h2>
-                  <div className='d-flex align-items-end'>
-                    <h2>Philosophy</h2>
-                    <div className='dash'></div>
-                  </div>
+              <div className='col-7 col-left'>
+                <p>
+                  We understand that wealth isn't just for today; it's about
+                  securing a legacy for the future. Beneficiaries and heirs have
+                  a vital role in this journey, and their unique situations
+                  require a tailored approach.
+                </p>
+
+                <div className='mb-3'>
+                  <h3>
+                    Understanding Their Special Situation and Unique Challenges
+                  </h3>
+                  <p>
+                    Beneficiaries and heirs, who inherit family wealth, face a
+                    journey filled with complexities. They come from wealthy
+                    families with diverse assets, including stocks, private
+                    investments, foundations, and even family offices. As the
+                    ones entrusted with this legacy, they encounter various
+                    challenges. These challenges include dealing with
+                    complicated tax rules, legal matters, and regulations,
+                    especially when family interests cross international
+                    borders. Additionally, they must navigate ever-changing
+                    investment trends, evolving practices, and shifting family
+                    dynamics, adding layers of complexity.
+                  </p>
+                </div>
+
+                <div className='mb-3'>
+                  <h3>Identifying Their Needs</h3>
+                  <p>
+                    Beneficiaries and heirs need more than just a simple wealth
+                    transfer; they require sophisticated financial planning
+                    tailored to their unique circumstances. They seek strategies
+                    that go beyond the ordinary, designed to grow and preserve
+                    inherited wealth while optimizing tax efficiency. Their
+                    financial portfolio demands meticulous attention to detail,
+                    addressing complexities inherent to their position.
+                  </p>
+
+                  <p>
+                    Additionally, they often desire opportunities for direct
+                    private investments, guidance on managing less liquid
+                    assets, and expert advice for significant acquisitions or
+                    disposals of family-held assets. These desires emphasize the
+                    necessity for a comprehensive and personalized approach to
+                    wealth management.
+                  </p>
                 </div>
               </div>
 
-              <div className='col-lg-7 right'>
+              <div className='col-5 col-right'>
                 <div>
-                  <p>Our investment philosophy is rooted in the belief that:</p>
-                  <ul>
-                    <li>
-                      Robust portfolio construction includes diversification by
-                      asset class, style and geography.
-                    </li>
-                    <li>
-                      Rigorous risk management is key to wealth preservation.
-                    </li>
-                    <li>
-                      Rigorous risk management is key to wealth preservation.
-                    </li>
-                  </ul>
+                  <h3>How WealthHat Support Them</h3>
+                  <p>
+                    At WealthHat, our expertise extends beyond financial
+                    planning; it includes a deep understanding of the unique
+                    journey beneficiaries and heirs undertake. We recognize that
+                    each family's situation is unique, and we tailor our
+                    services accordingly.
+                  </p>
+
+                  <p>
+                    Our team consists of experts from diverse backgrounds,
+                    including capital markets, investment banking, portfolio
+                    management, wealth structuring, and family office
+                    management. This wealth of knowledge allows us to merge
+                    institutional capabilities with the personalized approach
+                    typical of a boutique firm. We believe that addressing the
+                    distinct needs of beneficiaries and heirs requires a fusion
+                    of resources, where the precision of institutional support
+                    meets the warmth and attentiveness of a smaller firm.
+                  </p>
+
+                  <p>
+                    We offer a comprehensive range of services tailored to
+                    empower beneficiaries and heirs, including access to
+                    institutionally-backed private investments, seamless
+                    trading, expert guidance on managing less liquid assets, and
+                    strategic advice for handling significant acquisitions or
+                    divestitures of family assets. Furthermore, our
+                    institutional-level analytics, actionable strategies, and
+                    best practices ensure prudent management of family assets.
+                  </p>
+
+                  <p>
+                    We invite you to connect with us at WealthHat, where we can
+                    collaboratively craft a financial plan meticulously designed
+                    to ensure a seamless wealth transition to the next
+                    generation. Your family's financial legacy is our top
+                    priority, and we are committed to helping you achieve it
+                    with sophistication and clarity.
+                  </p>
+
+                  <button>Schedule a call</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='sustainable'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-6 left'>
-                <div>
-                  <div className='d-flex align-items-end'>
-                    <h3>Sustainable Investment</h3>
-                    <i className='mt-3 bi bi-dash-lg'></i>
-                  </div>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
-              </div>
-
-              <div className='col-lg-6 right'></div>
-            </div>
-          </div>
+        <div className='comprehensive-services'>
+          <Comprehensive />
         </div>
 
-        <div className='opportunities'>
-          <div className='container'>
-            <div className='opportunity d-flex align-items-end'>
-              <h3>Sustainable Investment</h3>
-              <div className='dash'></div>
-            </div>
+        <Blog />
 
-            <h1>
-              Simplifying Your Financial Life with Wealth Planning Services
-            </h1>
-
-            <hr />
-
-            <ul
-              className='accordion accordion-flush'
-              id='accordionFlushExample'
-            >
-              <li className='accordion-item'>
-                <button
-                  className='accordion-button collapsed'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#flush-collapseOne'
-                >
-                  Identifying Strategies to Enhance Portfolios
-                  
-                </button>
-
-                <div
-                  id='flush-collapseOne'
-                  className='accordion-collapse collapse'
-                  data-bs-parent='#accordionFlushExample'
-                >
-                  <div className='accordion-body'>
-
-                  <p>
-                    The Portfolio Construction team collaborates with the Wealth
-                    Planning, Investment Strategy, Manager Research and Private
-                    Investments teams to build a diversified portfolio that
-                    aligns with your financial plan and your ability and
-                    willingness to take risk — and one that is sensitive to tax,
-                    cost and liquidity factors.
-                  </p>
-                  </div>
-                </div>
-              </li>
-
-              <li className='accordion-item'>
-                <button
-                  className='accordion-button collapsed'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#flush-collapseTwo'
-                >
-                  Portfolio Construction: Aligning with Your Needs
-                  
-                </button>
-
-                <div
-                  id='flush-collapseTwo'
-                  className='accordion-collapse collapse'
-                  data-bs-parent='#accordionFlushExample'
-                >
-                  <div className='accordion-body'>
-
-                  <p>
-                    The Portfolio Construction team collaborates with the Wealth
-                    Planning, Investment Strategy, Manager Research and Private
-                    Investments teams to build a diversified portfolio that
-                    aligns with your financial plan and your ability and
-                    willingness to take risk — and one that is sensitive to tax,
-                    cost and liquidity factors.
-                  </p>
-                  </div>
-                </div>
-              </li>
-
-              <li className='accordion-item'>
-                <button
-                  className='accordion-button collapsed'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#flush-collapseThree'
-                >
-                  Identifying Strategies to Enhance Portfolios
-                  
-                </button>
-
-                <div
-                  id='flush-collapseThree'
-                  className='accordion-collapse collapse'
-                  data-bs-parent='#accordionFlushExample'
-                >
-                  <div className='accordion-body'>
-
-                  <p>
-                    The Portfolio Construction team collaborates with the Wealth
-                    Planning, Investment Strategy, Manager Research and Private
-                    Investments teams to build a diversified portfolio that
-                    aligns with your financial plan and your ability and
-                    willingness to take risk — and one that is sensitive to tax,
-                    cost and liquidity factors.
-                  </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Subscribe />
       </div>
     </Layout>
   );
