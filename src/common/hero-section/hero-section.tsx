@@ -5,6 +5,7 @@ interface Props {
   title: string;
   content?: string;
   image: any;
+  showbutton?: boolean;
 }
 
 const HeroSection = (props: Props) => {
@@ -15,7 +16,7 @@ const HeroSection = (props: Props) => {
           <div className='hero-left-box'>
             <h1>{props.title}</h1>
             <p>{props.content}</p>
-            <button>Schedule a call</button>
+            {props.showbutton && <button>Schedule a call</button>}
           </div>
         </div>
 

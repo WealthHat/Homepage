@@ -1,162 +1,47 @@
 .ultra-high {
-  // height:100vh;
+  .content-section {
+    background: $background-color;
+    // padding: 0 130px 50px 130px;
 
-  .ultra-high-hero {
-    height: 100vh;
-    background-image: url('../../../public/images/ultra-high-hero.svg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
+    .content-container {
+      background: $white;
+      padding: 80px ;
 
-    h1 {
-      @include heading($font-42, 700, $white);
-      margin-bottom: 26px;
-      font-family: $secondary-font;
-      width: 45%;
-      line-height: 55px;
-    }
+      .col-left {
+        h3 {
+          @include heading(28px, 400, $black);
+          margin-bottom: 15px;
+          font-family: $secondary-font;
+        }
 
-    p {
-      @include body-text($font-18, 400, $white);
-      margin-bottom: 8px;
-      width: 50%;
-      line-height: 30px;
-    }
-  }
-
-  .our-investment {
-    background: $black;
-    padding: 80px 0;
-
-    h2 {
-      @include heading($font-46, 200, $white);
-      font-family: $secondary-font;
-    }
-
-    p {
-      @include body-text($font-16, 600, $white);
-      line-height: 30px;
-      margin-bottom:10px;
-      margin-left:-17px;
-    }
-
-    .left {
-      height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content:center;
-
-      .dash{
-        width:50px;
-        height:2px;
-        margin-bottom:10px;
-        background:$white;
+        p {
+          @include body-text(16px, 400, $text-color);
+          line-height: 30px;
+          margin-bottom: 30px;
+        }
       }
-    }
 
-    .right {
-      height: 120px;
-      display: flex;
-      align-items: center;
-      padding-left: 50px;
+      .col-right {
+        background: $hero-background;
+        padding: 40px 30px;
 
-      
+        h3 {
+          @include heading(28px, 400, $black);
+          margin-bottom: 15px;
+          font-family: $secondary-font;
+        }
 
-      ul{
-        padding-left:1px!important;  
+        p {
+          @include body-text(16px, 400, $text-color);
+          line-height: 30px;
+          margin-bottom: 30px;
+        }
 
-        li{
-          @include body-text($font-16, 500, $white);
-          line-height:30px;
-           list-style-type:disc;
+        button {
+          @include buttons(black);
+          border-radius: 0;
         }
       }
     }
   }
-
-  .sustainable{
-    padding:80px 0;
-    background:$white;
-
-    .left{
-      height:400px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-
-      .bi{
-        font-size:$font-42;
-      }
-
-      h3{
-        @include heading($font-34, 400);
-        font-family:$secondary-font;
-        margin-bottom:22px;
-        display:flex;
-
-      }
-
-      p{
-        @include body-text($font-16, 400, $black);
-        margin-bottom:10px;
-        width:90%;
-      }
-    }
-
-    .right{
-      height:400px;
-       background-image: url('../../../public/images/agility-image.svg');
-    background-size: cover;
-    background-position: center;
-    }
-  }
-
-  .opportunities{
-    padding:80px 0;
-    background:$background-color;
-
-    .opportunity{
-      margin-bottom:25px;
-
-      .dash{
-        width:40px;
-        height:2px;
-        margin-left:5px;
-        background:$black;
-        margin-bottom:2px;
-      }
-
-      h3{
-        @include heading($font-16, 400);
-        text-transform: uppercase
-      }
-    }
-
-      h1{
-           @include heading($font-32, 400);
-        font-family: $secondary-font;
-        margin-bottom:65px;
-      }
-
-      .accordion{
-        
-        .accordion-button{
-          background:$background-color!important;
-          color:$black!important;
-          font-size:$font-20;
-        }
-
-        .accordion-collapse{
-           background:$background-color!important;
-            // padding:20px 0;
-
-            p{
-              line-height:30px;
-            }
-        }
-      }
-  }
-
 }

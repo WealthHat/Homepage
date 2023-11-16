@@ -1,194 +1,100 @@
 import React from 'react';
 import Layout from '@/components/Layout';
-import Heading from '@/components/heading/heading';
+import HeroSection from '@/common/hero-section/hero-section';
+import Comprehensive from '@/components/comprehensive';
+import Blog from '@/components/blog/blog';
+import Subscribe from '@/components/subscribe/subscribe';
 
 const UltraHighNetworth = () => {
   return (
     <Layout>
       <div className='ultra-high'>
-        <div className='ultra-high-hero'>
-          <div className='container-fluid'>
-            <h1>Ultra-High Net Worth Individuals</h1>
-            <p>
-              Private Wealth Solutions’ mission is to deliver innovative
-              solutions with exceptional service to advisors and their clients.
-              We are committed to helping more investors unlock differentiated
-              opportunities beyond traditional asset classes.
-            </p>
-          </div>
-        </div>
+        <HeroSection
+          title='High Net Worth & Ultra High Net Worth Individuals'
+          content='Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth.'
+          image='/images/about-hero.svg'
+          showbutton={true}
+        />
 
-        <div className='our-investment'>
-          <div className='container'>
+        <div className='content-section'>
+          <div className='container content-container'>
             <div className='row'>
-              <div className='col-lg-5 left'>
-                <div>
-                  <h2>Our Investment</h2>
-                  <div className='d-flex align-items-end'>
-                    <h2>Philosophy</h2>
-                    <div className='dash'></div>
-                  </div>
+              <div className='col-7 col-left'>
+                <p>
+                  At WealthHat, we understand that the financial circumstances
+                  of High Net Worth Individuals (HNWIs) and Ultra High Net Worth
+                  Individuals (UHNWIs) are not only significant but also
+                  intricate. Their wealth often comprises a diverse array of
+                  assets, including concentrated public company positions,
+                  private investment companies, family foundations, and family
+                  offices. Let's delve deeper into their unique challenges,
+                  needs, and how WealthHat can address them.
+                </p>
+
+                <div className='mb-3'>
+                  <h3>Understanding Their Unique Situations</h3>
+                  <p>
+                    Many of our HNWI and UHNWI clients have financial interests
+                    that go beyond one country. They deal with international
+                    money matters, which can lead to tricky tax issues, legal
+                    questions, and rules from different countries to follow. On
+                    top of that, they have to keep up with the ever-changing
+                    world of investing, make sure their businesses run smoothly,
+                    and handle family matters related to their money.
+                  </p>
+                </div>
+
+                <div className='mb-3'>
+                  <h3>Addressing Their Unique Needs</h3>
+                  <p>
+                    These wealthy individuals need specialized help with their
+                    money. They want strategies that not only make their wealth
+                    grow but also save them as much as possible on taxes. They
+                    also look for advice on how to deal with their mix of
+                    assets, from private investments to things that are harder
+                    to turn into cash. Plus, they might need guidance on making
+                    big financial moves, like buying or selling major assets.
+                  </p>
                 </div>
               </div>
 
-              <div className='col-lg-7 right'>
+              <div className='col-5 col-right'>
                 <div>
-                  <p>Our investment philosophy is rooted in the belief that:</p>
-                  <ul>
-                    <li>
-                      Robust portfolio construction includes diversification by
-                      asset class, style and geography.
-                    </li>
-                    <li>
-                      Rigorous risk management is key to wealth preservation.
-                    </li>
-                    <li>
-                      Rigorous risk management is key to wealth preservation.
-                    </li>
-                  </ul>
+                  <h3>How We Help</h3>
+                  <p>
+                    At WealthHat, we bring together a team of seasoned
+                    professionals with backgrounds in finance, investments,
+                    wealth management, and family office operations. Our
+                    approach combines the best practices and resources of major
+                    financial institutions with the personalized attention
+                    typically associated with smaller boutique firms. This
+                    fusion allows us to craft bespoke financial plans that
+                    seamlessly align with the unique needs and aspirations of
+                    our clients.
+                  </p>
+
+                  <p>
+                    We'd love to talk to you about how we can make a customized
+                    financial plan just for you, whether you're a High Net Worth
+                    Individual (HNWI) or an Ultra High Net Worth Individual
+                    (UHNWI). Your financial success is our top priority, and
+                    we're committed to helping you reach your wealth goals.
+                  </p>
+
+                  <button>Schedule a call</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='sustainable'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-6 left'>
-                <div>
-                  <div className='d-flex align-items-end'>
-                    <h3>Sustainable Investment</h3>
-                    <i className='mt-3 bi bi-dash-lg'></i>
-                  </div>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
-              </div>
-
-              <div className='col-lg-6 right'></div>
-            </div>
-          </div>
+        <div className='comprehensive-services'>
+          <Comprehensive />
         </div>
 
-        <div className='opportunities'>
-          <div className='container'>
-            <div className='opportunity d-flex align-items-end'>
-              <h3>Sustainable Investment</h3>
-              <div className='dash'></div>
-            </div>
+        <Blog />
 
-            <h1>
-              Simplifying Your Financial Life with Wealth Planning Services
-            </h1>
-
-            <hr />
-
-            <ul
-              className='accordion accordion-flush'
-              id='accordionFlushExample'
-            >
-              <li className='accordion-item'>
-                <button
-                  className='accordion-button collapsed'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#flush-collapseOne'
-                >
-                  Identifying Strategies to Enhance Portfolios
-                  
-                </button>
-
-                <div
-                  id='flush-collapseOne'
-                  className='accordion-collapse collapse'
-                  data-bs-parent='#accordionFlushExample'
-                >
-                  <div className='accordion-body'>
-
-                  <p>
-                    The Portfolio Construction team collaborates with the Wealth
-                    Planning, Investment Strategy, Manager Research and Private
-                    Investments teams to build a diversified portfolio that
-                    aligns with your financial plan and your ability and
-                    willingness to take risk — and one that is sensitive to tax,
-                    cost and liquidity factors.
-                  </p>
-                  </div>
-                </div>
-              </li>
-
-              <li className='accordion-item'>
-                <button
-                  className='accordion-button collapsed'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#flush-collapseTwo'
-                >
-                  Portfolio Construction: Aligning with Your Needs
-                  
-                </button>
-
-                <div
-                  id='flush-collapseTwo'
-                  className='accordion-collapse collapse'
-                  data-bs-parent='#accordionFlushExample'
-                >
-                  <div className='accordion-body'>
-
-                  <p>
-                    The Portfolio Construction team collaborates with the Wealth
-                    Planning, Investment Strategy, Manager Research and Private
-                    Investments teams to build a diversified portfolio that
-                    aligns with your financial plan and your ability and
-                    willingness to take risk — and one that is sensitive to tax,
-                    cost and liquidity factors.
-                  </p>
-                  </div>
-                </div>
-              </li>
-
-              <li className='accordion-item'>
-                <button
-                  className='accordion-button collapsed'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#flush-collapseThree'
-                >
-                  Identifying Strategies to Enhance Portfolios
-                  
-                </button>
-
-                <div
-                  id='flush-collapseThree'
-                  className='accordion-collapse collapse'
-                  data-bs-parent='#accordionFlushExample'
-                >
-                  <div className='accordion-body'>
-
-                  <p>
-                    The Portfolio Construction team collaborates with the Wealth
-                    Planning, Investment Strategy, Manager Research and Private
-                    Investments teams to build a diversified portfolio that
-                    aligns with your financial plan and your ability and
-                    willingness to take risk — and one that is sensitive to tax,
-                    cost and liquidity factors.
-                  </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Subscribe />
       </div>
     </Layout>
   );
