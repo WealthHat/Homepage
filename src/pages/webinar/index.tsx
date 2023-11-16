@@ -1,5 +1,6 @@
 import HeroSection from '@/common/hero-section/hero-section';
 import Layout from '@/components/Layout';
+import MetaTags from '@/components/meta-tags';
 import Marker from '@/svgs/marker';
 import Image from 'next/image';
 import React from 'react';
@@ -7,6 +8,7 @@ import React from 'react';
 const Webinar = () => {
   return (
     <Layout>
+      <MetaTags title='Webinar' description='Webinar' />
       <div className='webinars'>
         <HeroSection
           title='Maximizing Returns: Unveiling Investment Strategies for Financial Success'

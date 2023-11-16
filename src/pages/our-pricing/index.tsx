@@ -2,11 +2,13 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import PriceCard from '@/common/price-card';
 import HeroSection from '@/common/hero-section/hero-section';
+import MetaTags from '@/components/meta-tags';
 
 const OurPricing = () => {
   //
   return (
     <Layout>
+      <MetaTags title='Our Pricing' description='Our Pricing ' />
       <div className='our-pricing'>
         <HeroSection
           title='Our Pricing'

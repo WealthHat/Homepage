@@ -7,7 +7,10 @@ import React from 'react';
 const OneTimeComprehensivePlan = () => {
   return (
     <Layout>
-      <MetaTags title='One time advice' description='One time advice' />
+      <MetaTags
+        title='One-Time Comprehensive Plan'
+        description='One-Time Comprehensive Plan'
+      />
 
       <div className='one-time-container'>
         {/* onetimehero */}

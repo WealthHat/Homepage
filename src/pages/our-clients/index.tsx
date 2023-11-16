@@ -3,10 +3,12 @@ import Layout from '@/components/Layout';
 import Heading from '@/components/heading/heading';
 import ClientCard from '@/common/client-card/client-card';
 import HeroSection from '@/common/hero-section/hero-section';
+import MetaTags from '@/components/meta-tags';
 
 const OurClients = () => {
   return (
     <Layout>
+      <MetaTags title='Our Clients' description='Our Clients' />
       <div className='our-clients'>
         <HeroSection
           title='Our Clients'

@@ -2,10 +2,12 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import ClientCard from '@/common/client-card/client-card';
 import HeroSection from '@/common/hero-section/hero-section';
+import MetaTags from '@/components/meta-tags';
 
 const OurProcess = () => {
   return (
     <Layout>
+      <MetaTags title='Our Process' description='Our Process' />
       <div className='our-process'>
         <HeroSection
           title='Our Process'

@@ -8,7 +8,10 @@ import React from 'react';
 const OneTimeCustomisedPlan = () => {
   return (
     <Layout>
-      <MetaTags title='One time advice' description='One time advice' />
+      <MetaTags
+        title='One-Time Customised Plan'
+        description='One-Time Customised Plan'
+      />
 
       <div className='one-time-container'>
         {/* onetimehero */}

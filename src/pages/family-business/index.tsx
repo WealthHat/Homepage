@@ -4,10 +4,15 @@ import HeroSection from '@/common/hero-section/hero-section';
 import Comprehensive from '@/components/comprehensive';
 import Blog from '@/components/blog/blog';
 import Subscribe from '@/components/subscribe/subscribe';
+import MetaTags from '@/components/meta-tags';
 
 const FamilyBusiness = () => {
   return (
     <Layout>
+      <MetaTags
+        title='Families and Family Businesses'
+        description='Families and Family Businesses'
+      />
       <div className='ultra-high'>
         <HeroSection
           title='Families and Family Businesses'
@@ -100,7 +105,11 @@ const FamilyBusiness = () => {
         </div>
 
         <div className='comprehensive-services'>
-          <Comprehensive />
+          <Comprehensive
+            title='Comprehensive services for your wealth'
+            subtitle='We serve institutional and individual investors by building strong
+        businesses'
+          />
         </div>
 
         <Blog />

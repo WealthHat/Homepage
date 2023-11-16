@@ -5,10 +5,15 @@ import HeroSection from '@/common/hero-section/hero-section';
 import Comprehensive from '@/components/comprehensive';
 import Blog from '@/components/blog/blog';
 import Subscribe from '@/components/subscribe/subscribe';
+import MetaTags from '@/components/meta-tags';
 
 const Beneficiaries = () => {
   return (
     <Layout>
+      <MetaTags
+        title='Beneficiaries and Heirs'
+        description='Beneficiaries and Heirs'
+      />
       <div className='ultra-high'>
         <HeroSection
           title='Beneficiaries and Heirs'
@@ -121,7 +126,11 @@ const Beneficiaries = () => {
         </div>
 
         <div className='comprehensive-services'>
-          <Comprehensive />
+          <Comprehensive
+            title='Comprehensive services for your wealth'
+            subtitle='We serve institutional and individual investors by building strong
+        businesses'
+          />
         </div>
 
         <Blog />

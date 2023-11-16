@@ -4,10 +4,12 @@ import Heading from '@/components/heading/heading';
 import Image from 'next/image';
 import HeroSection from '@/common/hero-section/hero-section';
 import Comprehensive from '@/components/comprehensive';
+import MetaTags from '@/components/meta-tags';
 
 const AboutUs = () => {
   return (
     <Layout>
+      <MetaTags title='About Us' description='About Us' />
       <div className='about-us'>
         <HeroSection
           title='Why Choose WealtHat?'

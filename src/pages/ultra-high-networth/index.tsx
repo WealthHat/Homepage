@@ -4,10 +4,12 @@ import HeroSection from '@/common/hero-section/hero-section';
 import Comprehensive from '@/components/comprehensive';
 import Blog from '@/components/blog/blog';
 import Subscribe from '@/components/subscribe/subscribe';
+import MetaTags from '@/components/meta-tags';
 
 const UltraHighNetworth = () => {
   return (
     <Layout>
+      <MetaTags title='High networth' description='High networth' />
       <div className='ultra-high'>
         <HeroSection
           title='High Net Worth & Ultra High Net Worth Individuals'
