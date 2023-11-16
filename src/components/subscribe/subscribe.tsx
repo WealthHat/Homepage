@@ -11,10 +11,10 @@ const Subscribe = () => {
           </div>
 
           <div className='row mt-3'>
-            <div className='col-6 d-flex align-items-center'>
-              <p>For Special offers and Regular news</p>
+            <div className='col-8 d-flex'>
+              <p>For insights and articles</p>
             </div>
-            <div className='col-6 d-flex align-items-center justify-content-end'>
+            <div className='col-4 d-flex align-items-center justify-content-end'>
               <button>OK</button>
             </div>
           </div>
