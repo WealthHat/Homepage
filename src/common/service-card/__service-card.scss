@@ -1,11 +1,12 @@
 .services-card {
-  width: 430px;
+  // width: ;
   border-radius: 5px;
   background: $white;
   padding: 30px 20px;
   cursor: pointer;
   position: relative;
   height: 380px;
+  margin-bottom: 20px;
 
   h2 {
     @include heading($font-22, 400);
@@ -16,7 +17,7 @@
   p {
     margin-bottom: 90px;
     line-height: 25px;
-    font-size: 16px!important;
+    font-size: 16px !important;
   }
 
   small {

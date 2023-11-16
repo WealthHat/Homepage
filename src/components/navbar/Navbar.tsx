@@ -118,10 +118,14 @@ const Navbar = () => {
                 <ol>
                   <li className='schedule fw-bolder'>What we do</li>
                   <li className='schedule'>
-                    <Link href='/one-time-advice'>One-Time Advice</Link>
+                    <Link href='/one-time-customised-plan'>
+                      One-Time Customised Plan
+                    </Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/ongoing-advisory'>Ongoing Advisory</Link>
+                    <Link href='/one-time-comprehensive-plan'>
+                      One-Time Comprehensive Plan
+                    </Link>
                   </li>
                 </ol>
               </div>

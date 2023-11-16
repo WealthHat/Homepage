@@ -6,11 +6,10 @@
   .hero-left {
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 100vh;
 
     .hero-left-box {
-      width: 90%;
+      width: 80%;
     }
 
     h1 {
@@ -39,9 +38,10 @@
     align-items: center;
     justify-content: center;
 
+
     .hero-image {
       height: 500px;
-      width: 500px;
+      width: 100%;
 
       img {
         width: 100%;

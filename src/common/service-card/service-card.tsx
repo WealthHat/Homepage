@@ -4,9 +4,11 @@ type CardType = {
   title: string;
   content: string;
   color: string;
+  more?: boolean;
+  height?: string;
 };
 
-const ServiceCard = ({ title, content, color }: CardType) => {
+const ServiceCard = ({ title, content, color, more, height }: CardType) => {
   return (
     <div
       className='services-card'
@@ -17,6 +19,7 @@ const ServiceCard = ({ title, content, color }: CardType) => {
           color === 'light'
             ? '0px 16px 50px 0px rgba(171, 168, 168, 0.25)'
             : '',
+        height: height,
       }}
     >
       <h2
@@ -35,7 +38,7 @@ const ServiceCard = ({ title, content, color }: CardType) => {
         {content}
       </p>
 
-      <small>Read More</small>
+      {more && <small>Read More</small>}
     </div>
   );
 };
