@@ -45,63 +45,64 @@ const OneTimeComprehensivePlan = () => {
         <div className='content'>
           <div className='container'>
             <p>
-              Our one-time customised investment plan involves a comprehensive,
-              step-by-step process to define your financial objectives,
-              duration, risk tolerance, and other prevailing circumstances.
-              Following this, we develop an Investment Policy Statement that
-              serves as a foundational guide. Based on this, we construct your
-              investment portfolio, allocate assets, select securities, and
-              draft an actionable roadmap for implementation. During our maximum
-              of four (2) meetings (via phone, video, or in-person at our
-              office), we'll work together to create a personalised, customised
-              investment plan that empowers you to implement our recommendations
-              on your own. <b>This plan costs $2,000 (one-time fee)</b>
+              Our One-Time Comprehensive Financial Plan goes beyond just
+              investment planning to offer a more comprehensive financial plan.
+              We define your financial objectives, duration, and risk tolerance,
+              taking into account other prevailing circumstances such as estate
+              planning, insurance needs, and retirement goals. A comprehensive
+              financial plan serves as a foundational guide, followed by not
+              just portfolio construction but also debt management, retirement
+              planning, and estate planning. During our maximum of four (4)
+              meetings (via phone, video, or in-person at our office), we
+              collaboratively create a customized financial plan designed for
+              you to implement independently.{' '}
+              <b>This plan costs $3,500 (one-time fee)</b>
             </p>
 
             <div className='row mt-5'>
               <div className='col-lg-4 col-md-4'>
                 <ServiceCard
-                  title='One-Time Customised Plan'
-                  content='We offer a one-time customized investment plans and comprehensive financial plans designed individuals, families, and businesses. We assess your goals and risks tolerance to craft a plan you can implement independently, Ideal for those with less complex financial circumstances and those not seeking ongoing support.'
+                  title='Personalised Consultation'
+                  content='Schedule a one-on-one meeting with our financial experts to discuss your broader financial goals, risk tolerance, personal circumstances, and current financial landscape.'
                   color='light'
                   more={false}
-                  height='340px'
+                  height='270px'
                 />
               </div>
               <div className='col-lg-4 col-md-4'>
                 <ServiceCard
-                  title='One-Time Customised Plan'
-                  content='We offer a one-time customized investment plans and comprehensive financial plans designed individuals, families, and businesses. We assess your goals and risks tolerance to craft a plan you can implement independently, Ideal for those with less complex financial circumstances and those not seeking ongoing support.'
+                  title='Comprehensive Assessment'
+                  content=' We take a deep dive into all aspects of your financial life, including assets, liabilities, income, expenses, tax considerations, estate and retirement plans to create a holistic financial plan.'
                   color='light'
                   more={false}
-                  height='340px'
+                  height='270px'
                 />
               </div>
               <div className='col-lg-4 col-md-4'>
                 <ServiceCard
-                  title='One-Time Customised Plan'
-                  content='We offer a one-time customized investment plans and comprehensive financial plans designed individuals, families, and businesses. We assess your goals and risks tolerance to craft a plan you can implement independently, Ideal for those with less complex financial circumstances and those not seeking ongoing support.'
+                  title='Multi-faceted Financial Guidance'
+                  content='Apart from investment guidance, we also provide actionable advice on debt management, retirement planning, tax optimisation, and estate planning/trust advisory.'
                   color='light'
                   more={false}
-                  height='340px'
+                  height='270px'
                 />
               </div>
               <div className='col-lg-4 col-md-4'>
                 <ServiceCard
-                  title='One-Time Customised Plan'
-                  content='We offer a one-time customized investment plans and comprehensive financial plans designed individuals, families, and businesses. We assess your goals and risks tolerance to craft a plan you can implement independently, Ideal for those with less complex financial circumstances and those not seeking ongoing support.'
+                  title='Actionable Roadmap'
+                  content='Our plan includes a step-by-step guide that outlines how to implement not just your investment plan but your overall financial strategy, complete with timelines and milestones.'
                   color='light'
                   more={false}
-                  height='340px'
+                  height='270px'
                 />
               </div>
               <div className='col-lg-4 col-md-4'>
                 <ServiceCard
-                  title='One-Time Customised Plan'
-                  content='We offer a one-time customized investment plans and comprehensive financial plans designed individuals, families, and businesses. We assess your goals and risks tolerance to craft a plan you can implement independently, Ideal for those with less complex financial circumstances and those not seeking ongoing support.'
+                  title='Resource Kit'
+                  content='Receive a comprehensive set of tools and resources like worksheets, checklists, and guides to assist you in implementing and tracking your comprehensive financial plan on your own.'
                   color='light'
                   more={false}
-                  height='340px'
+                  height='270px'
                 />
               </div>
             </div>
