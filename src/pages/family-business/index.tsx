@@ -1,188 +1,111 @@
 import React from 'react';
 import Layout from '@/components/Layout';
-import Heading from '@/components/heading/heading';
+import HeroSection from '@/common/hero-section/hero-section';
+import Comprehensive from '@/components/comprehensive';
+import Blog from '@/components/blog/blog';
+import Subscribe from '@/components/subscribe/subscribe';
 
 const FamilyBusiness = () => {
   return (
     <Layout>
       <div className='ultra-high'>
-        <div className='ultra-high-hero'>
-          <div className='container-fluid'>
-            <h1>Families & Family Businesses</h1>
-            <p>
-              Private Wealth Solutions’ mission is to deliver innovative
-              solutions with exceptional service to advisors and their clients.
-              We are committed to helping more investors unlock differentiated
-              opportunities beyond traditional asset classes.
-            </p>
-          </div>
-        </div>
+        <HeroSection
+          title='Families and Family Businesses'
+          content='Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth.'
+          image='/images/about-hero.svg'
+          showbutton={true}
+        />
 
-        <div className='our-investment'>
-          <div className='container'>
+        <div className='content-section'>
+          <div className='container content-container'>
             <div className='row'>
-              <div className='col-lg-5 left'>
-                <div>
-                  <h2>Our Investment</h2>
-                  <div className='d-flex align-items-end'>
-                    <h2>Philosophy</h2>
-                    <div className='dash'></div>
-                  </div>
-                </div>
-              </div>
+              <div className='col-7 col-left'>
+                <p>
+                  WealthHat understands the vital role that family businesses
+                  play in both wealth creation and preservation. We specialize
+                  in providing tailored financial solutions to families and
+                  family businesses, addressing their unique challenges and
+                  needs.
+                </p>
 
-              <div className='col-lg-7 right'>
-                <div>
-                  <p>Our investment philosophy is rooted in the belief that:</p>
-                  <ul>
-                    <li>
-                      Robust portfolio construction includes diversification by
-                      asset class, style and geography.
-                    </li>
-                    <li>
-                      Rigorous risk management is key to wealth preservation.
-                    </li>
-                    <li>
-                      Rigorous risk management is key to wealth preservation.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className='sustainable'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-6 left'>
-                <div>
-                  <div className='d-flex align-items-end'>
-                    <h3>Sustainable Investment</h3>
-                    <i className='mt-3 bi bi-dash-lg'></i>
-                  </div>
+                <div className='mb-3'>
+                  <h3>
+                    Understanding Their Unique Challenges and Circumstances
+                  </h3>
                   <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
+                    Family businesses often possess a diverse range of assets,
+                    including significant holdings in publicly traded companies,
+                    private investment firms, family foundations, and family
+                    offices. These businesses frequently operate across multiple
+                    regions, leading to complex tax, legal, and regulatory
+                    considerations. The evolving landscape of investment trends,
+                    changing operational practices, and the dynamic nature of
+                    family enterprises further add to the complexity.
                   </p>
+                </div>
+
+                <div className='mb-3'>
+                  <h3>Identifying Their Needs</h3>
                   <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
+                    Families and family businesses require financial strategies
+                    that go beyond the standard. They seek solutions that not
+                    only facilitate wealth growth but also ensure its long-term
+                    preservation. Optimization of tax efficiency, succession
+                    planning, and managing intricate financial portfolios are
+                    primary concerns. Family businesses may also require
+                    guidance on expansion, diversification, and wealth transfer
+                    to the next generation.
                   </p>
                 </div>
               </div>
 
-              <div className='col-lg-6 right'></div>
+              <div className='col-5 col-right'>
+                <div>
+                  <h3>How WealthHat Understands and Meets Their Needs</h3>
+                  <p>
+                    WealthHat has a proven track record of assisting families
+                    and family businesses facing similar challenges. Our team
+                    comprises experts with diverse backgrounds, including
+                    capital markets, investment banking, portfolio management,
+                    wealth structuring, and family office management. We
+                    seamlessly merge institutional resources with personalized
+                    service to provide solutions aligned with the unique needs
+                    of family businesses.
+                  </p>
+
+                  <p>
+                    We offer a comprehensive suite of services tailored to
+                    empower family businesses, including wealth preservation
+                    strategies, institutionally-backed investment opportunities,
+                    succession planning guidance, and expert advice on managing
+                    complex financial portfolios. Our institutional-level
+                    analytics, actionable strategies, and best practices ensure
+                    the prudent management of family assets and business
+                    interests.
+                  </p>
+
+                  <p>
+                    We invite you to connect with us at WealthHat, where we can
+                    collaborate to create a customized financial plan designed
+                    to address the specific needs of your family business. Your
+                    business's financial success and continuity are our top
+                    priorities, and we're committed to helping you achieve them.
+                  </p>
+
+                  <button>Schedule a call</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className='opportunities'>
-          <div className='container'>
-            <div className='opportunity d-flex align-items-end'>
-              <h3>Sustainable Investment</h3>
-              <div className='dash'></div>
-            </div>
-
-            <h1>
-              Simplifying Your Financial Life with Wealth Planning Services
-            </h1>
-
-            <hr />
-
-            <ul
-              className='accordion accordion-flush'
-              id='accordionFlushExample'
-            >
-              <li className='accordion-item'>
-                <button
-                  className='accordion-button collapsed'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#flush-collapseOne'
-                >
-                  Identifying Strategies to Enhance Portfolios
-                </button>
-
-                <div
-                  id='flush-collapseOne'
-                  className='accordion-collapse collapse'
-                  data-bs-parent='#accordionFlushExample'
-                >
-                  <div className='accordion-body'>
-                    <p>
-                      The Portfolio Construction team collaborates with the
-                      Wealth Planning, Investment Strategy, Manager Research and
-                      Private Investments teams to build a diversified portfolio
-                      that aligns with your financial plan and your ability and
-                      willingness to take risk — and one that is sensitive to
-                      tax, cost and liquidity factors.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li className='accordion-item'>
-                <button
-                  className='accordion-button collapsed'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#flush-collapseTwo'
-                >
-                  Portfolio Construction: Aligning with Your Needs
-                </button>
-
-                <div
-                  id='flush-collapseTwo'
-                  className='accordion-collapse collapse'
-                  data-bs-parent='#accordionFlushExample'
-                >
-                  <div className='accordion-body'>
-                    <p>
-                      The Portfolio Construction team collaborates with the
-                      Wealth Planning, Investment Strategy, Manager Research and
-                      Private Investments teams to build a diversified portfolio
-                      that aligns with your financial plan and your ability and
-                      willingness to take risk — and one that is sensitive to
-                      tax, cost and liquidity factors.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li className='accordion-item'>
-                <button
-                  className='accordion-button collapsed'
-                  data-bs-toggle='collapse'
-                  data-bs-target='#flush-collapseThree'
-                >
-                  Identifying Strategies to Enhance Portfolios
-                </button>
-
-                <div
-                  id='flush-collapseThree'
-                  className='accordion-collapse collapse'
-                  data-bs-parent='#accordionFlushExample'
-                >
-                  <div className='accordion-body'>
-                    <p>
-                      The Portfolio Construction team collaborates with the
-                      Wealth Planning, Investment Strategy, Manager Research and
-                      Private Investments teams to build a diversified portfolio
-                      that aligns with your financial plan and your ability and
-                      willingness to take risk — and one that is sensitive to
-                      tax, cost and liquidity factors.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div className='comprehensive-services'>
+          <Comprehensive />
         </div>
+
+        <Blog />
+
+        <Subscribe />
       </div>
     </Layout>
   );

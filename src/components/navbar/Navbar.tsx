@@ -141,7 +141,9 @@ const Navbar = () => {
                     <Link href='/families-and-spouses'>Families & Spouses</Link>
                   </li>
                   <li className='schedule'>
-                    <Link href='/entrepreneurs'>Entrepreneurs & Founders</Link>
+                    <Link href='/entrepreneurs-and-founders'>
+                      Entrepreneurs & Founders
+                    </Link>
                   </li>
                   <li className='schedule'>
                     <Link href='/family-business'>
