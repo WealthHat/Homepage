@@ -3,15 +3,15 @@ import Layout from '@/components/Layout';
 import ClientCard from '@/common/client-card/client-card';
 import HeroSection from '@/common/hero-section/hero-section';
 
-
 const OurProcess = () => {
   return (
     <Layout>
       <div className='our-process'>
-         <HeroSection
+        <HeroSection
           title='Our Process'
           content='Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth.'
           image='/images/about-hero.svg'
+          showbutton={true}
         />
 
         <div className='approach'>

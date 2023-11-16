@@ -18,9 +18,9 @@ const Different = () => {
                 <th className='white' scope='col'></th>
                 <th scope='col'>WealthHat</th>
                 <th className='white' scope='col'>
-                  Traditional Firm
+                  Investment Management Firm
                 </th>
-                <th scope='col'>Traditional Firm</th>
+                <th scope='col'>Stockbroking Firm</th>
               </tr>
             </thead>
 

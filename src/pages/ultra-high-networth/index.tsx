@@ -89,7 +89,11 @@ const UltraHighNetworth = () => {
         </div>
 
         <div className='comprehensive-services'>
-          <Comprehensive />
+          <Comprehensive
+            title='Comprehensive services for your wealth'
+            subtitle='We serve institutional and individual investors by building strong
+        businesses'
+          />
         </div>
 
         <Blog />

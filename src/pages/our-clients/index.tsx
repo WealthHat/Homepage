@@ -12,6 +12,7 @@ const OurClients = () => {
           title='Our Clients'
           content='Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth.'
           image='/images/about-hero.svg'
+          showbutton={true}
         />
 
         <div className='private'>

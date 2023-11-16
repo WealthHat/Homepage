@@ -17,6 +17,7 @@ const AboutUs = () => {
               families, and businesses. Our focus is always upon you and the
               needs of your wealth.'
           image='/images/about-hero.svg'
+          showbutton={true}
         />
 
         <div className='apart'>
@@ -107,7 +108,10 @@ const AboutUs = () => {
         </div>
 
         <div className='comprehensive-services'>
-          <Comprehensive />
+          <Comprehensive
+            title='Different Needs, Different Plans'
+            subtitle='We customize our wealth offering to the objectives of you and your family'
+          />
         </div>
       </div>
     </Layout>
