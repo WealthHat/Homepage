@@ -15,10 +15,7 @@ const ServiceCard = ({ title, content, color, more, height }: CardType) => {
       style={{
         background: color === 'light' ? 'white' : 'black',
         color: color === 'light' ? 'black' : 'white',
-        boxShadow:
-          color === 'light'
-            ? '0px 16px 50px 0px rgba(171, 168, 168, 0.25)'
-            : '',
+        border: `1px solid #e1e6ef`,
         height: height,
       }}
     >
