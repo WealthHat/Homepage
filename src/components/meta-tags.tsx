@@ -1,7 +1,7 @@
-import Head from "next/head";
-import React from "react";
+import Head from 'next/head';
+import React from 'react';
 
-const MetaTags = (props:any) => {
+const MetaTags = (props: any) => {
   return (
     <Head>
       <link rel='icon' href='/favicon.ico' />
@@ -22,7 +22,7 @@ const MetaTags = (props:any) => {
         sizes='16x16'
         href='/favicon-16x16.png'
       />
-      <title>{props.title}</title>
+      <title>WealthHat - {props.title}</title>
       <meta name='title' content={props.title} />
       <meta name='description' content={props.description} />
       <meta name='keywords' content='WealthHat Investments investment' />
