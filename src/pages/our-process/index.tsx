@@ -19,13 +19,14 @@ const OurProcess = () => {
         <div className='approach'>
           <div className='container'>
             <div className='row'>
-              <div className='col approach-left'>
+              <div className='col-12 col-md-6 approach-left'>
                 <div>
                   <h1>WealthHat</h1>
                   <h2>Approach</h2>
                 </div>
               </div>
-              <div className='col approach-right'>
+
+              <div className='col-12 col-md-6 approach-right'>
                 <p>
                   The WealthHat Approach is the framework for how we work with
                   our clients.

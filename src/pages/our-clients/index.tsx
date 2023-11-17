@@ -4,6 +4,7 @@ import Heading from '@/components/heading/heading';
 import ClientCard from '@/common/client-card/client-card';
 import HeroSection from '@/common/hero-section/hero-section';
 import MetaTags from '@/components/meta-tags';
+import CardSlider from '@/common/slick';
 
 const OurClients = () => {
   return (
@@ -41,7 +42,7 @@ const OurClients = () => {
 
         <div className='client-section'>
           <div className='container'>
-            <div className='row'>
+            <div className='row desktop'>
               <div className='col-lg-4 col-md-6 client-box'>
                 <ClientCard
                   title='High Net Worth & Ultra High Net Individuals'
@@ -90,17 +91,69 @@ const OurClients = () => {
                 />
               </div>
             </div>
+
+            <div className='row mobile'>
+              <CardSlider>
+                <div className='col-4 client-box'>
+                  <ClientCard
+                    title='High Net Worth & Ultra High Net Individuals'
+                    content='"Tailored wealth management solutions designed specifically for individuals and families with significant assets. We understand the unique challenges and opportunities that come with substantial wealth and provide strategies to preserve and grow your assets."'
+                    color='light'
+                  />
+                </div>
+
+                <div className='col-4 client-box'>
+                  <ClientCard
+                    title='Beneficiaries & Heirs'
+                    content='"Guidance and support to beneficiaries and heirs to ensure seamless transition and continuation of wealth. Our experts help navigate the complexities of inheritance, trusts, and legacy planning."'
+                    color='dark'
+                  />
+                </div>
+
+                <div className='col-4 client-box'>
+                  <ClientCard
+                    title='Families & Spouses'
+                    content={`"Comprehensive financial planning that considers the needs of every family member. From joint investments to educational trusts, we make sure your family's financial well-being is secured"`}
+                    color='light'
+                  />
+                </div>
+
+                <div className='col-4 client-box'>
+                  <ClientCard
+                    title='Families & Family Businesses'
+                    content='"Expertise in aligning family values with business goals. We offer strategies for succession planning, risk management, and growth to ensure your family business thrives for generations."'
+                    color='dark'
+                  />
+                </div>
+
+                <div className='col-4 client-box'>
+                  <ClientCard
+                    title='Entrepreneurs & Founders'
+                    content='"Dedicated support for business leaders, from startup phase to exit strategy. Our financial advisors help entrepreneurs optimize their personal and business wealth for maximum impact."'
+                    color='light'
+                  />
+                </div>
+
+                <div className='col-4 client-box'>
+                  <ClientCard
+                    title='Senior Executives'
+                    content='"Customized financial planning for top-tier professionals. Our services address the unique needs of senior executives, from stock option planning to retirement strategies."'
+                    color='dark'
+                  />
+                </div>
+              </CardSlider>
+            </div>
           </div>
         </div>
 
         <div className='in-touch'>
           <div className='container'>
             <div className='row'>
-              <div className='col-3'>
+              <div className='col-12 col-md-3'>
                 <h3>Get in Touch</h3>
               </div>
 
-              <div className='col-9'>
+              <div className='col-12 col-md-9'>
                 <p>
                   If you are interested in becoming a client, please complete
                   the form via the ‘become a client’ button below.
