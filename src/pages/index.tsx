@@ -16,8 +16,8 @@ export default function Home() {
         description='Our clients always come first. We serve them through a global network powered by partnership, integrity, advancing economy.'
       />
       <Hero />
-      {/* <Firm /> */}
-      {/* <Services /> */}
+      <Firm />
+      <Services />
       {/* <Client /> */}
       {/* <Different /> */}
       {/* <Blog /> */}
