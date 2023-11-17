@@ -1,11 +1,15 @@
 .about-us {
   .apart {
     background: $background-color;
-    padding: 40px 0px;
+    padding: 40px 10px;
 
     .apart-container {
       background: $white;
       padding: 80px 40px;
+
+      @media (max-width: 1200px) {
+        padding: 80px 10px;
+      }
     }
 
     h1 {
@@ -13,6 +17,10 @@
       text-align: center;
       font-family: $secondary-font;
       margin-bottom: 15px;
+
+      @media (max-width: 500px) {
+        font-size: 35px;
+      }
     }
 
     p {
@@ -23,6 +31,19 @@
 
     .apart-box {
       margin-top: 80px !important;
+
+      &.box1 {
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+
+      &.box2 {
+        display: none;
+        @media (max-width: 991px) {
+          display: block;
+        }
+      }
 
       h3 {
         @include heading(22px, 400, $black);
@@ -38,12 +59,28 @@
       .apart-card {
         padding: 50px 30px;
         border-right: 2px solid $border-color;
+        border-bottom: 2px solid $border-color;
+
+        @media (max-width: 1200px) {
+          padding: 50px 20px;
+        }
+
+        @media (max-width: 991px) {
+          height: 400px;
+          border: 2px solid $border-color !important;
+        }
 
         &:nth-child(3) {
           border-right: 0;
         }
         &:last-child {
           border-right: 0;
+        }
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+          border-bottom: 0;
         }
       }
     }
