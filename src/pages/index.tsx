@@ -19,9 +19,9 @@ export default function Home() {
       <Firm />
       <Services />
       <Client />
-      {/* <Different /> */}
-      {/* <Blog /> */}
-      {/* <Subscribe />  */}
+      <Different />
+      <Blog />
+      <Subscribe />
     </Layout>
   );
 }

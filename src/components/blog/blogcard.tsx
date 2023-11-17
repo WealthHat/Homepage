@@ -7,7 +7,7 @@ const BlogCard = () => {
 
   // 
   return (
-    <div className='col-lg-3 col-md-4 col-sm-6' onClick={() => router.push("/articles/1")}>
+    <div className='col-xl-3 col-lg-4 col-md-6 col-sm-6' onClick={() => router.push("/articles/1")}>
 
     <div className='blog-card'>
       <div className='blog-image'>
