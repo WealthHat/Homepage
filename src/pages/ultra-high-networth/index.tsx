@@ -21,7 +21,7 @@ const UltraHighNetworth = () => {
         <div className='content-section'>
           <div className='container content-container'>
             <div className='row'>
-              <div className='col-7 col-left'>
+              <div className='col-12 col-md-7 col-left'>
                 <p>
                   At WealthHat, we understand that the financial circumstances
                   of High Net Worth Individuals (HNWIs) and Ultra High Net Worth
@@ -60,7 +60,7 @@ const UltraHighNetworth = () => {
                 </div>
               </div>
 
-              <div className='col-5 col-right'>
+              <div className='col-12 col-md-5 col-right'>
                 <div>
                   <h3>How We Help</h3>
                   <p>

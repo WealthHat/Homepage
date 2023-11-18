@@ -21,7 +21,7 @@ const SeniorExecutives = () => {
         <div className='content-section'>
           <div className='container content-container'>
             <div className='row'>
-              <div className='col-7 col-left'>
+              <div className='col-12 col-md-7 col-left'>
                 <p>
                   At WealthHat, we understand that the journey of senior
                   executives is marked by unique circumstances and challenges.
@@ -62,7 +62,7 @@ const SeniorExecutives = () => {
                 </div>
               </div>
 
-              <div className='col-5 col-right'>
+              <div className='col-12 col-md-5 col-right'>
                 <div>
                   <h3>How WealthHat Understands and Meets Their Needs</h3>
                   <p>

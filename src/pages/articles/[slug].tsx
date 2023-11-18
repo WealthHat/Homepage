@@ -19,9 +19,9 @@ const BlogDetails = () => {
           <div className='row'>
             <div className='col-lg-6 article-left'>
               <div className='d-flex align-items-center gap-3'>
-                <p>
+                <div>
                   <GoBack />
-                </p>
+                </div>
                 <p> 22 Aug, 2023</p>
                 <p>2 mins</p>
               </div>

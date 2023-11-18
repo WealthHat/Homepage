@@ -1,11 +1,15 @@
 .ultra-high {
   .content-section {
     background: $background-color;
-    padding-top: 80px;
+    padding: 80px 10px 10px 10px;
 
     .content-container {
       background: $white;
       padding: 80px;
+
+      @media (max-width: 1199px) {
+        padding: 80px 20px;
+      }
 
       .col-left {
         padding-right: 50px;
@@ -27,6 +31,10 @@
       .col-right {
         background: $hero-background;
         padding: 40px 30px;
+
+        @media (max-width:767px){
+          padding:40px 10px;
+        }
 
         h3 {
           @include heading(28px, 400, $black);

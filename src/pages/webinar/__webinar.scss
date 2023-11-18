@@ -1,44 +1,7 @@
 .webinars {
   // height:100vh;
 
-  .webinar-hero {
-    height: 100vh;
-    background-image: url('../../../public/images/webinar-hero.svg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-
-    h1 {
-      @include heading($font-42, 700, $white);
-      margin-bottom: 26px;
-      font-family: $secondary-font;
-      width: 55%;
-      line-height: 55px;
-    }
-
-    p {
-      @include body-text($font-18, 400, $white);
-      margin-bottom: 8px;
-      text-transform: uppercase;
-    }
-
-    small {
-      @include body-text($font-18, 400, $white);
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .status {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
-      color: $white;
-      font-size:$font-18
-    }
-  }
-
+ 
   .note {
     padding: 80px 0;
     background: $background-color;
@@ -57,9 +20,17 @@
       align-items: center;
       justify-content: center;
 
+      @media (max-width:991px){
+        margin-top:20px;
+      }
+
 
       .note-box {
         width: 80%;
+
+        @media (max-width:991px){
+          width:100%;
+        }
 
         .title {
             display:flex;

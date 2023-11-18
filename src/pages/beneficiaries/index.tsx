@@ -25,7 +25,7 @@ const Beneficiaries = () => {
         <div className='content-section'>
           <div className='container content-container'>
             <div className='row'>
-              <div className='col-7 col-left'>
+              <div className='col-12 col-md-7 col-left'>
                 <p>
                   We understand that wealth isn't just for today; it's about
                   securing a legacy for the future. Beneficiaries and heirs have
@@ -75,7 +75,7 @@ const Beneficiaries = () => {
                 </div>
               </div>
 
-              <div className='col-5 col-right'>
+              <div className='col-12 col-md-5 col-right'>
                 <div>
                   <h3>How WealthHat Support Them</h3>
                   <p>

@@ -26,12 +26,17 @@
       border-top: 1px solid $border-color;
       padding: 60px 20px 35px 20px;
 
+      @media (max-width: 500px) {
+        padding: 50px 10px 30px 10px;
+      }
+
       &:last-child {
         border-bottom: 1px solid $border-color;
       }
 
       .news-box {
         width: 90%;
+
         p {
           @include body-text($font-12, 400, $text-color);
           text-transform: uppercase;
@@ -42,6 +47,11 @@
           @include heading($font-22, 400);
           width: 80%;
           line-height: 40px;
+
+          @media (max-width: 991px) {
+            width: 100%;
+            font-size: 20px;
+          }
         }
       }
 
@@ -75,7 +85,7 @@
 
 // news details
 .news-details {
-  padding: 180px 10px 150px 10px;
+  padding: 180px 0px 150px 0px;
 
   small {
     @include body-text($font-16, 400, $text-color);

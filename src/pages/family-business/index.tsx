@@ -24,7 +24,7 @@ const FamilyBusiness = () => {
         <div className='content-section'>
           <div className='container content-container'>
             <div className='row'>
-              <div className='col-7 col-left'>
+              <div className='col-12 col-md-7 col-left'>
                 <p>
                   WealthHat understands the vital role that family businesses
                   play in both wealth creation and preservation. We specialize
@@ -64,7 +64,7 @@ const FamilyBusiness = () => {
                 </div>
               </div>
 
-              <div className='col-5 col-right'>
+              <div className='col-12 col-md-5 col-right'>
                 <div>
                   <h3>How WealthHat Understands and Meets Their Needs</h3>
                   <p>

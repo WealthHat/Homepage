@@ -25,7 +25,7 @@ const Families = () => {
         <div className='content-section'>
           <div className='container content-container'>
             <div className='row'>
-              <div className='col-7 col-left'>
+              <div className='col-12 col-md-7 col-left'>
                 <p>
                   We understand that family is at the heart of wealth, and
                   that's why WealthHat is here to assist families and spouses in
@@ -65,7 +65,7 @@ const Families = () => {
                 </div>
               </div>
 
-              <div className='col-5 col-right'>
+              <div className='col-12 col-md-5 col-right'>
                 <div>
                   <h3>How WealthHat Understands and Meets Their Needs</h3>
                   <p>

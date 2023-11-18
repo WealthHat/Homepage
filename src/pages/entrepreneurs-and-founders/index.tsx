@@ -24,7 +24,7 @@ const Entrepreneurs = () => {
         <div className='content-section'>
           <div className='container content-container'>
             <div className='row'>
-              <div className='col-7 col-left'>
+              <div className='col-12 col-md-7 col-left'>
                 <p>
                   WealthHat recognizes the unique journey of entrepreneurs and
                   founders who have not only built their wealth but also created
@@ -65,7 +65,7 @@ const Entrepreneurs = () => {
                 </div>
               </div>
 
-              <div className='col-5 col-right'>
+              <div className='col-12 col-md-5 col-right'>
                 <div>
                   <h3>How WealthHat Understands and Meets Their Needs</h3>
                   <p>
