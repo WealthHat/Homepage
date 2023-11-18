@@ -205,16 +205,16 @@ const Navbar = () => {
               data-bs-parent='#accordionFlushExample'
             >
               <div className='accordion-body'>
-                <Link href=''>About WealthHat</Link>
+                <Link href='/about-us'>About WealthHat</Link>
               </div>
               <div className='accordion-body'>
-                <Link href=''>Our Client</Link>
+                <Link href='/our-clients'>Our Client</Link>
               </div>
               <div className='accordion-body'>
-                <Link href=''>Our Process</Link>
+                <Link href='/our-process'>Our Process</Link>
               </div>
               <div className='accordion-body'>
-                <Link href=''>Our Pricing</Link>
+                <Link href='our-pricing'>Our Pricing</Link>
               </div>
             </div>
           </li>
@@ -240,34 +240,42 @@ const Navbar = () => {
                 <div className='drop-left'>
                   <div className='accordion-body fw-bolder'>What We Do</div>
                   <div className='accordion-body'>
-                    <Link href=''>One-time Advice</Link>
+                    <Link href='one-time-customised-plan'>
+                      One-Time Customised Plan
+                    </Link>
                   </div>
                   <div className='accordion-body'>
-                    <Link href=''>Ongoing Advisory</Link>
+                    <Link href='/one-time-comprehensive-plan'>
+                      One-Time Comprehensive Plan
+                    </Link>
                   </div>
                 </div>
 
                 <div className='drop-right'>
                   <div className='accordion-body fw-bolder'>Who We Serve</div>
                   <div className='accordion-body'>
-                    <Link href=''>
+                    <Link href='/ultra-hight-networth'>
                       Ultra High Net Worth & High Net Worth Individuals
                     </Link>
                   </div>
                   <div className='accordion-body'>
-                    <Link href=''>Beneficiaries & Heirs</Link>
+                    <Link href='/beneficiaries'>Beneficiaries & Heirs</Link>
                   </div>
                   <div className='accordion-body'>
-                    <Link href=''>Families & Spouses</Link>
+                    <Link href='/families-and-spouses'>Families & Spouses</Link>
                   </div>
                   <div className='accordion-body'>
-                    <Link href=''>Entrepreneurs & Founders</Link>
+                    <Link href='/entrepreneurs-and-founders'>
+                      Entrepreneurs & Founders
+                    </Link>
                   </div>
                   <div className='accordion-body'>
-                    <Link href=''>Families & Family Businesses</Link>
+                    <Link href='/family-business'>
+                      Families & Family Businesses
+                    </Link>
                   </div>
                   <div className='accordion-body'>
-                    <Link href=''>Senior Executives</Link>
+                    <Link href='/senior-executives'>Senior Executives</Link>
                   </div>
                 </div>
               </div>
@@ -291,13 +299,13 @@ const Navbar = () => {
               data-bs-parent='#accordionFlushExample'
             >
               <div className='accordion-body'>
-                <Link href=''>Articles</Link>
+                <Link href='/insights'>Articles</Link>
               </div>
               <div className='accordion-body'>
-                <Link href=''>Webinars</Link>
+                <Link href='/webinar'>Webinars</Link>
               </div>
               <div className='accordion-body'>
-                <Link href=''>News & Events</Link>
+                <Link href='/news'>News & Events</Link>
               </div>
             </div>
           </li>
