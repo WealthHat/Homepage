@@ -1,5 +1,6 @@
 import HeroSection from '@/common/hero-section/hero-section';
 import ServiceCard from '@/common/service-card/service-card';
+import CardSlider from '@/common/slick';
 import Layout from '@/components/Layout';
 import MetaTags from '@/components/meta-tags';
 import Image from 'next/image';
@@ -13,7 +14,7 @@ const OneTimeCustomisedPlan = () => {
         description='One-Time Customised Plan'
       />
 
-      <div className='one-time-container'>
+      <div className='one-times'>
         {/* onetimehero */}
         <HeroSection
           title='One-Time Customised Plan'
@@ -25,19 +26,21 @@ const OneTimeCustomisedPlan = () => {
         {/* note component */}
         <div className='note'>
           <div className='container'>
-            <h4>
-              We provide two distinct service packages for our clients: <br />{' '}
-              <span>
-                {' '}
-                a One-Time Customized Investment Plan and a One-Time
-                Comprehensive Financial Plan{' '}
-              </span>
-            </h4>
+            <div className='row'>
+              <h4>
+                We provide two distinct service packages for our clients:{' '}
+                <span>
+                  {' '}
+                  a One-Time Customized Investment Plan and a One-Time
+                  Comprehensive Financial Plan{' '}
+                </span>
+              </h4>
+            </div>
           </div>
         </div>
 
         <div className='customised-switch'>
-          <div className='switch-left  active'>
+          <div className='switch-left active'>
             One-Time Customised Investment Plan
           </div>
 
@@ -63,51 +66,53 @@ const OneTimeCustomisedPlan = () => {
             </p>
 
             <div className='row mt-5'>
-              <div className='col-lg-4 col-md-4'>
-                <ServiceCard
-                  title='Personalised Consultation'
-                  content='Schedule a one-on-one meeting with our financial experts to discuss your goals, risk tolerance, and existing financial landscape.'
-                  color='light'
-                  more={false}
-                  height='270px'
-                />
-              </div>
-              <div className='col-lg-4 col-md-4'>
-                <ServiceCard
-                  title='Comprehensive Assessment'
-                  content='We conduct an in-depth evaluation of your financial standing, including assets, liabilities, income, and expenses to create a tailored plan.'
-                  color='light'
-                  more={false}
-                  height='270px'
-                />
-              </div>
-              <div className='col-lg-4 col-md-4'>
-                <ServiceCard
-                  title='Investment Guidance'
-                  content='Based on your profile, we offer specific investment recommendations, including asset allocation strategies to meet your financial objectives.'
-                  color='light'
-                  more={false}
-                  height='270px'
-                />
-              </div>
-              <div className='col-lg-4 col-md-4'>
-                <ServiceCard
-                  title='Actionable Roadmap'
-                  content='We provide a step-by-step guide outlining how to implement your financial plan, complete with timelines and milestones.'
-                  color='light'
-                  more={false}
-                  height='270px'
-                />
-              </div>
-              <div className='col-lg-4 col-md-4'>
-                <ServiceCard
-                  title='Resource Kit'
-                  content="You'll receive a set of tools and resources (worksheets, checklists, and guides) to help you implement and track your investment plan independently."
-                  color='light'
-                  more={false}
-                  height='270px'
-                />
-              </div>
+              <CardSlider>
+                <div className='col-4 columns'>
+                  <ServiceCard
+                    title='Personalised Consultation'
+                    content='Schedule a one-on-one meeting with our financial experts to discuss your goals, risk tolerance, and existing financial landscape.'
+                    color='light'
+                    more={false}
+                    height='270px'
+                  />
+                </div>
+                <div className='col-4 columns'>
+                  <ServiceCard
+                    title='Comprehensive Assessment'
+                    content='We conduct an in-depth evaluation of your financial standing, including assets, liabilities, income, and expenses to create a tailored plan.'
+                    color='light'
+                    more={false}
+                    height='270px'
+                  />
+                </div>
+                <div className='col-4 columns'>
+                  <ServiceCard
+                    title='Investment Guidance'
+                    content='Based on your profile, we offer specific investment recommendations, including asset allocation strategies to meet your financial objectives.'
+                    color='light'
+                    more={false}
+                    height='270px'
+                  />
+                </div>
+                <div className='col-4 columns'>
+                  <ServiceCard
+                    title='Actionable Roadmap'
+                    content='We provide a step-by-step guide outlining how to implement your financial plan, complete with timelines and milestones.'
+                    color='light'
+                    more={false}
+                    height='270px'
+                  />
+                </div>
+                <div className='col-4 columns'>
+                  <ServiceCard
+                    title='Resource Kit'
+                    content="You'll receive a set of tools and resources (worksheets, checklists, and guides) to help you implement and track your investment plan independently."
+                    color='light'
+                    more={false}
+                    height='270px'
+                  />
+                </div>
+              </CardSlider>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import HeroSection from '@/common/hero-section/hero-section';
 import ServiceCard from '@/common/service-card/service-card';
 import Layout from '@/components/Layout';
 import MetaTags from '@/components/meta-tags';
+import CardSlider from '@/common/slick';
 import React from 'react';
 
 const OneTimeComprehensivePlan = () => {
@@ -12,7 +13,7 @@ const OneTimeComprehensivePlan = () => {
         description='One-Time Comprehensive Plan'
       />
 
-      <div className='one-time-container'>
+      <div className='one-times'>
         {/* onetimehero */}
         <HeroSection
           title='One-Time Comprehensive Plan'
@@ -35,12 +36,12 @@ const OneTimeComprehensivePlan = () => {
           </div>
         </div>
 
-        <div className='comprehensive-switch'>
-          <div className='switch-left  active'>
+        <div className='switch'>
+          <div className='switch-left'>
             One-Time Customised Investment Plan
           </div>
 
-          <div className='switch-right'>
+          <div className='switch-right active'>
             One-Time Comprehensive Financial Plan
           </div>
         </div>
@@ -63,51 +64,55 @@ const OneTimeComprehensivePlan = () => {
             </p>
 
             <div className='row mt-5'>
-              <div className='col-lg-4 col-md-4'>
+              <CardSlider>
+
+              <div className='col-4 columns'>
                 <ServiceCard
                   title='Personalised Consultation'
                   content='Schedule a one-on-one meeting with our financial experts to discuss your broader financial goals, risk tolerance, personal circumstances, and current financial landscape.'
                   color='light'
                   more={false}
-                  height='270px'
+                  height='290px'
                 />
+            
               </div>
-              <div className='col-lg-4 col-md-4'>
+              <div className='col-4 columns'>
                 <ServiceCard
                   title='Comprehensive Assessment'
                   content=' We take a deep dive into all aspects of your financial life, including assets, liabilities, income, expenses, tax considerations, estate and retirement plans to create a holistic financial plan.'
                   color='light'
                   more={false}
-                  height='270px'
+                  height='290px'
                 />
               </div>
-              <div className='col-lg-4 col-md-4'>
+              <div className='col-4 columns'>
                 <ServiceCard
                   title='Multi-faceted Financial Guidance'
                   content='Apart from investment guidance, we also provide actionable advice on debt management, retirement planning, tax optimisation, and estate planning/trust advisory.'
                   color='light'
                   more={false}
-                  height='270px'
+                  height='290px'
                 />
               </div>
-              <div className='col-lg-4 col-md-4'>
+              <div className='col-4 columns'>
                 <ServiceCard
                   title='Actionable Roadmap'
                   content='Our plan includes a step-by-step guide that outlines how to implement not just your investment plan but your overall financial strategy, complete with timelines and milestones.'
                   color='light'
                   more={false}
-                  height='270px'
+                  height='290px'
                 />
               </div>
-              <div className='col-lg-4 col-md-4'>
+              <div className='col-4 columns'>
                 <ServiceCard
                   title='Resource Kit'
                   content='Receive a comprehensive set of tools and resources like worksheets, checklists, and guides to assist you in implementing and tracking your comprehensive financial plan on your own.'
                   color='light'
                   more={false}
-                  height='270px'
+                  height='290px'
                 />
               </div>
+              </CardSlider>
             </div>
           </div>
         </div>
