@@ -20,17 +20,17 @@ const OurPricing = () => {
         <div className='price'>
           <div className='container'>
             <div className='row'>
-              <div className='col-3'>
+              <div className='col-12 col-md-6 col-lg-6 col-xl-3 mb-4'>
                 <PriceCard color='light' />
               </div>
-              <div className='col-3'>
+              <div className='col-12 col-md-6 col-lg-6 col-xl-3 mb-4'>
                 <PriceCard color='light' />
               </div>
 
-              <div className='col-3'>
+              <div className='col-12 col-md-6 col-lg-6 col-xl-3 mb-4'>
                 <PriceCard color='black' />
               </div>
-              <div className='col-3'>
+              <div className='col-12 col-md-6 col-lg-6 col-xl-3 mb-4'>
                 <PriceCard color='black' />
               </div>
             </div>
