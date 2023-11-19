@@ -6,7 +6,7 @@ type Props = {
   res: any;
 };
 
-const Sitemap = async ({ req, res }: Props) => {
+const Sitemap = async (req, res) => {
   // An array with your links
   const links = [
     { url: "/", changefreq: "daily", priority: 0.3 },
