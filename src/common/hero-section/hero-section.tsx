@@ -1,5 +1,6 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
+import AnimatedWrapper from "../animate/animateWrapper";
 
 interface Props {
   title: string;
@@ -10,21 +11,31 @@ interface Props {
 
 const HeroSection = (props: Props) => {
   return (
-    <div className='hero-section'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-7 hero-left'>
-            <div className='hero-left-box'>
-              <h1>{props.title}</h1>
-              <p>{props.content}</p>
-              {props.showbutton && <button>Schedule a call</button>}
+    <div className="hero-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-7 hero-left">
+            <div className="hero-left-box">
+              <AnimatedWrapper>
+                <h1>{props.title}</h1>
+              </AnimatedWrapper>
+
+              <AnimatedWrapper delay="500">
+                <p>{props.content}</p>
+              </AnimatedWrapper>
+
+              <AnimatedWrapper delay="800">
+                {props.showbutton && <button>Schedule a call</button>}
+              </AnimatedWrapper>
             </div>
           </div>
 
-          <div className='col-5 hero-right'>
-            <div className='hero-image'>
-              <Image src={props.image} alt='' width={100} height={100} />
-            </div>
+          <div className="col-5 hero-right">
+            <AnimatedWrapper delay="500">
+              <div className="hero-image">
+                <Image src={props.image} alt="" width={100} height={100} />
+              </div>
+            </AnimatedWrapper>
           </div>
         </div>
       </div>
