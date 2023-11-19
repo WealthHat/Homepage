@@ -6,14 +6,14 @@ const Blog = () => {
   return (
     <div className="blog">
       <div className="container">
-        <AnimatedWrapper delay="500">
+        <AnimatedWrapper>
           <div className="d-flex">
             <h1 className="explore">Explore insights</h1>
             <div className="dash"></div>
           </div>
         </AnimatedWrapper>
 
-        <AnimatedWrapper delay="800">
+        <AnimatedWrapper delay="300">
           <div className="row">
             <BlogCard />
             <BlogCard />

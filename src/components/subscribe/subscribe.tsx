@@ -7,14 +7,14 @@ const Subscribe = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-3 col-lg-5 col-md-6 bg">
-            <AnimatedWrapper delay="500">
+            <AnimatedWrapper>
               <div className="form-box">
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" placeholder="email@email.com" />
               </div>
             </AnimatedWrapper>
 
-            <AnimatedWrapper delay="800">
+            <AnimatedWrapper delay="300">
               <div className="row mt-3">
                 <div className="col-8 d-flex">
                   <p>For insights and articles</p>

@@ -10,11 +10,11 @@ interface Props {
 const Comprehensive = (props: Props) => {
   return (
     <div className="container comprehensive">
-      <AnimatedWrapper delay="300">
+      <AnimatedWrapper>
         <h1>{props.title}</h1>
       </AnimatedWrapper>
 
-      <AnimatedWrapper delay="500">
+      <AnimatedWrapper delay="300">
         <p>{props.subtitle}</p>
       </AnimatedWrapper>
 
