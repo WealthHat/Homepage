@@ -63,7 +63,7 @@
         
       }
 
-      button {
+      .button {
         @include buttons(black);
         border-radius: 0;
         width: 180px;
