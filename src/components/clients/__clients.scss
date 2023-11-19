@@ -3,5 +3,13 @@
 
   .client-center {
     margin-top: 75px;
+
+    .client-box {
+      padding: 0 20px;
+
+      @media (max-width: 575px) {
+        padding: 0;
+      }
+    }
   }
 }

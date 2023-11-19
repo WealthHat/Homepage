@@ -35,14 +35,10 @@ const Insights = () => {
             <BlogCard />
             <BlogCard />
             <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
           </div>
         </div>
 
-        <Subscribe/>
+        <Subscribe />
       </div>
     </Layout>
   );

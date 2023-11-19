@@ -1,211 +1,201 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import Heading from '@/components/heading/heading';
+import Image from 'next/image';
+import HeroSection from '@/common/hero-section/hero-section';
+import Comprehensive from '@/components/comprehensive';
+import MetaTags from '@/components/meta-tags';
+import CardSlider from '@/common/slick';
 
 const AboutUs = () => {
   return (
     <Layout>
+      <MetaTags title='About Us' description='About Us' />
       <div className='about-us'>
-        <div className='about-hero'>
-          <div className='container-fluid'>
-            <h1>About Us</h1>
+        <HeroSection
+          title='Why Choose WealtHat?'
+          content='WealthHat provides comprehensive wealth advisory and financial
+              planning services spanning investment advisory, tax advisory,
+              retirement planning, and wealth preservation to individuals,
+              families, and businesses. Our focus is always upon you and the
+              needs of your wealth.'
+          image='/images/about-hero.svg'
+          showbutton={true}
+        />
+
+        <div className='apart'>
+          <div className='container apart-container'>
+            <h1>What Sets Us Apart</h1>
             <p>
-              Private Wealth Solutions’ mission is to deliver innovative
-              solutions with exceptional service to advisors and their clients.
-              We are committed to helping more investors unlock differentiated
-              opportunities beyond traditional asset classes.
+              WealthHat is like no other. We take a distinctive approach to
+              serving our unique clients and their loved ones.
             </p>
-          </div>
-        </div>
 
-        <div className='who-we-are'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-3 left'>
-                <h3>Who we are</h3>
+            <div className='row apart-box box1'>
+              <div className='col-md-4 apart-card'>
+                <h3>Bridging the Gap with Goals-Based Planning</h3>
+                <small>
+                  At WealthHat, we believe in the power of goals-centered
+                  planning. Our approach begins with setting clear, achievable
+                  goals that align with your vision for the future. Whether
+                  you're planning for retirement, saving for your child's
+                  education, or building wealth over time, our team of expert
+                  advisors will work with you to bridge the gap between where
+                  you are today and where you want to be tomorrow.
+                </small>
               </div>
 
-              <div className='col-lg-7 right'>
-                <p>
-                  Driving capital to the world’s most impactful and compelling
-                  investments, leveraging our combination of talent, technology,
-                  analytics and global scale.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className='experience'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-6 left'>
-                <h3>A Firm with</h3>
-
-                <div className='d-flex align-items-center gap-3'>
-                  <i className='mt-3 bi bi-dash-lg'></i>
-                  <h3>experience</h3>
-                </div>
-                <h3>and vision</h3>
+              <div className='col-md-4 apart-card'>
+                <h3>Clarity Amidst Complexity and Steadying your Course</h3>
+                <small>
+                  Many financial planning challenges can be complex and
+                  daunting. We're here to help you navigate these complexities
+                  and achieve greater clarity and control over your financial
+                  future. Our team offers objective, independent advice tailored
+                  to your unique needs and objectives. We will work with you to
+                  steady your course and make informed decisions that align with
+                  your goals.
+                </small>
               </div>
 
-              <div className='col-lg-6 right'>
-                <p>
-                  We see ourselves as a forward looking group of passionate
-                  property professionals with the relevant experience to match.
-                  With varied backgrounds in construction, investment and
-                  development we have entrepreneurialism in our hearts and risk
-                  awareness in our heads.
-                </p>
-                <p>
-                  We see ourselves as a forward looking group of passionate
-                  property professionals with the relevant experience to match.
-                  With varied backgrounds in construction, investment and
-                  development we have entrepreneurialism in our hearts and risk
-                  awareness in our heads.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className='expertise'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-6 left'>
-                <div>
-                  <div className='d-flex align-items-end'>
-                    <h3>Our Expertise</h3>
-                    <i className='mt-3 bi bi-dash-lg'></i>
-                  </div>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
+              <div className='col-md-4 apart-card'>
+                <h3>Centralized Reporting and Dedication</h3>
+                <small>
+                  At WealthHat, we provide a centralized and unified reporting
+                  structure that offers greater visibility and transparency into
+                  your portfolio performance and progress. We are dedicated to
+                  offering world-class support to our clients and delivering
+                  consistent results that meet and exceed your expectations.
+                </small>
               </div>
 
-              <div className='col-lg-6 right'></div>
-            </div>
-          </div>
-        </div>
-
-        <div className='business'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col'>
-                <h3>100+ Business Financed</h3>
+              <div className='col-md-4 apart-card'>
+                <h3>Expertise in Every Niche and Depth Over Breadth</h3>
+                <small>
+                  Our team of expert advisors boasts a wealth of expertise
+                  across a broad range of financial areas. We believe in depth
+                  over breadth, focusing our resources on providing targeted,
+                  specialized advice tailored to your unique needs. Whether
+                  you're looking for investment advice, retirement planning
+                  strategies, or guidance on trusts and estates, we have the
+                  expertise to help you achieve your goals.
+                </small>
               </div>
 
-              <div className='col'>
-                <div>
-                  <h1>100M+</h1>
-                  <p>Active equity</p>
-                  <p>assets under management</p>
-                </div>
+              <div className='col-md-4 apart-card'>
+                <h3>Transparent Fees and Commitment</h3>
+                <small>
+                  We believe that clarity and transparency are essential
+                  components of any successful relationship. That's why we're
+                  committed to offering transparent fees and keeping you
+                  informed about the costs involved in our services. We are
+                  dedicated to building long-term relationships with our clients
+                  that are founded on mutual trust, respect, and commitment.
+                </small>
               </div>
 
-              <div className='col'>
-                <div>
-                  <h1>100M+</h1>
-                  <p>Active equity</p>
-                  <p>assets under management</p>
-                </div>
+              <div className='col-md-4 apart-card'>
+                <h3>A Fiduciary Approach and Your Dreams</h3>
+                <small>
+                  Our commitment to a fiduciary approach means that we always
+                  put our clients' interests first. We prioritize your needs,
+                  goals, and objectives above all else, ensuring that you always
+                  receive objective, independent advice that is tailored to your
+                  unique situation. You can trust us to act in your best
+                  interests in all situations, helping you to achieve your
+                  financial goals with confidence.
+                </small>
               </div>
             </div>
+
+              <div className='row apart-box box2'>
+            <CardSlider>
+                <div className='col-md-4 apart-card'>
+                  <h3>Bridging the Gap with Goals-Based Planning</h3>
+                  <small>
+                    At WealthHat, we believe in the power of goals-centered
+                    planning. Our approach begins with setting clear, achievable
+                    goals that align with your vision for the future. Whether
+                    you're planning for retirement, saving for your child's
+                    education, or building wealth over time, our team of expert
+                    advisors will work with you to bridge the gap between where
+                    you are today and where you want to be tomorrow.
+                  </small>
+                </div>
+
+                <div className='col-md-4 apart-card'>
+                  <h3>Clarity Amidst Complexity and Steadying your Course</h3>
+                  <small>
+                    Many financial planning challenges can be complex and
+                    daunting. We're here to help you navigate these complexities
+                    and achieve greater clarity and control over your financial
+                    future. Our team offers objective, independent advice
+                    tailored to your unique needs and objectives. We will work
+                    with you to steady your course and make informed decisions
+                    that align with your goals.
+                  </small>
+                </div>
+
+                <div className='col-md-4 apart-card'>
+                  <h3>Centralized Reporting and Dedication</h3>
+                  <small>
+                    At WealthHat, we provide a centralized and unified reporting
+                    structure that offers greater visibility and transparency
+                    into your portfolio performance and progress. We are
+                    dedicated to offering world-class support to our clients and
+                    delivering consistent results that meet and exceed your
+                    expectations.
+                  </small>
+                </div>
+
+                <div className='col-md-4 apart-card'>
+                  <h3>Expertise in Every Niche and Depth Over Breadth</h3>
+                  <small>
+                    Our team of expert advisors boasts a wealth of expertise
+                    across a broad range of financial areas. We believe in depth
+                    over breadth, focusing our resources on providing targeted,
+                    specialized advice tailored to your unique needs. Whether
+                    you're looking for investment advice, retirement planning
+                    strategies, or guidance on trusts and estates, we have the
+                    expertise to help you achieve your goals.
+                  </small>
+                </div>
+
+                <div className='col-md-4 apart-card'>
+                  <h3>Transparent Fees and Commitment</h3>
+                  <small>
+                    We believe that clarity and transparency are essential
+                    components of any successful relationship. That's why we're
+                    committed to offering transparent fees and keeping you
+                    informed about the costs involved in our services. We are
+                    dedicated to building long-term relationships with our
+                    clients that are founded on mutual trust, respect, and
+                    commitment.
+                  </small>
+                </div>
+
+                <div className='col-md-4 apart-card'>
+                  <h3>A Fiduciary Approach and Your Dreams</h3>
+                  <small>
+                    Our commitment to a fiduciary approach means that we always
+                    put our clients' interests first. We prioritize your needs,
+                    goals, and objectives above all else, ensuring that you
+                    always receive objective, independent advice that is
+                    tailored to your unique situation. You can trust us to act
+                    in your best interests in all situations, helping you to
+                    achieve your financial goals with confidence.
+                  </small>
+                </div>
+            </CardSlider>
+              </div>
           </div>
         </div>
 
-        <div className='process'>
-          <Heading
-            title='Our Process'
-            content='WealthHat is the world’s largest alternative asset manager, with $1 trillion in AUM. We serve institutional and individual investors by building strong businesses '
+        <div className='comprehensive-services'>
+          <Comprehensive
+            title='Different Needs, Different Plans'
+            subtitle='We customize our wealth offering to the objectives of you and your family'
           />
-
-          <div className='container process-container'>
-            <div className='row'>
-              <div className='col-lg-6 left'>
-                <div className='left-box'>
-                  <h3>Agility</h3>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
-                <div className='left-box'>
-                  <h3>Agility</h3>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
-                <div className='left-box'>
-                  <h3>Agility</h3>
-                  <p>
-                    We see ourselves as a forward looking group of passionate
-                    property professionals with the relevant experience to
-                    match. With varied backgrounds in construction, investment
-                    and development we have entrepreneurialism in our hearts and
-                    risk awareness in our heads.
-                  </p>
-                </div>
-              </div>
-
-              <div className='col-lg-6 right'></div>
-            </div>
-          </div>
-        </div>
-
-        <div className='pricing'>
-          <Heading
-            title='Our Pricing'
-            content='WealthHat is the world’s largest alternative asset manager, with $1 trillion in AUM. We serve institutional and individual investors by building strong businesses '
-          />
-
-          <div className='container'>
-            <div className='pricing-box'>
-              <div className='top'>Get a premium subscription</div>
-
-              <h2>Go Premium for as little as N6,500 a month</h2>
-
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-                Receive five new exclusive articles every week
-              </div>
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-                Receive our popular daily and weekly newsletters
-              </div>
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-               Unlimited access to 1000+ exclusive articles
-              </div>
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-                Unlimited access to 1000+ exclusive articles
-              </div>
-              <div className='box'>
-                <i className='bi bi-check-lg'></i>
-                Unlimited access to 1000+ exclusive articles
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </Layout>

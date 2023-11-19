@@ -1,28 +1,27 @@
-import Layout from '@/components/Layout'
-import Blog from '@/components/blog/blog'
-import MetaTags from '@/components/meta-tags'
-import Subscribe from '@/components/subscribe/subscribe'
-import React from 'react'
+import Layout from '@/components/Layout';
+import Blog from '@/components/blog/blog';
+import MetaTags from '@/components/meta-tags';
+import Subscribe from '@/components/subscribe/subscribe';
+import React from 'react';
 import Image from 'next/image';
-import LinkedIn from '@/svgs/linkedin'
-import Twitter from '@/svgs/twitter'
-import Facebook from '@/svgs/facebook'
-import Instagram from '@/svgs/instagram'
-import GoBack from '@/common/go-back'
+import LinkedIn from '@/svgs/linkedin';
+import Twitter from '@/svgs/twitter';
+import Facebook from '@/svgs/facebook';
+import Instagram from '@/svgs/instagram';
+import GoBack from '@/common/go-back';
 
 const BlogDetails = () => {
   return (
     <Layout>
-      <MetaTags title='Article' description='Single article' />
+      <MetaTags title='Article' description='Read Article' />
       <div className='article'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6 article-left'>
               <div className='d-flex align-items-center gap-3'>
-                <p>
-
-                <GoBack />
-                </p>
+                <div>
+                  <GoBack />
+                </div>
                 <p> 22 Aug, 2023</p>
                 <p>2 mins</p>
               </div>
@@ -113,6 +112,6 @@ const BlogDetails = () => {
       <Subscribe />
     </Layout>
   );
-}
+};
 
-export default BlogDetails
+export default BlogDetails;

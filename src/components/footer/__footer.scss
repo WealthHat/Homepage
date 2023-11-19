@@ -40,6 +40,7 @@ padding-bottom:50px;
     .content {
       @include body-text($font-16, 400, $white);
       line-height: 30px;
+      margin-bottom:20px;
 
       @media (min-width:1240px){
 width: 70%;

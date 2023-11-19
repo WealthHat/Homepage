@@ -1,47 +1,38 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import PriceCard from '@/common/price-card';
-
+import HeroSection from '@/common/hero-section/hero-section';
+import MetaTags from '@/components/meta-tags';
 
 const OurPricing = () => {
-
-  // 
+  //
   return (
     <Layout>
+      <MetaTags title='Our Pricing' description='Our Pricing ' />
       <div className='our-pricing'>
-        <div className='pricing-hero'>
-          <div className='container-fluid'>
-            <h1>Our Pricing</h1>
-            <p>
-              Private Wealth Solutions’ mission is to deliver innovative
-              solutions with exceptional service to advisors and their clients.
-              We are committed to helping more investors unlock differentiated
-              opportunities beyond traditional asset classes.
-            </p>
-          </div>
-        </div>
+        <HeroSection
+          title='Our Pricing'
+          content='Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth.'
+          image='/images/about-hero.svg'
+          showbutton={true}
+        />
 
         <div className='price'>
           <div className='container'>
             <div className='row'>
-              <div className="col-3">
-
-              <PriceCard color="light"/>
+              <div className='col-12 col-md-6 col-lg-6 col-xl-3 mb-4'>
+                <PriceCard color='light' />
               </div>
-              <div className="col-3">
-
-              <PriceCard color="light"/>
+              <div className='col-12 col-md-6 col-lg-6 col-xl-3 mb-4'>
+                <PriceCard color='light' />
               </div>
 
-              <div className="col-3">
-
-              <PriceCard color="black"/>
+              <div className='col-12 col-md-6 col-lg-6 col-xl-3 mb-4'>
+                <PriceCard color='black' />
               </div>
-              <div className="col-3">
-
-              <PriceCard color="black"/>
+              <div className='col-12 col-md-6 col-lg-6 col-xl-3 mb-4'>
+                <PriceCard color='black' />
               </div>
-              
             </div>
           </div>
         </div>

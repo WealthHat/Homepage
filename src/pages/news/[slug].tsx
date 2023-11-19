@@ -1,7 +1,8 @@
+import React from 'react';
 import NewsCard from '@/common/news-card';
 import Layout from '@/components/Layout';
 import MetaTags from '@/components/meta-tags';
-import React from 'react';
+import GoBack from '@/common/go-back';
 
 const NewsDetails = () => {
   return (
@@ -11,8 +12,9 @@ const NewsDetails = () => {
       <div className='news-details'>
         <div className='container'>
           <small>
-            {/* <GoBack/> */}
-            28 Jul 2023</small>
+            <GoBack />
+            28 Jul 2023
+          </small>
           <h1>
             WealthHat and Creative Planning Announce Agreement to Acquire
             WealthHat Personal Financial Management Business
