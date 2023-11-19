@@ -2,13 +2,8 @@ import "@/styles/styles.scss";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 import { useEffect } from "react";
-import Aos from "aos";
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    Aos.init({ duration: 600 });
-  }, []);
-
   return (
     <>
       <Script
