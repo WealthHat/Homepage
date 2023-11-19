@@ -13,6 +13,7 @@ const CardSlider = ({ children }: Props) => {
     slidesToShow: 3,
     slidesToScroll: 2,
     initialSlide: 0,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1200,
@@ -28,15 +29,14 @@ const CardSlider = ({ children }: Props) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+           infinite: true,
         },
       },
     ],
   };
 
   return (
-    <div>
       <Slider {...settings}>{children}</Slider>
-    </div>
   );
 };
 

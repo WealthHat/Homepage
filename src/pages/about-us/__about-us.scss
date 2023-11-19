@@ -1,4 +1,6 @@
 .about-us {
+  overflow-x: hidden;
+
   .apart {
     background: $background-color;
     padding: 40px 10px;
@@ -68,6 +70,10 @@
         @media (max-width: 991px) {
           height: 400px;
           border: 2px solid $border-color !important;
+        }
+
+        @media (max-width: 500px) {
+          height: 100%;
         }
 
         &:nth-child(3) {
