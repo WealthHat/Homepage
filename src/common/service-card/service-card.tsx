@@ -35,7 +35,7 @@ const ServiceCard = ({ title, content, color, more, height }: CardType) => {
         {content}
       </p>
 
-      {more && <small>Read More</small>}
+      {/* {more && <small>Read More</small>} */}
     </div>
   );
 };
