@@ -16,7 +16,7 @@ const AnimatedWrapper = ({
   }, [duration]);
 
   return (
-    <div data-aos={type} data-aos-delay={delay}>
+    <div data-aos={type} data-aos-once="true" data-aos-delay={delay}>
       {children}
     </div>
   );
