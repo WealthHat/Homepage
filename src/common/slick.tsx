@@ -1,7 +1,11 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
 
-const CardSlider = ({ children }: any) => {
+type Props = {
+  children: string | JSX.Element | JSX.Element[];
+};
+
+const CardSlider = ({ children }: Props) => {
   var settings = {
     dots: true,
     infinite: false,
