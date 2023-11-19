@@ -1,0 +1,12 @@
+.schedule {
+  padding-top: 60px;
+
+  @media (max-width: 650px) {
+    padding-top: 100px;
+  }
+
+  .calendly-inline-widget {
+    height: 100vh;
+    min-width: 320px;
+  }
+}
