@@ -8,5 +8,9 @@
   .calendly-inline-widget {
     height: 100vh;
     min-width: 320px;
+
+    &::-webkit-scrollbar {
+      display: none!important;
+    }
   }
 }

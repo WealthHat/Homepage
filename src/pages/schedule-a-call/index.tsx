@@ -14,11 +14,7 @@ const Schedule = (props: Props) => {
     <Layout>
       <div className="schedule">
         <InlineWidget url="https://calendly.com/alayosingers/wealthhat" />
-        {/* <div
-          className="calendly-inline-widget"
-          data-url="https://calendly.com/alayosingers/wealthhat"
-          //   style={{ minWidth: "320px", height: "100vh" }}
-        /> */}
+       
       </div>
     </Layout>
   );

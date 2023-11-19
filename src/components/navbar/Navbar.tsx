@@ -41,7 +41,7 @@ const Navbar = () => {
                 setNavOne(true), setNavTwo(false), setNavThree(false);
               }}
             >
-              <Link href="/">The Firm</Link>
+              The Firm
               <i className="bi bi-chevron-down"></i>
             </li>
             <li
@@ -49,7 +49,7 @@ const Navbar = () => {
                 setNavTwo(true), setNavOne(false), setNavThree(false);
               }}
             >
-              <Link href="/">What we do</Link>
+              What we do
               <i className="bi bi-chevron-down"></i>
             </li>
             <li
@@ -57,7 +57,7 @@ const Navbar = () => {
                 setNavTwo(false), setNavOne(false), setNavThree(true);
               }}
             >
-              <Link href="/">Insights</Link>
+              Insights
               <i className="bi bi-chevron-down"></i>
             </li>
             <li
