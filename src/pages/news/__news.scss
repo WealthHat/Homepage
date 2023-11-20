@@ -1,4 +1,6 @@
 .news {
+  overflow-x:hidden;
+  
   .news-body {
     padding: 100px 10px;
 
@@ -86,6 +88,10 @@
 // news details
 .news-details {
   padding: 180px 0px 150px 0px;
+
+  @media (max-width:500px){
+    padding-top:130px;
+  }
 
   small {
     @include body-text($font-16, 400, $text-color);

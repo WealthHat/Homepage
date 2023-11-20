@@ -25,7 +25,7 @@ const ClientCard = ({ title, content, color }: CardType) => {
       </h2>
       <p>{content}</p>
 
-      <small>Read More</small>
+      {/* <small>Read More</small> */}
     </div>
   );
 };

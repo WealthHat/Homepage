@@ -2,8 +2,28 @@ import React from "react";
 import Heading from "../heading/heading";
 import CircleArrow from "@/svgs/circle-arrow";
 import AnimatedWrapper from "@/common/animate/animateWrapper";
+import { useRouter } from "next/router";
 
 const Firm = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push({
+      pathname: "/readmore",
+      query: {
+        title: "Growing and Preserving Wealth",
+        content: `WealthHat is a leading wealth advisory and financial planning
+                firm, with $100M+ in Assets under Advisement (AuA). With our
+                unwavering commitment to precision and purpose, we specialize in
+                offering comprehensive wealth advisory & financial planning
+                services to high net-worth individuals, families, and
+                businesses. Our extensive expertise allows us to serve our
+                clients with utmost conviction.`,
+      },
+    });
+  };
+
+  //
   return (
     <div className="firm">
       <Heading title="The firm" subtitle="Fiduciary. Expertise. Trust" />
@@ -28,7 +48,7 @@ const Firm = () => {
             </AnimatedWrapper>
 
             <AnimatedWrapper>
-              <div className="readmore">
+              <div className="readmore" onClick={handleClick}>
                 <span>Read more</span>
                 <CircleArrow />
               </div>
