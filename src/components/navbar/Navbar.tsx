@@ -254,7 +254,7 @@ const Navbar = () => {
                 <div className="drop-right">
                   <div className="accordion-body fw-bolder">Who We Serve</div>
                   <div className="accordion-body">
-                    <Link href="/ultra-hight-networth">
+                    <Link href="/ultra-high-networth">
                       Ultra High Net Worth & High Net Worth Individuals
                     </Link>
                   </div>
@@ -316,7 +316,12 @@ const Navbar = () => {
             </button>
           </li>
 
-          <li onClick={() => setShowNav(false)} className="accordion-item">
+          <li
+            onClick={() => {
+              router.push("/schedule-a-call"), setShowNav(false);
+            }}
+            className="accordion-item"
+          >
             <button className="accordion-button collapsed">
               Schedule a call
             </button>
