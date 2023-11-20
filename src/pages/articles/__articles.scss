@@ -13,7 +13,7 @@
     flex-direction: column;
 
     h1 {
-      @include heading($font-42, 500);
+      @include heading($font-42, 700);
       font-family: $secondary-font;
       line-height: 60px;
       margin-bottom: 18px;
@@ -34,11 +34,25 @@
       @include body-text($font-12, 400, $orange-color);
       text-transform: uppercase;
     }
+
+    .hero-footer{
+      display:flex;
+      align-items:center;
+      
+      @media (max-width:425px){
+        flex-direction:column;
+        align-items:flex-start
+      }
+    }
   }
 
   .article-right {
     height: 100vh;
     padding-top: 80px;
+
+    @media (max-width:991px){
+      display:none;
+    }
 
     img {
       // margin-top:150px;
@@ -52,6 +66,8 @@
 .summary {
   background: $background-color;
   padding-bottom: 80px;
+  padding-left:10px;
+  padding-right:10px;
 
   .summary-box {
     background: $white;
@@ -123,8 +139,18 @@
         width: 100%;
       }
 
+      @media (max-width:425px){
+        flex-direction:column;
+        align-items:flex-start;
+
+      }
+
       small {
         @include body-text($font-16, 400, $text-color);
+
+        @media (max-width:425px){
+          margin-bottom:20px;
+        }
       }
 
       .social-box {

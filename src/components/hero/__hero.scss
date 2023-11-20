@@ -47,7 +47,7 @@
     }
 
     h1 {
-      @include heading($font-40, 500, $white);
+      @include heading($font-42, 700, $white);
       font-family: $secondary-font;
       line-height: 60px;
       margin-bottom: 22px;
