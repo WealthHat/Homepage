@@ -13,8 +13,7 @@ const Schedule = (props: Props) => {
   return (
     <Layout>
       <div className="schedule">
-        <InlineWidget url="https://calendly.com/alayosingers/wealthhat" />
-       
+        <InlineWidget url="https://calendly.com/wealthhat?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=1a1a1a" />
       </div>
     </Layout>
   );

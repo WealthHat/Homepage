@@ -18,12 +18,19 @@ const BlogDetails = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 article-left">
-              <div className="d-flex align-items-center gap-3">
+              <div className="d-flex align-items-center gap-3 bg-danger">
                 <div>
                   <GoBack />
                 </div>
+                <div>
+
                 <p> 22 Aug, 2023</p>
+                </div>
+
+                <div>
+
                 <p>2 mins</p>
+                </div>
               </div>
               <h1>How are family offices positioning their portfolios?</h1>
 
