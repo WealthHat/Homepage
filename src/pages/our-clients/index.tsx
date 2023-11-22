@@ -6,8 +6,11 @@ import HeroSection from "@/common/hero-section/hero-section";
 import MetaTags from "@/components/meta-tags";
 import CardSlider from "@/common/slick";
 import AnimatedWrapper from "@/common/animate/animateWrapper";
+import { useRouter } from "next/router";
 
 const OurClients = () => {
+  const router = useRouter();
+
   return (
     <Layout>
       <MetaTags title="Our Clients" description="Our Clients" />
@@ -196,9 +199,14 @@ const OurClients = () => {
 
                 <AnimatedWrapper delay="700">
                   <div className="button-container">
-                    <button className="button">Become a client</button>
+                    <button
+                      className="button"
+                      onClick={() => router.push("/schedule-a-call")}
+                    >
+                      Become a client
+                    </button>
 
-                    <button className="button">Contact us</button>
+                    {/* <button className="button">Contact us</button> */}
                   </div>
                 </AnimatedWrapper>
               </div>

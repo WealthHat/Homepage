@@ -36,10 +36,6 @@ const News = () => {
           <AnimatedWrapper>
             <div>
               <NewsCard />
-              <NewsCard />
-              <NewsCard />
-              <NewsCard />
-              <NewsCard />
             </div>
           </AnimatedWrapper>
         </div>
