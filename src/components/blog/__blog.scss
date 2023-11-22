@@ -64,6 +64,7 @@
 
       p {
         @include body-text($font-12, 400, $black);
+        text-transform:uppercase;
       }
     }
   }

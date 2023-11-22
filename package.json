@@ -21,6 +21,7 @@
     "react-bootstrap": "^2.9.0",
     "react-calendly": "^4.3.0",
     "react-dom": "18.2.0",
+    "react-share": "^5.0.2",
     "react-slick": "^0.29.0",
     "sass": "^1.68.0",
     "sitemap": "^7.1.1",

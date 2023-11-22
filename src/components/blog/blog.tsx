@@ -1,6 +1,7 @@
 import React from "react";
 import BlogCard from "./blogcard";
 import AnimatedWrapper from "@/common/animate/animateWrapper";
+import { blogs } from "@/constant/blogs";
 
 const Blog = () => {
   return (
@@ -15,10 +16,9 @@ const Blog = () => {
 
         <AnimatedWrapper delay="300">
           <div className="row">
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            {blogs.map((item, index) => {
+              return <BlogCard key={index} {...item}/>;
+            })}
           </div>
         </AnimatedWrapper>
       </div>
