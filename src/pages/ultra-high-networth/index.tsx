@@ -6,8 +6,12 @@ import Blog from "@/components/blog/blog";
 import Subscribe from "@/components/subscribe/subscribe";
 import MetaTags from "@/components/meta-tags";
 import AnimatedWrapper from "@/common/animate/animateWrapper";
+import { useRouter } from "next/router";
 
 const UltraHighNetworth = () => {
+  const router = useRouter();
+
+  //
   return (
     <Layout>
       <MetaTags title="High networth" description="High networth" />
@@ -87,7 +91,9 @@ const UltraHighNetworth = () => {
                     we're committed to helping you reach your wealth goals.`}
                     </p>
 
-                    <button>Schedule a call</button>
+                    <button onClick={() => router.push("/schedule-a-call")}>
+                      Schedule a call
+                    </button>
                   </div>
                 </div>
               </div>

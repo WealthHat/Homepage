@@ -3,7 +3,7 @@
   height: 100vh;
   width: 100%;
   // margin-top:80px;
-  overflow-x:hidden;
+  overflow-x: hidden;
 
   .article-left {
     height: 100vh;
@@ -21,7 +21,6 @@
 
     p {
       @include body-text($font-18, 400, $text-color);
-      margin-bottom: 10px;
       text-transform: uppercase;
     }
 
@@ -35,23 +34,24 @@
       text-transform: uppercase;
     }
 
-    .hero-footer{
-      display:flex;
-      align-items:center;
-      
-      @media (max-width:425px){
-        flex-direction:column;
-        align-items:flex-start
+    .hero-footer {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 425px) {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   }
 
   .article-right {
     height: 100vh;
-    padding-top: 80px;
+    display: flex;
+    align-items: center;
 
-    @media (max-width:991px){
-      display:none;
+    @media (max-width: 991px) {
+      display: none;
     }
 
     img {
@@ -66,8 +66,8 @@
 .summary {
   background: $background-color;
   padding-bottom: 80px;
-  padding-left:10px;
-  padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   .summary-box {
     background: $white;
@@ -78,15 +78,15 @@
     }
 
     h2 {
-      @include heading($font-16, 600);
+      @include heading(17px, 600);
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     p {
-      @include body-text($font-16, 400, $text-color);
+      @include body-text(16px, 400, $text-color);
       line-height: 30px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     .download-box {
@@ -95,7 +95,7 @@
       justify-content: space-between;
       width: 600px;
       margin: 0 auto;
-     
+      margin-top: 50px;
 
       @media (max-width: 767px) {
         width: 100%;
@@ -108,7 +108,7 @@
         height: 50px;
         width: 90%;
         background: $background-color;
-         padding-left:10px;
+        padding-left: 10px;
       }
 
       .download-box-right {
@@ -139,17 +139,16 @@
         width: 100%;
       }
 
-      @media (max-width:425px){
-        flex-direction:column;
-        align-items:flex-start;
-
+      @media (max-width: 425px) {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
       small {
         @include body-text($font-16, 400, $text-color);
 
-        @media (max-width:425px){
-          margin-bottom:20px;
+        @media (max-width: 425px) {
+          margin-bottom: 20px;
         }
       }
 

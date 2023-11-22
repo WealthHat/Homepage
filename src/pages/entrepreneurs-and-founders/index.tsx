@@ -6,8 +6,10 @@ import Blog from "@/components/blog/blog";
 import Subscribe from "@/components/subscribe/subscribe";
 import MetaTags from "@/components/meta-tags";
 import AnimatedWrapper from "@/common/animate/animateWrapper";
+import { useRouter } from "next/router";
 
 const Entrepreneurs = () => {
+  const router = useRouter();
   return (
     <Layout>
       <MetaTags
@@ -103,7 +105,9 @@ const Entrepreneurs = () => {
                     helping you achieve them.`}
                     </p>
 
-                    <button>Schedule a call</button>
+                    <button onClick={() => router.push("/schedule-a-call")}>
+                      Schedule a call
+                    </button>
                   </div>
                 </div>
               </div>

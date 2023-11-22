@@ -22,7 +22,7 @@ const FooterIcons = () => {
         </svg>
       </a>
 
-      <a href={process.env.NEXT_PUBLIC_INSTAGRAM_URL} rel='noreferrer'>
+      <a href={process.env.NEXT_PUBLIC_INSTAGRAM_URL} target='_blank' rel='noreferrer'>
         <svg
           width='22'
           height='23'

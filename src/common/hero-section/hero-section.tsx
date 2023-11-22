@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import AnimatedWrapper from "../animate/animateWrapper";
+import { useRouter } from "next/router";
 
 interface Props {
   title: string;
@@ -10,6 +11,9 @@ interface Props {
 }
 
 const HeroSection = (props: Props) => {
+  const router = useRouter();
+
+  //
   return (
     <div className="hero-section">
       <div className="container">
@@ -25,7 +29,11 @@ const HeroSection = (props: Props) => {
               </AnimatedWrapper>
 
               <AnimatedWrapper delay="800">
-                {props.showbutton && <button>Schedule a call</button>}
+                {props.showbutton && (
+                  <button onClick={() => router.push("/schedule-a-call")}>
+                    Schedule a call
+                  </button>
+                )}
               </AnimatedWrapper>
             </div>
           </div>
