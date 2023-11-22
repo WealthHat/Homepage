@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import BlogCard from "@/components/blog/blogcard";
 import MetaTags from "@/components/meta-tags";
 import Subscribe from "@/components/subscribe/subscribe";
+import { blogs } from "@/constant/blogs";
 import Filter from "@/svgs/filter";
 import React from "react";
 
@@ -37,13 +38,11 @@ const Insights = () => {
 
         <div className="container blogs">
           <AnimatedWrapper>
-
-          <div className="row">
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-          </div>
+            <div className="row">
+              {blogs.map((item, index) => {
+                return <BlogCard key={index} {...item} />;
+              })}
+            </div>
           </AnimatedWrapper>
         </div>
 
