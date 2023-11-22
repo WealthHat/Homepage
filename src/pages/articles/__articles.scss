@@ -47,7 +47,8 @@
 
   .article-right {
     height: 100vh;
-    padding-top: 80px;
+    display: flex;
+    align-items: center;
 
     @media (max-width: 991px) {
       display: none;
@@ -94,7 +95,7 @@
       justify-content: space-between;
       width: 600px;
       margin: 0 auto;
-      margin-top:50px;
+      margin-top: 50px;
 
       @media (max-width: 767px) {
         width: 100%;

@@ -11,6 +11,9 @@ import Instagram from "@/svgs/instagram";
 import GoBack from "@/common/go-back";
 import { useRouter } from "next/router";
 import { blogs } from "@/constant/blogs";
+import DownloadArticle from "@/common/download";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import AnimatedWrapper from "@/common/animate/animateWrapper";
 
 const BlogDetails = () => {
   const router = useRouter();
@@ -33,14 +36,18 @@ const BlogDetails = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 article-left">
-              <div className="d-flex align-items-center gap-3 mb-2">
-                <GoBack />
+              <AnimatedWrapper>
+                <div className="d-flex align-items-center gap-3 mb-2">
+                  <GoBack />
+                  <p>{blog?.date}</p>
 
-                <p>{blog?.date}</p>
+                  <p>{blog?.time}</p>
+                </div>
+              </AnimatedWrapper>
 
-                <p>{blog?.time}</p>
-              </div>
-              <h1>{blog?.one?.title}</h1>
+              <AnimatedWrapper delay="300">
+                <h1>{blog?.one?.title}</h1>
+              </AnimatedWrapper>
 
               {/* <div className="hero-footer gap-4">
                 <small>Samuel BABAJIDE </small>
@@ -49,12 +56,14 @@ const BlogDetails = () => {
             </div>
 
             <div className="col-lg-6 article-right">
-              <Image
-                src="/images/article-hero.svg"
-                alt="hero"
-                width={100}
-                height={100}
-              />
+              <AnimatedWrapper delay="400">
+                <Image
+                  src="/images/article-hero.svg"
+                  alt="hero"
+                  width={100}
+                  height={100}
+                />
+              </AnimatedWrapper>
             </div>
           </div>
         </div>
@@ -87,16 +96,26 @@ const BlogDetails = () => {
 
               <div className="download-box">
                 <div className="download-box-left">
-                  <small>Family Office Investment Report (PDF 1MB)</small>
+                  <small>{blog?.one?.title}</small>
                 </div>
 
                 <div className="download-box-right">
-                  <Image
-                    src="/images/download-image.svg"
-                    alt="hero"
-                    width={100}
-                    height={100}
-                  />
+                  {blog && (
+                    <PDFDownloadLink
+                      document={<DownloadArticle blog={blog} />}
+                      fileName={blog?.one?.title + ".pdf"}
+                      className="button"
+                    >
+                      {() => (
+                        <Image
+                          src="/images/download-image.svg"
+                          alt="hero"
+                          width={100}
+                          height={100}
+                        />
+                      )}
+                    </PDFDownloadLink>
+                  )}
                 </div>
               </div>
 
