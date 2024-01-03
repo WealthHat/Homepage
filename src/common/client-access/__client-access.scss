@@ -1,0 +1,29 @@
+.client-access-modal{
+width: 100%;
+  max-width: 80vw;
+  margin-top:60px;
+}
+
+.client-access{
+      height:80vh;
+      width:100%;
+      overflow:hidden!important;
+       border-radius:none!important;
+
+      .client-left{
+            height:80vh;
+            background:$black;
+
+            .left-box{
+                  h1{
+                        @include heading($font-36, 400, $white);
+                        margin-bottom:35px;
+                  }
+            }
+      }
+
+      .client-right{
+            height:80vh;
+            background:$white;
+      }
+}

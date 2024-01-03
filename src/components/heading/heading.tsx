@@ -1,22 +1,32 @@
-import React from 'react'
+import AnimatedWrapper from "@/common/animate/animateWrapper";
+import React from "react";
 
 type Interface = {
-    title:string,
-    subtitle:string,
-    content?:string
-}
+  title?: string;
+  subtitle?: string;
+  content?: string;
+};
 
-const Heading = ({title, subtitle, content} : Interface) => {
+const Heading = ({ title, subtitle, content }: Interface) => {
   return (
-    <div className='heading'>
-      <div className='dash'></div>
-      <small>{title}</small>
-      <h1>{subtitle}</h1>
-      <p>
-        {content}
-      </p>
+    <div className="heading">
+      <AnimatedWrapper>
+        <div className="dash"></div>
+      </AnimatedWrapper>
+
+      <AnimatedWrapper delay="500">
+        <small>{title}</small>
+      </AnimatedWrapper>
+
+      <AnimatedWrapper delay="800">
+        <h1>{subtitle}</h1>
+      </AnimatedWrapper>
+
+      <AnimatedWrapper delay="800">
+        <p>{content}</p>
+      </AnimatedWrapper>
     </div>
   );
-}
+};
 
-export default Heading
+export default Heading;

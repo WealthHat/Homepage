@@ -1,28 +1,35 @@
 .services-card {
-  width: 430px;
+  // width: ;
   border-radius: 5px;
   background: $white;
   padding: 30px 20px;
   cursor: pointer;
-  position:relative;
-  height:380px;
+  position: relative;
+  height: 380px;
+  margin-bottom: 20px;
+
+  @media (max-width: 450px) {
+    height: 100% !important;
+    padding: 30px 10px;
+  }
 
   h2 {
     @include heading($font-22, 400);
     margin-bottom: 21px;
     font-family: $secondary-font;
+    line-height: 30px;
   }
 
   p {
     margin-bottom: 90px;
-    line-height:25px;
+    line-height: 25px;
+    font-size: 16px !important;
   }
 
   small {
-    position:absolute;
-    bottom:10%;
-    left:5%;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
     text-decoration: underline;
   }
-  
 }

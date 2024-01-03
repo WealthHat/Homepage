@@ -1,46 +1,47 @@
+.heading {
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
 
-    .heading{
-        width:100%;
-        text-align:center;
-        padding:0 10px;
+  .dash {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 50px;
+    background: $black;
+    height: 3px !important;
+  }
 
-        .dash{
-            margin:0 auto;
-            margin-bottom:20px;
-            width:50px;
-            background:$black;
-            height:3px!important;
-        }
-        
-        small{
-            @include body-text($font-16, 400, $black);
-            margin-bottom:48px;
-            display:block;
-            text-transform:uppercase;
-        }
+  small {
+    @include body-text($font-16, 400, $black);
+    margin-bottom: 38px;
+    display: block;
+    text-transform: uppercase;
+  }
 
-        h1{
-            @include heading($font-44, 400, $black);
-            margin-bottom:15px;
-            font-family:$secondary-font;
+  h1 {
+    @include heading($font-44, 400, $black);
+    margin-bottom: 15px;
+    font-family: $secondary-font;
 
-            @media (max-width:767px){
-                font-size:$font-40;
-            }
-
-            @media (max-width:500px){
-                font-size:$font-32;
-            }
-        }
-
-        p{
-              @include body-text($font-16, 400, $black);
-              margin:0 auto;
-              
-              
-              @media (min-width:1240px){
-                width:60%;
-
-            }
-        }
+    @media (max-width: 767px) {
+      font-size: $font-40;
     }
+
+    @media (max-width: 500px) {
+      font-size: $font-32;
+    }
+  }
+
+  p {
+    @include body-text(16px, 400, $black);
+    margin: 0 auto;
+
+    @media (min-width: 1240px) {
+      width: 90%;
+    }
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+}

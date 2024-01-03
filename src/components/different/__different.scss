@@ -2,71 +2,63 @@
   padding: 80px 0;
   background: $background-color;
 
+
   .different-center {
     margin-top: 75px;
 
     .table-container {
-      padding:0 50px;
-
-      @media (min-width:1240px){
-         padding:0 150px;
-      }
-
-      @media (max-width:768px){
-        padding:0 10px;
-      }
-
-      @media (max-width:600px){
-        overflow-x:scroll;
+      @media (max-width: 600px) {
+        overflow-x: scroll;
       }
 
       table {
         margin-bottom: 0;
-        width: 100% !important;
-        border:8px solid $border-color;
-        border-radius:10px!important;
+        // width: 100% !important;
+        border: 8px solid $border-color;
+        border-radius: 10px !important;
 
-        @media (max-width:600px){
-          width:750px!important;
+        @media (max-width: 600px) {
+          width: 750px !important;
           // display:none;
         }
 
         th {
-          @include body-text(16px, 600, $text-color);
+          @include body-text(16px, 400, $text-color);
           padding: 20px 10px;
-          text-align:center;
-          width:15%;
+          text-align: center;
+          width: 15%;
 
-          &:first-child{
-            width:30%;
+          &:first-child {
+            width: 30%;
           }
 
-          &.white{
-            background:$white;
+          &.white {
+            background: $white;
           }
         }
 
         tr {
           border-bottom: 1px solid $border-color;
-        
 
           td {
             @include body-text(16px, 400, $text-color);
-             padding: 20px;
-             background:$background-color;
-             
-             &.check{
-              text-align:center;
-             }
+            padding: 20px;
+            background: $background-color;
 
-             &.white{
-            background:$white;
+            @media (max-width: 991px) {
+              padding: 20px 10px;
+            }
 
-          }
-          .bi{
-            font-size:$font-20
-          }
+            &.check {
+              text-align: center;
+            }
 
+            &.white {
+              background: $white;
+            }
+            .bi {
+              font-size: $font-20;
+            }
           }
         }
       }

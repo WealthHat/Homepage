@@ -1,0 +1,116 @@
+.our-pricing {
+  overflow-x:hidden;
+
+  .price {
+    background: #f2f6f7;
+    padding: 80px 0;
+
+    .price-box-white {
+      background: $white;
+      height: 700px;
+      padding: 30px;
+      border-radius: 10px;
+      position: relative;
+
+      @media (max-width: 400px) {
+        padding: 30px 10px;
+        height: 750px;
+      }
+
+      .dash {
+        margin-bottom: 27px;
+        height: 7px;
+        border-radius: 50px;
+        width: 100%;
+        background: $black;
+      }
+
+      h3 {
+        @include heading($font-20, 400);
+        margin-bottom: 38px;
+      }
+
+      p {
+        @include body-text($font-14, 400, $text-color);
+        margin-bottom: 0;
+      }
+
+      span {
+        @include body-text($font-22, 400, $black);
+      }
+      small {
+        color: $black;
+      }
+
+      button {
+        @include buttons($black);
+        color: $white;
+        height: 40px;
+        width: 100%;
+        width: calc(100% - 30px);
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: $font-14;
+      }
+    }
+
+    .price-box-black {
+      background: $black;
+      height: 700px;
+      padding: 30px;
+      border-radius: 10px;
+      position: relative;
+
+      @media (max-width: 400px) {
+        padding: 30px 10px;
+        height: 750px;
+      }
+
+      .dash {
+        margin-bottom: 27px;
+        height: 7px;
+        border-radius: 50px;
+        width: 100%;
+        background: $white;
+      }
+
+      h3 {
+        @include heading($font-20, 400, $white);
+        margin-bottom: 38px;
+      }
+
+      p {
+        @include body-text($font-14, 400, $white);
+        margin-bottom: 0;
+      }
+
+      span {
+        @include body-text($font-22, 400, $white);
+      }
+      small {
+        color: $white;
+      }
+
+      .bi-check-circle-fill {
+        color: white;
+      }
+
+      button {
+        @include buttons($white);
+        background: $white;
+        color: $black;
+        height: 40px;
+        width: calc(100% - 30px);
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: $font-14;
+      }
+    }
+  }
+}

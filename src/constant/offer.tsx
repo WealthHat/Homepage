@@ -1,62 +1,62 @@
 export const offer = [
   {
-    name: 'Dedicated financial advisor',
+    name: 'Holistic Financial Planning',
     wealthhat: true,
     firstFirm: true,
     secondFirm: true,
   },
   {
-    name: 'In-house tax advisors',
+    name: 'Financial Goal Setting',
     wealthhat: true,
     firstFirm: false,
     secondFirm: false,
   },
   {
-    name: 'Digital net worth tracking including stock options,crypto, and real estate',
+    name: 'Net Worth & Cashflow',
     wealthhat: true,
     firstFirm: false,
     secondFirm: false,
   },
   {
-    name: 'Cash flow and retirement projections',
+    name: 'Portfolio & Investment Analysis',
     wealthhat: true,
     firstFirm: true,
     secondFirm: false,
   },
   {
-    name: 'Public equities & fixed income',
+    name: 'Ongoing Investment Advisory',
     wealthhat: true,
     firstFirm: true,
     secondFirm: true,
   },
   {
-    name: 'Vetted alternative investments',
+    name: 'Insurance Needs Analysis',
     wealthhat: true,
     firstFirm: false,
     secondFirm: false,
   },
   {
-    name: 'Tax return preparation and filing',
+    name: 'Estate Planning & Trust Advisory',
     wealthhat: true,
     firstFirm: false,
     secondFirm: true,
   },
   {
-    name: 'Help with startup equity backed loans',
+    name: 'Retirement Planning',
     wealthhat: true,
     firstFirm: false,
     secondFirm: false,
   },
   {
-    name: 'Help with buying and selling secondaries',
+    name: 'Tax Planning',
     wealthhat: true,
     firstFirm: false,
     secondFirm: false,
   },
   {
-    name: 'Help with getting a portfolio line of credit',
+    name: 'Ongoing Collaboration with other experts',
     wealthhat: true,
     firstFirm: false,
     secondFirm: false,
-  }
+  },
 ];

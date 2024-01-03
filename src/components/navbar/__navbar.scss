@@ -1,5 +1,5 @@
-.nav{
-  position:relative;
+.nav {
+  position: relative;
 
   nav {
     width: 100% !important;
@@ -8,93 +8,97 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    position:fixed;
-    z-index:9;
-  
-  
+    position: fixed;
+    z-index: 9;
+
     @media (min-width: 1240px) {
       padding: 0 50px;
     }
-  
+
     .nav-left {
       display: flex;
       align-items: center;
       height: 80px;
       width: 20%;
-  
+
+      img {
+        cursor: pointer;
+      }
     }
-  
+
     .nav-right {
       display: flex;
       align-items: center;
       height: 80px;
       width: 70%;
-  
+
       @media (min-width: 1240px) {
         width: 50%;
       }
-  
+
       @media (max-width: 850px) {
         width: 75%;
       }
-  
+
       .nav-menu {
         display: none;
-  
-        @media (max-width: 767px) {
+
+        @media (max-width: 768px) {
           display: flex;
           align-items: center;
           justify-content: flex-end;
           width: 100%;
         }
-  
+
         .bi {
           color: $white;
           font-size: $font-28;
-          transition:$transitions;
+          transition: $transitions;
         }
       }
-  
+
       ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-  
-        @media (max-width: 767px) {
+
+        @media (max-width: 768px) {
           display: none;
         }
-  
+
         li {
           @include heading($font-16, 500, '');
           display: flex;
           align-items: center;
-  
+          color: $white;
+          cursor:pointer;
+
           a {
             cursor: pointer;
             color: $white;
           }
-  
+
           .bi-chevron-down {
             color: $white;
             margin-left: 5px;
             display: block;
             // margin-top: 5px;
             font-size: $font-16;
-  
+
             @media (min-width: 1240px) {
               margin-left: 10px;
             }
           }
-  
+
           &.schedule {
             border: 1px solid $white;
             padding: 10px 20px !important;
-  
+
             &:hover {
               background: $white;
               transition: $transitions;
-  
+
               a {
                 color: $black;
               }
@@ -103,26 +107,27 @@
         }
       }
     }
-  
+
     //   dropdown section
     .dropdown {
       background: $black;
       padding: 30px 20px;
       transition: $transitions;
-  
+
       .line {
         border-bottom: 1px solid $border-color;
         margin-bottom: 30px;
       }
-  
+
       ol {
         li {
           display: block;
           line-height: 40px;
-  
+          @include heading($font-16, 400, $white);
+
           a {
             @include heading($font-16, 400, $white);
-  
+
             &:hover {
               text-decoration: underline;
               transition: $transitions;
@@ -132,101 +137,95 @@
       }
     }
   }
-  
+
   .nav-mobile {
     display: none;
     padding: 0px 30px 20px 30px;
     background: $black;
     color: $white;
-    opacity:0;
-    transition:$transitions;
-    transform:translateX(-100%);
-    position:fixed;
-    top:80px;
-    z-index:99;
-    overflow-y:auto;
-    height:calc(100vh - 80px);
+    opacity: 0;
+    transition: $transitions;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 80px;
+    z-index: 99;
+    overflow-y: auto;
+    height: calc(100vh - 80px);
 
-  
-  
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       display: block;
       width: 100%;
     }
-  
-    @media (max-width:500px){
-        padding: 0px 10px 50px 10px;
+
+    @media (max-width: 500px) {
+      padding: 0px 10px 50px 10px;
     }
-  
-    ul{
-      li{
-        &:last-child{
-          border-bottom:1px solid transparent;
-  
-          button{
-            width:200px;
-            border:1px solid $border-color;
-            text-align:center!important;
-            display:flex;
+
+    ul {
+      li {
+        &:last-child {
+          border-bottom: 1px solid transparent;
+
+          button {
+            width: 200px;
+            border: 1px solid $border-color;
+            text-align: center !important;
+            display: flex;
             align-items: center;
             justify-content: center;
-            height:60px;
-            margin-top:30px;
+            height: 60px;
+            margin-top: 30px;
             // margin-left:20px;
-  
           }
         }
       }
     }
-  
+
     .accordion-item {
       background: transparent;
-      padding:5px 0!important;
-      border-bottom:1px solid $border-color;
-  
+      padding: 5px 0 !important;
+      border-bottom: 1px solid $border-color;
+
       .accordion-button {
         background: $black;
         color: $white;
         font-weight: bold;
-  
+
         .bi {
           margin-top: 4px;
           margin-left: 10px;
           font-size: 16px;
         }
       }
-  
+
       .accordion-body {
         font-weight: normal;
-        padding-top:5px;
-        padding-bottom:5px;
-        line-height:35px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: 35px;
         color: $off-white;
-  
+
         a {
           color: $off-white;
         }
       }
-  
-      .drop-left{
-        width:45%;
+
+      .drop-left {
+        width: 45%;
       }
-      .drop-right{
-        width:55%;
-  
+      .drop-right {
+        width: 55%;
       }
     }
-  
+
     .accordion-button::after {
       content: none;
     }
   }
-  
-    .show-nav{
-      opacity:1;
-      transition:$transitions;
-      transform:translateX(0%);
-  
-    }
-}
 
+  .show-nav {
+    opacity: 1;
+    transition: $transitions;
+    transform: translateX(0%);
+  }
+}
