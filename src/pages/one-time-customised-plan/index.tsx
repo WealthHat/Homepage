@@ -20,7 +20,7 @@ const OneTimeCustomisedPlan = () => {
         <HeroSection
           title="One-Time Customised Plan"
           content="This plan is well-suited for those with simpler financial situations, DIY enthusiasts, or individuals who are just starting out and prefer not to have ongoing support."
-          image="/images/about-hero.svg"
+          image="/images/one-time.svg"
           showbutton={true}
         />
 

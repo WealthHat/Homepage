@@ -15,7 +15,7 @@ const News = () => {
         <HeroSection
           title="News"
           content="Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth."
-          image="/images/about-hero.svg"
+          image="/images/news.svg"
         />
 
         <div className="container news-body">

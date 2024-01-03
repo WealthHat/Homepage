@@ -20,7 +20,7 @@ const FamilyBusiness = () => {
         <HeroSection
           title="Families and Family Businesses"
           content="Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth."
-          image="/images/about-hero.svg"
+          image="/images/family-business.svg"
           showbutton={true}
         />
 

@@ -19,7 +19,7 @@ const UltraHighNetworth = () => {
         <HeroSection
           title="High Net Worth & Ultra High Net Worth Individuals"
           content="Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth."
-          image="/images/about-hero.svg"
+          image="/images/high-net.svg"
           showbutton={true}
         />
 
