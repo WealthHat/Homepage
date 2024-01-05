@@ -127,6 +127,16 @@ const Navbar = () => {
                       One-Time Comprehensive Plan
                     </Link>
                   </li>
+                  <li className="schedule">
+                    <Link href="/premium-wealth/investment">
+                      Investment Advisory Retainer Plan
+                    </Link>
+                  </li>
+                  <li className="schedule">
+                    <Link href="/premium-wealth/comprehensive">
+                      Comprehensive Wealth Advisory Retainer Plan
+                    </Link>
+                  </li>
                 </ol>
               </div>
 
@@ -240,13 +250,23 @@ const Navbar = () => {
                 <div className="drop-left">
                   <div className="accordion-body fw-bolder">What We Do</div>
                   <div className="accordion-body">
-                    <Link href="one-time-customised-plan">
+                    <Link href="/one-time-customised-plan">
                       One-Time Customised Plan
                     </Link>
                   </div>
                   <div className="accordion-body">
                     <Link href="/one-time-comprehensive-plan">
                       One-Time Comprehensive Plan
+                    </Link>
+                  </div>
+                  <div className="accordion-body">
+                    <Link href="/premium-wealth/investment">
+                      Investment Advisory Retainer Plan
+                    </Link>
+                  </div>
+                  <div className="accordion-body">
+                    <Link href="/premium-wealth/comprehensive">
+                      Comprehensive Wealth Advisory Retainer Plan
                     </Link>
                   </div>
                 </div>

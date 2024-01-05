@@ -17,7 +17,7 @@ const SeniorExecutives = () => {
         <HeroSection
           title="Senior Executives"
           content="Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth."
-          image="/images/about-hero.svg"
+          image="/images/executives.svg"
           showbutton={true}
         />
 

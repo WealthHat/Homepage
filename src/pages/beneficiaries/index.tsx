@@ -23,7 +23,7 @@ const Beneficiaries = () => {
         <HeroSection
           title="Beneficiaries and Heirs"
           content="Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth."
-          image="/images/about-hero.svg"
+          image="/images/beneficiaries.svg"
           showbutton={true}
         />
 

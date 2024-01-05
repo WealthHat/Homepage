@@ -20,7 +20,7 @@ const AboutUs = () => {
               retirement planning, and wealth preservation to individuals,
               families, and businesses. Our focus is always upon you and the
               needs of your wealth."
-          image="/images/about-hero.svg"
+          image="/images/about.svg"
           showbutton={true}
         />
 

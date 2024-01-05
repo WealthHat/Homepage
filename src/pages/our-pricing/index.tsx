@@ -14,7 +14,7 @@ const OurPricing = () => {
         <HeroSection
           title="Our Pricing"
           content="Individuals, families, and family businesses seeking expertise, clarity, and personalised strategies to grow and protect their wealth."
-          image="/images/about-hero.svg"
+          image="/images/our-pricing.svg"
           showbutton={true}
         />
 
