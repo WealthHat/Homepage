@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://demo.wealthhat.com/api/my-sitemap
+Sitemap: https://wealthhat.com/api/my-sitemap
 
 Disallow: /*.wealthhat.com/
